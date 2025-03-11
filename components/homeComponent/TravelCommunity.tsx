@@ -193,7 +193,7 @@ const Box = ({
         {buttons.map((button, index) => (
           <Button
             key={index}
-            className={`bg-white rounded-[50px] text-primary border border-primary flex-1 text-[14px] lg:px-0 px-[1rem] py-2  ${
+            className={`bg-white rounded-[50px] text-primary border border-primary flex-1 text-[14px] lg:px-0 px-[1.8rem] py-2  ${
               index === buttons.length - 1 ? "flex-auto lg:flex-1" : ""
             }`}
             text={button.title}
