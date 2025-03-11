@@ -10,6 +10,10 @@ export const CustomContainer = ({
   children,
 }: CustomContainerProps) => {
   return (
-    <div className={`px-[5rem]  py-24 lg:py-40 ${className}`}>{children}</div>
+    <div
+      className={`md:px-[5rem] px-[2rem] py-[1.5rem] lg:py-[2.5rem] ${className}`}
+    >
+      {children}
+    </div>
   );
 };

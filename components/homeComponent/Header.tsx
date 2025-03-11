@@ -7,8 +7,8 @@ import Description from "../common/Description";
 import Title from "../common/Title";
 function Header() {
   return (
-    <CustomContainer className="flex items-center min-[1920px]:justify-between flex-col lg:flex-row md:gap-[35px] xl:gap-[123px] bg-[#F7FCFC]">
-      <div className="2xl:w-[50rem] xl:w-[40rem]">
+    <CustomContainer className="flex items-center justify-between flex-col lg:flex-row  bg-[#F7FCFC]">
+      <div className="2xl:w-[50rem] xl:w-[40rem] w-full">
         <Title
           title="home.header.empowering_tourism"
           titleColor="text-primary"

@@ -110,18 +110,18 @@ function NavBar() {
   return (
     <CustomContainer className="mt-[36px] !py-0">
       <header className="bg-white h-[80px]">
-        <div className=" flex items-center gap-48">
+        <div className=" flex items-center gap-[2rem]">
           <a href="#">
             <Image src={images.logo} alt="logo" />
           </a>
           <div className="flex flex-1 items-center justify-end lg:justify-between">
             <nav aria-label="Global" className="hidden lg:block">
-              <ul className="flex items-center gap-24 text-sm">
+              <ul className="flex items-center gap-[1rem] text-sm">
                 {links.map((link, index) => (
                   <li key={index} className="relative">
                     {link.links && link.links.length > 0 ? (
                       <DropdownMenu>
-                        <DropdownMenuTrigger className="flex items-center gap-2 text-gray-600 hover:text-secondary transition text-[1rem] outline-none">
+                        <DropdownMenuTrigger className="flex items-center gap-1 text-gray-600 hover:text-secondary transition text-[1rem] outline-none">
                           <Title title={link.title} titleColor="" />
                           <ChevronDown className="w-4 h-4" />
                         </DropdownMenuTrigger>
