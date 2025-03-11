@@ -7,12 +7,12 @@ import Description from "../common/Description";
 import Title from "../common/Title";
 function Header() {
   return (
-    <CustomContainer className="flex items-center justify-between flex-col lg:flex-row  bg-[#F7FCFC]">
+    <CustomContainer className="w-full flex items-center justify-between flex-col lg:flex-row  bg-[#F7FCFC]">
       <div className="2xl:w-[50rem] xl:w-[40rem] w-full">
         <Title
           title="home.header.empowering_tourism"
           titleColor="text-primary"
-          className="text-[2.5rem] block font-medium"
+          className="text-[2.5rem] font-medium"
         />
         <Title
           title="home.header.elevating_experiences"
