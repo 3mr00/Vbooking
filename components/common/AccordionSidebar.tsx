@@ -81,7 +81,7 @@ export default function AccordionSidebar({
                           : "hover:translate-x-1"
                       }`}
                     >
-                      {link.title}
+                      {t(link.title)}
                     </Link>
                   ))}
                 </div>

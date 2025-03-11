@@ -12,11 +12,11 @@ function Header() {
         <Title
           title="home.header.empowering_tourism"
           titleColor="text-primary"
-          className="text-[2.5rem] font-medium"
+          className="md:text-[2.5rem] text-[2rem] block font-medium"
         />
         <Title
           title="home.header.elevating_experiences"
-          className="text-[2.5rem] font-medium"
+          className="md:text-[2.5rem] text-[2rem] font-medium"
           titleColor="text-secondary"
         />
         <div>

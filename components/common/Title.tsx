@@ -10,7 +10,9 @@ interface TitleProps {
 function Title({ title, titleColor, className }: TitleProps) {
   const t = useTranslations();
 
-  return <span className={`${titleColor} ${className}`}>{t(title)}</span>;
+  return (
+    <span className={`break-words ${titleColor} ${className}`}>{t(title)}</span>
+  );
 }
 
 export default Title;
