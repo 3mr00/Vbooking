@@ -11,7 +11,9 @@ function Title({ title, titleColor, className }: TitleProps) {
   const t = useTranslations();
 
   return (
-    <span className={`break-words ${titleColor} ${className}`}>{t(title)}</span>
+    <span className={`break-words break-normal ${titleColor} ${className}`}>
+      {t(title)}
+    </span>
   );
 }
 

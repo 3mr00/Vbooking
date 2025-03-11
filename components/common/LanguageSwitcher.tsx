@@ -18,12 +18,16 @@ export default function LanguageSwitcher() {
         scroll={false}
       >
         {locale === "ar" ? (
-          <Image src={images.EnFlag} alt="flag" className="w-[1rem] h-[1rem]" />
+          <Image
+            src={images.EnFlag}
+            alt="flag"
+            className="w-[1.2rem] h-[1.2rem]"
+          />
         ) : (
           <Image
             src={images.EgyptFlag}
             alt="flag"
-            className="w-[1rem] h-[1rem]"
+            className="w-[1.2rem] h-[1.2rem]"
           />
         )}
         <Title

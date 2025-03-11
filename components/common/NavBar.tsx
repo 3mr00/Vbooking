@@ -110,13 +110,13 @@ function NavBar() {
   return (
     <CustomContainer className="mt-[36px] !py-0">
       <header className="bg-white h-[80px]">
-        <div className=" flex items-center gap-[2rem]">
+        <div className=" flex items-center gap-[3rem]">
           <a href="#">
             <Image src={images.logo} alt="logo" />
           </a>
-          <div className="flex flex-1 items-center justify-end lg:justify-between">
-            <nav aria-label="Global" className="hidden lg:block">
-              <ul className="flex items-center gap-[1rem] text-sm">
+          <div className="flex flex-1 items-center justify-end xl:justify-between">
+            <nav aria-label="Global" className="hidden xl:block">
+              <ul className="flex items-center gap-3 text-sm">
                 {links.map((link, index) => (
                   <li key={index} className="relative">
                     {link.links && link.links.length > 0 ? (
@@ -153,7 +153,7 @@ function NavBar() {
             </nav>
 
             <div className="flex items-center gap-4">
-              <div className="hidden lg:flex items-center gap-4">
+              <div className="hidden xl:flex items-center gap-4">
                 <LanguageSwitcher />
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -174,7 +174,7 @@ function NavBar() {
 
               <button
                 onClick={toggleMenu}
-                className="block rounded-full bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 lg:hidden"
+                className="block rounded-full bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 xl:hidden"
               >
                 <span className="sr-only">Toggle menu</span>
                 <svg
@@ -199,7 +199,7 @@ function NavBar() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white z-50 lg:hidden overflow-y-auto">
+        <div className="fixed inset-0 bg-white z-50 xl:hidden overflow-y-auto">
           <div className="p-4">
             <div className="flex justify-between items-center my-[18px]">
               <a href="#">

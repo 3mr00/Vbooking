@@ -13,7 +13,9 @@ function Description({
 }: DescriptionProps) {
   const t = useTranslations();
   return (
-    <p className={`${DescriptionColor} ${className} whitespace-pre text-wrap`}>
+    <p
+      className={`${DescriptionColor} ${className} break-words break-normal leading-relaxed`}
+    >
       {t(Description)}
     </p>
   );
