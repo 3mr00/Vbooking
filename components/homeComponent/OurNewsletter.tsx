@@ -16,7 +16,7 @@ function OurNewsletter() {
         <Description
           Description="home.our_newsletter.newsletter_description"
           DescriptionColor="text-white"
-          className="text-center md:text-[.8rem] text-[.5rem]"
+          className="text-center md:text-[.8rem] text-[.7rem]"
         />
         <div className="mt-8 mb-[8px] flex flex-wrap items-center justify-center gap-4">
           <input
@@ -25,13 +25,13 @@ function OurNewsletter() {
           />
           <Button
             text="home.our_newsletter.subscribe"
-            className="bg-white text-primary"
+            className="bg-white text-primary px-4 py-2"
           />
         </div>
         <Description
           Description="home.our_newsletter.privacy_policy_care"
           DescriptionColor="text-white"
-          className=" md:text-[.8rem] text-[.9rem]"
+          className=" md:text-[.8rem] text-[.7rem]text-[.9rem]"
         />
       </div>
     </CustomContainer>

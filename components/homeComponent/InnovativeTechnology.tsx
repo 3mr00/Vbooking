@@ -55,7 +55,7 @@ function InnovativeTechnology() {
         <Description
           Description="home.InnovativeTechnology.transformation_to_advanced_technology"
           DescriptionColor="text-grayText"
-          className="md:text-[.8rem] text-[.5rem]"
+          className="md:text-[.8rem] text-[.7rem]"
         />
       </div>
       <div className="hidden sm:grid grid-cols-1 gap-4 lg:grid-cols-2 mt-6">
@@ -93,7 +93,7 @@ const Box = ({ title, image, description }: BoxProps) => {
         <Description
           Description={description}
           DescriptionColor="text-grayText"
-          className="md:text-[.8rem] text-[.5rem] font-normal text-wrap"
+          className="md:text-[.8rem] text-[.7rem] font-normal text-wrap"
         />
       </div>
     </div>

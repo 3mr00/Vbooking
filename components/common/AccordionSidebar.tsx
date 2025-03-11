@@ -43,7 +43,7 @@ export default function AccordionSidebar({
           >
             <button
               onClick={() => toggleItem(item.title)}
-              className="flex items-center  justify-between w-full py-3 text-left font-medium"
+              className="flex items-center  justify-between w-full py-[.5rem] px-4  text-left font-medium"
             >
               <div className="flex items-center gap-3">
                 {item.links && item.links.length > 0 && (

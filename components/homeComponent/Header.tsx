@@ -24,12 +24,12 @@ function Header() {
         <div>
           <Description
             Description="home.header.vbooking_your_partner_in_seamless_travel_solutions"
-            DescriptionColor="text-text mb-[6px] md:text-[.8rem] text-[0.5rem] "
+            DescriptionColor="text-text mb-[6px] md:text-[.8rem] text-[.5rem] "
           />
           <Description
             Description="home.header.revolutionizing_global_travel_with_cutting_edge_ai"
             DescriptionColor="text-text"
-            className="text-wrap font-normal md:text-[.8rem] text-[0.5rem] "
+            className="text-wrap font-normal md:text-[.8rem] text-[.5rem] "
           />
         </div>
         <div className="flex gap-4 mt-3 flex-wrap">

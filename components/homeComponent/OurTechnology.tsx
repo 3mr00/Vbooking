@@ -91,11 +91,11 @@ const Box = ({ title, description, index }: BoxProps) => {
       <Description
         Description={description}
         DescriptionColor="text-grayText"
-        className="md:text-[.8rem] text-[.5rem]"
+        className="md:text-[.8rem] text-[.7rem]"
       />
       <Button
         text="common.learn_more"
-        className="mt-4 text-darkText border-[#D0D5DD] bg-white border"
+        className="mt-4 text-darkText border-[#D0D5DD] bg-white border px-4 py-2"
       />
     </div>
   );

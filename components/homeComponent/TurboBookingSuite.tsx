@@ -50,12 +50,12 @@ function TurboBookingSuite() {
         <Description
           Description="home.booking_suite.improve_client_experiences"
           DescriptionColor="text-grayText"
-          className="md:text-[.8rem] text-[.5rem]"
+          className="md:text-[.8rem] text-[.7rem]"
         />
         <Description
           Description="home.booking_suite.empower_business"
           DescriptionColor="text-grayText"
-          className="md:text-[.8rem] text-[.5rem]"
+          className="md:text-[.8rem] text-[.7rem]"
         />
       </div>
       <div className="hidden sm:grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mt-6">
@@ -100,14 +100,17 @@ const Box = ({ title, image, description, className }: BoxProps) => {
       <Description
         Description={description}
         DescriptionColor="text-grayText"
-        className="text-wrap text-center md:text-[.8rem] text-[.5rem]"
+        className="text-wrap text-center md:text-[.8rem] text-[.7rem]"
       />
       <div className="mt-6 flex gap-3">
         <Button
           text="common.learn_more"
-          className="border text-clamp-[16px,3vw,16px] border-[#D0D5DD] text-black bg-white"
+          className="px-4 py-2 border text-clamp-[16px,3vw,16px] border-[#D0D5DD] text-black bg-white"
         />
-        <Button text="common.book_demo" className="text-white bg-primary" />
+        <Button
+          text="common.book_demo"
+          className="text-white bg-primary px-4 py-2"
+        />
       </div>
     </div>
   );

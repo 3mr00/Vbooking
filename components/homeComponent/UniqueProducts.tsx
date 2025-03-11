@@ -59,7 +59,7 @@ function UniqueProducts() {
       <Description
         Description="home.unique_products.crafting_unique_products_from_innovative_technology"
         DescriptionColor="text-grayText"
-        className="md:text-[.8rem] text-[.5rem]"
+        className="md:text-[.8rem] text-[.7rem]"
       />
       <div className="hidden sm:flex flex-wrap gap-[0.5rem] mt-6">
         {UniqueProductsItems.map((item, index) => (

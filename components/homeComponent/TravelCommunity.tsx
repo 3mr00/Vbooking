@@ -99,12 +99,12 @@ function TravelCommunity() {
           <Description
             Description="home.travel_community.subtitle"
             DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.5rem]"
+            className="md:text-[.8rem] text-[.7rem]"
           />
           <Description
             Description="home.travel_community.description"
             DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.5rem]"
+            className="md:text-[.8rem] text-[.7rem]"
           />
         </div>
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
@@ -178,13 +178,13 @@ const Box = ({
         <Description
           Description={description}
           DescriptionColor="text-grayText"
-          className="md:text-[.9rem] text-[.5rem]"
+          className="md:text-[.9rem] text-[.8rem]"
         />
         {subDescription && (
           <Description
             Description={subDescription}
             DescriptionColor="text-secondary h-[24px]"
-            className="md:text-[.9rem] text-[.5rem] mt-4"
+            className="md:text-[.9rem] text-[.8rem] mt-4"
           />
         )}
       </div>
@@ -193,8 +193,8 @@ const Box = ({
         {buttons.map((button, index) => (
           <Button
             key={index}
-            className={`bg-white text-primary border border-primary flex-1 rounded-[50px] md:text-[.8rem] text-[.5rem] md:text-[14px]  md:px-[0rem] py-2 ${
-              index === buttons.length - 1 ? "flex-auto md:flex-1" : ""
+            className={`bg-white rounded-[50px] text-primary border border-primary flex-1 text-[14px] lg:px-0 px-[1rem] py-2  ${
+              index === buttons.length - 1 ? "flex-auto lg:flex-1" : ""
             }`}
             text={button.title}
           />

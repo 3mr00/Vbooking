@@ -29,12 +29,12 @@ function OurPartners() {
           <Description
             Description="home.our_partners.partners_description"
             DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.5rem]"
+            className="md:text-[.8rem] text-[.7rem]"
           />
           <Description
             Description="home.our_partners.inclusive_ecosystem"
             DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.5rem]"
+            className="md:text-[.8rem] text-[.7rem]"
           />
         </div>
         <div className="grid grid-cols-2 gap-[0.5rem] mt-4 xl:grid-cols-4">

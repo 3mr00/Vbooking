@@ -123,7 +123,7 @@ const Box = ({ title, description, icon, index }: BoxProps) => {
         />
         <Description
           Description={description}
-          DescriptionColor="text-grayText md:text-[.8rem] text-[.5rem]"
+          DescriptionColor="text-grayText md:text-[.8rem] text-[.7rem]"
         />
       </div>
     </div>
