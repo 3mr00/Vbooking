@@ -57,7 +57,7 @@ const items = [
 function WhyTuRbo() {
   return (
     <CustomContainer>
-      <div className="bg-[#F8E6F9] p-32 rounded-[20px]">
+      <div className="bg-[#F8E6F9] p-8 rounded-[20px]">
         <div className="text-center">
           <Title
             title="common.our"
@@ -81,7 +81,7 @@ function WhyTuRbo() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-16 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-4">
           {items.map((item, index) => (
             <Box key={index} index={index} {...item} />
           ))}
@@ -112,10 +112,10 @@ const Box = ({ title, description, icon, index }: BoxProps) => {
   ];
   return (
     <div
-      className={`flex items-center flex-col text-center ${gridClasses[index]} space-x-4  bg-white p-16 rounded-[20px] sm:col-span-1 md:col-span-1 animations-box`}
+      className={`flex items-center flex-col text-center ${gridClasses[index]} space-x-4  bg-white p-4 rounded-[20px] sm:col-span-1 md:col-span-1 animations-box`}
     >
       <div>{icon}</div>
-      <div className="mt-16">
+      <div className="mt-4">
         <Title
           title={title}
           titleColor="text-secondary"

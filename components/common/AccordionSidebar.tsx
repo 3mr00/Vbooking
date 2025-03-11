@@ -39,7 +39,7 @@ export default function AccordionSidebar({
         {items.map((item) => (
           <div
             key={item.title}
-            className="last:border-b last:border-blue-400 last:border-opacity-30 last:pb-24"
+            className="last:border-b last:border-blue-400 last:border-opacity-30 last:pb-6"
           >
             <button
               onClick={() => toggleItem(item.title)}

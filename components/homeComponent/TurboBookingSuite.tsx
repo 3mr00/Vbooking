@@ -102,7 +102,7 @@ const Box = ({ title, image, description, className }: BoxProps) => {
         DescriptionColor="text-grayText"
         className="text-wrap text-center text-12"
       />
-      <div className="mt-24 flex gap-16">
+      <div className="mt-6 flex gap-3">
         <Button
           text="common.learn_more"
           className="border text-clamp-[16px,3vw,16px] border-[#D0D5DD] text-black bg-white"

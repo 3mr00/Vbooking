@@ -30,7 +30,7 @@ const data = [
 function OurTechnology() {
   return (
     <CustomContainer className="pt-[44px]">
-      <div className="bg-[url(../../assets/images/OurTechnologyBg.jpg)] bg-cover bg-center relative rounded-[26px] overflow-hidden px-16 py-24 sm:p-[48px] min-[1920px]:px-[173px] 2xl:py-[50px]">
+      <div className="bg-[url(../../assets/images/OurTechnologyBg.jpg)] bg-cover bg-center relative rounded-[26px] overflow-hidden px-4 py-6 sm:p-[48px] min-[1920px]:px-[173px] 2xl:py-[50px]">
         <div className="inset-0 absolute bg-[#224A9A] opacity-[.8]"></div>
         <div className="relative z-10">
           <div className="text-center">
@@ -46,7 +46,7 @@ function OurTechnology() {
             />
           </div>
           {/* Responsive Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-16 mt-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-24">
             {data.map((item, index) => (
               <Box
                 key={index}
@@ -81,7 +81,7 @@ const Box = ({ title, description, index }: BoxProps) => {
 
   return (
     <div
-      className={`p-16 rounded-[16px] bg-[#EFF9FA] ${gridClasses[index]} sm:col-span-1 md:col-span-1 animations-box`}
+      className={`p-4 rounded-[16px] bg-[#EFF9FA] ${gridClasses[index]} sm:col-span-1 md:col-span-1 animations-box`}
     >
       <Title
         title={title}

@@ -107,7 +107,7 @@ function TravelCommunity() {
             className="text-[12px]"
           />
         </div>
-        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-16 mt-24">
+        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-24">
           {data.map((item, index) => (
             <Box
               key={index}
@@ -166,7 +166,7 @@ const Box = ({
   ];
   return (
     <div
-      className={`p-24 rounded-[24px] bg-white space-y-8 ${gridClasses[index]} sm:col-span-1 md:col-span-1 ${className} flex flex-col justify-between h-full`}
+      className={`p-6 rounded-[24px] bg-white space-y-8 ${gridClasses[index]} sm:col-span-1 md:col-span-1 ${className} flex flex-col justify-between h-full`}
     >
       <div className="flex-grow">
         {icon}
@@ -184,7 +184,7 @@ const Box = ({
           <Description
             Description={subDescription}
             DescriptionColor="text-secondary h-[24px]"
-            className="text-[14px] mt-20"
+            className="text-[14px] mt-4"
           />
         )}
       </div>
@@ -193,7 +193,7 @@ const Box = ({
         {buttons.map((button, index) => (
           <Button
             key={index}
-            className={`bg-white text-primary border border-primary flex-1 rounded-[50px] text-[12px] md:text-[14px] md:px-8 px-[1rem] py-2 ${
+            className={`bg-white text-primary border border-primary flex-1 rounded-[50px] text-[12px] md:text-[14px]  px-[0rem] py-2 ${
               index === buttons.length - 1 ? "flex-auto md:flex-1" : ""
             }`}
             text={button.title}

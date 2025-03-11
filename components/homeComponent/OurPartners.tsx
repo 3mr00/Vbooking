@@ -37,7 +37,7 @@ function OurPartners() {
             className="text-[12px]"
           />
         </div>
-        <div className="grid grid-cols-2 gap-6 mt-20 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-6 mt-4 xl:grid-cols-4">
           {data.map((item, index) => (
             <div key={index}>
               <Image src={item} alt="Our Partners" priority />

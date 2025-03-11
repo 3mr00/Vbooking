@@ -80,7 +80,7 @@ interface BoxProps {
 }
 const Box = ({ title, image, description }: BoxProps) => {
   return (
-    <div className="bg-white p-16 flex items-center gap-4 rounded-lg">
+    <div className="bg-white p-4 flex items-center gap-4 rounded-lg">
       <div>
         <Image src={image} alt={title} />
       </div>
@@ -112,7 +112,7 @@ const AccordionBox = ({ items }: any) => {
       {items.map((item: BoxProps, index: number) => (
         <div key={index} className="mb-10">
           <div
-            className={`cursor-pointer bg-white px-24 py-16 rounded-[16px] ${
+            className={`cursor-pointer bg-white px-6 py-4 rounded-[16px] ${
               openIndex === index ? "hidden" : ""
             }`}
             onClick={() => handleToggle(index)}

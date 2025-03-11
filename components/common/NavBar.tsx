@@ -157,7 +157,7 @@ function NavBar() {
                 <LanguageSwitcher />
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button className="rounded-[50px] py-10 px-18 text-white bg-primary flex items-center gap-2 h-[40px]">
+                    <Button className="rounded-[50px] py-3 px-4 text-white bg-primary flex items-center gap-2 h-[40px]">
                       {t("home.navbar.login")} <ChevronDown />
                     </Button>
                   </DropdownMenuTrigger>

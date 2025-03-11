@@ -8,7 +8,7 @@ interface ButtonProps {
 }
 function Button({ text, className, withIcon }: ButtonProps) {
   return (
-    <button className={` rounded-[50px] py-10 px-18  ${className}`}>
+    <button className={` rounded-[50px] py-[.5rem] px-4  ${className}`}>
       <Title title={text} titleColor="" className=" text-[.8rem]" />
       {withIcon && <ArrowButton />}
     </button>

@@ -142,13 +142,13 @@ function footer() {
           <AccordionSidebar items={data} />
         </div>
 
-        <div className="flex items-center justify-between sm:justify-end mt-32">
+        <div className="flex items-center justify-between sm:justify-end mt-8">
           <Title
             title="home.footer.connectWithUs"
             titleColor="text-white"
             className=""
           />
-          <ul className="flex gap-4 sm:me-32 sm:ms-16">
+          <ul className="flex gap-4 sm:me-8 sm:ms-16">
             {socialLinks.map((link, index) => (
               <li key={index} className="cursor-pointer">
                 {link.icon}
@@ -194,7 +194,7 @@ function footer() {
           <div
             className={`${
               t("language.lang") === "ar" ? "sm:divide-x-reverse" : ""
-            }  sm:divide-slate-500 sm:divide-x-2 flex flex-wrap gap-3 justify-center mt-10`}
+            }  sm:divide-slate-500 sm:divide-x-2 flex flex-wrap gap-3 justify-center mt-4`}
           >
             <Title
               title="home.footer.copyright"
