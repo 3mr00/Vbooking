@@ -55,16 +55,16 @@ function InnovativeTechnology() {
         <Description
           Description="home.InnovativeTechnology.transformation_to_advanced_technology"
           DescriptionColor="text-grayText"
-          className="text-[12px]"
+          className="md:text-[.8rem] text-[.5rem]"
         />
       </div>
-      <div className="hidden sm:grid grid-cols-1 gap-4 lg:grid-cols-2 mt-24">
+      <div className="hidden sm:grid grid-cols-1 gap-4 lg:grid-cols-2 mt-6">
         {items.map((item, index) => (
           <Box key={index} {...item} />
         ))}
       </div>
 
-      <div className="sm:hidden mt-24">
+      <div className="sm:hidden mt-6">
         <AccordionBox items={items} />
       </div>
     </CustomContainer>
@@ -93,7 +93,7 @@ const Box = ({ title, image, description }: BoxProps) => {
         <Description
           Description={description}
           DescriptionColor="text-grayText"
-          className="text-[12px] font-normal text-wrap"
+          className="md:text-[.8rem] text-[.5rem] font-normal text-wrap"
         />
       </div>
     </div>
@@ -110,7 +110,7 @@ const AccordionBox = ({ items }: any) => {
   return (
     <div className="w-full">
       {items.map((item: BoxProps, index: number) => (
-        <div key={index} className="mb-10">
+        <div key={index} className="mb-3">
           <div
             className={`cursor-pointer bg-white px-6 py-4 rounded-[16px] ${
               openIndex === index ? "hidden" : ""

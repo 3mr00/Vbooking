@@ -8,31 +8,31 @@ import Title from "../common/Title";
 function Header() {
   return (
     <CustomContainer className="w-full flex items-center justify-between flex-col lg:flex-row bg-[#F7FCFC]">
-      <div className="2xl:w-[50rem] xl:w-[40rem] w-full px-4">
+      <div className="2xl:w-[50rem] xl:w-[40rem] w-full ">
         {" "}
         {/* Add padding for better spacing */}
         <Title
           title="home.header.empowering_tourism"
           titleColor="text-primary"
-          className="md:text-[2.5rem] text-[1.8rem] block font-medium "
+          className="md:text-[2.5rem] text-[1.7rem] block font-medium "
         />
         <Title
           title="home.header.elevating_experiences"
-          className="md:text-[2.5rem] text-[1.8rem] font-medium "
+          className="md:text-[2.5rem] text-[1.7rem] font-medium "
           titleColor="text-secondary"
         />
         <div>
           <Description
             Description="home.header.vbooking_your_partner_in_seamless_travel_solutions"
-            DescriptionColor="text-text mb-[6px] text-[0.85rem] "
+            DescriptionColor="text-text mb-[6px] md:text-[.8rem] text-[0.5rem] "
           />
           <Description
             Description="home.header.revolutionizing_global_travel_with_cutting_edge_ai"
             DescriptionColor="text-text"
-            className="text-wrap font-normal text-[0.75rem] "
+            className="text-wrap font-normal md:text-[.8rem] text-[0.5rem] "
           />
         </div>
-        <div className="flex gap-4 mt-12 flex-wrap">
+        <div className="flex gap-4 mt-3 flex-wrap">
           {" "}
           {/* Allow wrapping for buttons */}
           <Button
@@ -48,7 +48,7 @@ function Header() {
       <Image
         src={images.animatedHeaderImage}
         alt="headerImage"
-        className="w-[24rem] max-w-full"
+        className="w-[22rem] max-w-full"
         width={400}
         height={400}
         priority

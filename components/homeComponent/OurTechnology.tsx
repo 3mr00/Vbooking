@@ -42,11 +42,11 @@ function OurTechnology() {
             <Description
               Description="home.our_technology.read_more_technologies"
               DescriptionColor="text-white"
-              className="text-[12px]"
+              className="md:text-[.8rem] text-[.5rem]"
             />
           </div>
           {/* Responsive Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
             {data.map((item, index) => (
               <Box
                 key={index}
@@ -91,7 +91,7 @@ const Box = ({ title, description, index }: BoxProps) => {
       <Description
         Description={description}
         DescriptionColor="text-grayText"
-        className="text-[12px]"
+        className="md:text-[.8rem] text-[.5rem]"
       />
       <Button
         text="common.learn_more"

@@ -16,7 +16,7 @@ function OurNewsletter() {
         <Description
           Description="home.our_newsletter.newsletter_description"
           DescriptionColor="text-white"
-          className="text-center text-[12px]"
+          className="text-center md:text-[.8rem] text-[.5rem]"
         />
         <div className="mt-8 mb-[8px] flex flex-wrap items-center justify-center gap-4">
           <input
@@ -31,7 +31,7 @@ function OurNewsletter() {
         <Description
           Description="home.our_newsletter.privacy_policy_care"
           DescriptionColor="text-white"
-          className="text-[14px]"
+          className=" md:text-[.8rem] text-[.9rem]"
         />
       </div>
     </CustomContainer>

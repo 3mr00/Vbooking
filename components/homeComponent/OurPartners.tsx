@@ -29,15 +29,15 @@ function OurPartners() {
           <Description
             Description="home.our_partners.partners_description"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:text-[.8rem] text-[.5rem]"
           />
           <Description
             Description="home.our_partners.inclusive_ecosystem"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:text-[.8rem] text-[.5rem]"
           />
         </div>
-        <div className="grid grid-cols-2 gap-6 mt-4 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-[0.5rem] mt-4 xl:grid-cols-4">
           {data.map((item, index) => (
             <div key={index}>
               <Image src={item} alt="Our Partners" priority />

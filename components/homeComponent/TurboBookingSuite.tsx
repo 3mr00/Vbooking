@@ -50,21 +50,21 @@ function TurboBookingSuite() {
         <Description
           Description="home.booking_suite.improve_client_experiences"
           DescriptionColor="text-grayText"
-          className="text-[12px]"
+          className="md:text-[.8rem] text-[.5rem]"
         />
         <Description
           Description="home.booking_suite.empower_business"
           DescriptionColor="text-grayText"
-          className="text-[12px]"
+          className="md:text-[.8rem] text-[.5rem]"
         />
       </div>
-      <div className="hidden sm:grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mt-24">
+      <div className="hidden sm:grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mt-6">
         {items.map((item, index) => (
           <Box key={index} {...item} />
         ))}
       </div>
 
-      <div className="block sm:hidden mt-24">
+      <div className="block sm:hidden mt-6">
         <ScrollableCards
           options={items}
           renderCard={(option) => (
@@ -90,7 +90,7 @@ const Box = ({ title, image, description, className }: BoxProps) => {
     <div
       className={`bg-white p-[16px] flex items-center justify-between flex-col rounded-[16px] ${className}`}
     >
-      <Image src={image} alt={title} className="mb-16" />
+      <Image src={image} alt={title} className="mb-4" />
 
       <Title
         title={title}
@@ -100,7 +100,7 @@ const Box = ({ title, image, description, className }: BoxProps) => {
       <Description
         Description={description}
         DescriptionColor="text-grayText"
-        className="text-wrap text-center text-12"
+        className="text-wrap text-center md:text-[.8rem] text-[.5rem]"
       />
       <div className="mt-6 flex gap-3">
         <Button

@@ -99,15 +99,15 @@ function TravelCommunity() {
           <Description
             Description="home.travel_community.subtitle"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:text-[.8rem] text-[.5rem]"
           />
           <Description
             Description="home.travel_community.description"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:text-[.8rem] text-[.5rem]"
           />
         </div>
-        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-24">
+        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
           {data.map((item, index) => (
             <Box
               key={index}
@@ -121,7 +121,7 @@ function TravelCommunity() {
           ))}
         </div>
 
-        <div className="block sm:hidden mt-24">
+        <div className="block sm:hidden mt-6">
           <ScrollableCards
             options={data}
             renderCard={(option, index) => (
@@ -178,13 +178,13 @@ const Box = ({
         <Description
           Description={description}
           DescriptionColor="text-grayText"
-          className="text-[14px]"
+          className="md:text-[.9rem] text-[.5rem]"
         />
         {subDescription && (
           <Description
             Description={subDescription}
             DescriptionColor="text-secondary h-[24px]"
-            className="text-[14px] mt-4"
+            className="md:text-[.9rem] text-[.5rem] mt-4"
           />
         )}
       </div>
@@ -193,7 +193,7 @@ const Box = ({
         {buttons.map((button, index) => (
           <Button
             key={index}
-            className={`bg-white text-primary border border-primary flex-1 rounded-[50px] text-[12px] md:text-[14px]  px-[0rem] py-2 ${
+            className={`bg-white text-primary border border-primary flex-1 rounded-[50px] md:text-[.8rem] text-[.5rem] md:text-[14px]  md:px-[0rem] py-2 ${
               index === buttons.length - 1 ? "flex-auto md:flex-1" : ""
             }`}
             text={button.title}

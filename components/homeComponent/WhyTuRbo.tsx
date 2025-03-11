@@ -72,12 +72,12 @@ function WhyTuRbo() {
           <Description
             Description="home.why_turbo.empower_business_platform"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:text-[.8rem] text-[.5rem]"
           />
           <Description
             Description="home.why_turbo.streamline_reservations"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:text-[.8rem] text-[.5rem]"
           />
         </div>
 
@@ -123,7 +123,7 @@ const Box = ({ title, description, icon, index }: BoxProps) => {
         />
         <Description
           Description={description}
-          DescriptionColor="text-grayText text-[12px]"
+          DescriptionColor="text-grayText md:text-[.8rem] text-[.5rem]"
         />
       </div>
     </div>

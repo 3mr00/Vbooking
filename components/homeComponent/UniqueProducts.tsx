@@ -59,15 +59,15 @@ function UniqueProducts() {
       <Description
         Description="home.unique_products.crafting_unique_products_from_innovative_technology"
         DescriptionColor="text-grayText"
-        className="text-clamp-[12px,3vw,16px]"
+        className="md:text-[.8rem] text-[.5rem]"
       />
-      <div className="hidden sm:flex flex-wrap gap-6 mt-24">
+      <div className="hidden sm:flex flex-wrap gap-[0.5rem] mt-6">
         {UniqueProductsItems.map((item, index) => (
           <Box key={index} title={item.title} icon={item.icon} />
         ))}
       </div>
 
-      <div className="block sm:hidden mt-24">
+      <div className="block sm:hidden mt-6">
         <ScrollableCards
           options={UniqueProductsItems}
           renderCard={(option) => (
