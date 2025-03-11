@@ -8,26 +8,26 @@ import Title from "../common/Title";
 function Header() {
   return (
     <CustomContainer className="flex items-center min-[1920px]:justify-between flex-col lg:flex-row md:gap-[35px] xl:gap-[123px] bg-[#F7FCFC]">
-      <div className="2xl:w-[813px]">
+      <div className="2xl:w-[50rem] xl:w-[40rem]">
         <Title
           title="home.header.empowering_tourism"
           titleColor="text-primary"
-          className="text-clamp-[34px,3.6vw,64px] block font-medium"
+          className="text-[2.5rem] block font-medium"
         />
         <Title
           title="home.header.elevating_experiences"
-          className="text-clamp-[34px,3.6vw,64px] font-medium"
+          className="text-[2.5rem] font-medium"
           titleColor="text-secondary"
         />
         <div>
           <Description
             Description="home.header.vbooking_your_partner_in_seamless_travel_solutions"
-            DescriptionColor="text-text mb-[6px] text-[14px]"
+            DescriptionColor="text-text mb-[6px] text-[.8rem]"
           />
           <Description
             Description="home.header.revolutionizing_global_travel_with_cutting_edge_ai"
             DescriptionColor="text-text"
-            className="text-wrap font-normal text-[12px]"
+            className="text-wrap font-normal text-[.7rem]"
           />
         </div>
         <div className="flex gap-4 mt-24">
@@ -41,10 +41,26 @@ function Header() {
           />
         </div>
       </div>
+      {/* <video
+                controls={false}
+                loop
+                muted
+                playsInline
+                autoPlay
+                preload="metadata"
+                width="100%"
+                height="100%"
+                className="w-full h-full object-cover rounded-[1rem]"
+                title="videoSlider"
+              >
+                <source src={`${item.src}`} type="video/mp4" />
+                Your bro wser does not support the video tag.
+              </video> */}
+
       <Image
         src={images.animatedHeaderImage}
         alt="headerImage"
-        className="w-[35rem]"
+        className="w-[30rem]"
         width={500}
         height={500}
         priority

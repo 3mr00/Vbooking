@@ -126,11 +126,7 @@ function NavBar() {
                           <ChevronDown className="w-4 h-4" />
                         </DropdownMenuTrigger>
 
-                        <DropdownMenuContent
-                          align="end"
-                          sideOffset={4}
-                          className="w-auto bg-white shadow-lg rounded-md"
-                        >
+                        <DropdownMenuContent className="w-auto bg-white shadow-lg rounded-md">
                           {link.links.map((sublink, subIndex) => (
                             <DropdownMenuItem key={subIndex} asChild>
                               <Link
