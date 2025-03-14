@@ -83,14 +83,8 @@ interface BoxProps {
 const Box = ({ title, image, description }: BoxProps) => {
   return (
     <div className="bg-white p-[16px] flex  gap-[16px] rounded-lg">
-      <div>
-        <Image
-          src={image}
-          alt={title}
-          width={800}
-          height={800}
-          className=" w-[8rem]  h-[8rem]"
-        />
+      <div className="w-[8rem] h-auto relative overflow-hidden rounded-xl">
+        <Image src={image} alt={title} fill className="   object-cover" />
       </div>
       <div className="w-[222px] min-[450px]:w-full">
         <Title
@@ -101,7 +95,7 @@ const Box = ({ title, image, description }: BoxProps) => {
         <Description
           Description={description}
           DescriptionColor="text-grayText"
-          className="text-[11px] font-normal text-wrap"
+          className="text-[10px] font-normal text-wrap"
         />
       </div>
     </div>
@@ -118,7 +112,7 @@ const AccordionBox = ({ items }: any) => {
   return (
     <div className="w-full">
       {items.map((item: BoxProps, index: number) => (
-        <div key={index} className="mb-3">
+        <div key={index} className="mb-3 h-auto">
           <div
             className={`cursor-pointer bg-white px-6 py-4 rounded-[16px] ${
               openIndex === index ? "hidden" : ""

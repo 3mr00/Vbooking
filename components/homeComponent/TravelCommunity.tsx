@@ -11,6 +11,7 @@ import {
 } from "@/icons";
 import ScrollableCards from "../common/ScrollableCards";
 import Button from "../common/Button";
+import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
 
 const data = [
   {
@@ -192,12 +193,13 @@ const Box = ({
 
       <div className="flex flex-wrap gap-3 mt-8">
         {buttons.map((button, index) => (
-          <Button
+          <ButtonShadcn
+            style="outline"
+            text={button.title}
             key={index}
-            className={`bg-white rounded-[50px] text-primary border border-primary flex-1 text-[14px] lg:px-0 px-[1.8rem] py-2  ${
+            className={`bg-white rounded-[50px] text-primary border border-primary flex-1 text-[12px] px-3 py-2  ${
               index === buttons.length - 1 ? "flex-auto lg:flex-1" : ""
             }`}
-            text={button.title}
           />
         ))}
       </div>

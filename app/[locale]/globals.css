@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .accordion-content.open {
-  max-height: 200px; /* Adjust based on content height */
+  max-height: 400px; /* Adjust based on content height */
   transition: max-height 0.3s ease-in;
 }
 
