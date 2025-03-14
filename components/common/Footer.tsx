@@ -109,24 +109,24 @@ function footer() {
   const t = useTranslations();
 
   return (
-    <footer className="bg-[#224A9A] text-white">
+    <footer className="py-16 bg-gradient-to-b from-[#224A9A] to-[#1C3D80]  text-white ">
       <CustomContainer>
         <div className="hidden md:block">
-          <div className="mb-32">
+          <div className="mb-[32px]">
             <Image src={images.footerLogo} alt="logo" />
           </div>
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-6 lg:gap-y-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 text-sm">
             {data.map((item, index) => (
               <div key={index}>
-                <h3 className="text-white text-lg font-semibold mb-4">
+                <h3 className="text-[.9rem] font-semibold mb-4">
                   {t(item.title)}
                 </h3>
                 <ul>
-                  {item.links.map((link, index) => (
-                    <li key={index}>
+                  {item.links.map((link, i) => (
+                    <li key={i} className="mb-2">
                       <Link
                         href={link.url}
-                        className="text-gray-300 hover:text-white transition"
+                        className="text-gray-300 hover:text-white transition text-sm"
                       >
                         {t(link.title)}
                       </Link>

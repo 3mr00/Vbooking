@@ -111,100 +111,103 @@ function NavBar() {
   return (
     <header className="bg-white h-[72px] w-full">
       <CustomContainer className=" py-[16px]">
-        <div className=" flex items-center gap-[48px]">
+        <div className="flex items-center justify-between gap-[48px] w-full">
+          {/* Logo on the left */}
           <Link href="#">
             <Image
               src={images.logo}
               alt="logo"
               width={800}
               height={800}
-              className=" xl:w-[12rem] w-[10rem] h-auto"
+              className="xl:w-[12rem] w-[10rem] h-auto"
             />
           </Link>
-          <div className="flex flex-1 items-center justify-end xl:justify-between">
-            <nav aria-label="Global" className="hidden xl:block">
-              <ul className="flex items-center gap-[22px] text-sm">
-                {links.map((link, index) => (
-                  <li key={index} className="relative">
-                    {link.links && link.links.length > 0 ? (
-                      <DropdownMenu>
-                        <DropdownMenuTrigger className="flex items-center gap-[8px] hover:text-secondary transition  outline-none text-[#004CA6] text-[16px] font-normal">
-                          <Title
-                            title={link.title}
-                            titleColor=""
-                            className="text-[#004CA6] text-[13px] font-normal"
-                          />
-                          <ChevronDown className="w-4 h-4" />
-                        </DropdownMenuTrigger>
 
-                        <DropdownMenuContent className="w-auto bg-white shadow-lg rounded-md">
-                          {link.links.map((sublink, subIndex) => (
-                            <DropdownMenuItem key={subIndex} asChild>
-                              <Link
-                                href={sublink.url}
-                                className="w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100"
-                              >
-                                {sublink.title}
-                              </Link>
-                            </DropdownMenuItem>
-                          ))}
-                        </DropdownMenuContent>
-                      </DropdownMenu>
-                    ) : (
-                      <Link
-                        href="#"
-                        className="text-[#004CA6] font-normal text-[13px]"
-                      >
-                        <Title title={link.title} titleColor="" />
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </nav>
+          {/* Centered navigation for desktop */}
+          <nav
+            aria-label="Global"
+            className="hidden xl:flex flex-1 justify-center"
+          >
+            <ul className="flex items-center gap-[22px] text-sm">
+              {links.map((link, index) => (
+                <li key={index} className="relative">
+                  {link.links && link.links.length > 0 ? (
+                    <DropdownMenu>
+                      <DropdownMenuTrigger className="flex items-center gap-[8px] hover:text-secondary transition outline-none text-[#004CA6] text-[16px] font-normal">
+                        <Title
+                          title={link.title}
+                          titleColor=""
+                          className="text-[#004CA6] text-[13px] font-normal"
+                        />
+                        <ChevronDown className="w-4 h-4" />
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent className="w-auto bg-white shadow-lg rounded-md">
+                        {link.links.map((sublink, subIndex) => (
+                          <DropdownMenuItem key={subIndex} asChild>
+                            <Link
+                              href={sublink.url}
+                              className="w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100"
+                            >
+                              {sublink.title}
+                            </Link>
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  ) : (
+                    <Link
+                      href="#"
+                      className="text-[#004CA6] font-normal text-[13px]"
+                    >
+                      <Title title={link.title} titleColor="" />
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-            <div className="flex items-center gap-4">
-              <div className="hidden xl:flex items-center gap-4">
-                <LanguageSwitcher />
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button className="rounded-[50px] py-3 px-4 text-white bg-primary flex items-center gap-2 h-[40px]">
-                      {t("home.navbar.login")} <ChevronDown />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent className="w-auto">
-                    <DropdownMenuItem>
-                      {t("home.navbar.login_supplier")}
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      {t("home.navbar.login_agent")}
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </div>
-
-              <button
-                onClick={toggleMenu}
-                className="block rounded-full bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 xl:hidden"
-              >
-                <span className="sr-only">Toggle menu</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
+          {/* Buttons for desktop */}
+          <div className="hidden xl:flex items-center gap-4">
+            <LanguageSwitcher />
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button className="rounded-[50px] py-3 px-4 text-white bg-primary flex items-center gap-2 h-[40px]">
+                  {t("home.navbar.login")} <ChevronDown />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-auto">
+                <DropdownMenuItem>
+                  {t("home.navbar.login_supplier")}
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  {t("home.navbar.login_agent")}
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={toggleMenu}
+            className="block rounded-full bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 xl:hidden"
+          >
+            <span className="sr-only">Toggle menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="size-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
 
         {/* Mobile Menu Overlay */}

@@ -75,66 +75,67 @@ const data = [
 
 function TravelCommunity() {
   return (
-    <CustomContainer className="bg-[url(../../assets/images/OurCommunity.png)] bg-cover bg-center pt-[64px] mt-[32px] relative pb-[3rem]">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#e2f4f5] via-[#F9DBE8] to-[#DBF1F2] opacity-55"></div>
-      <div className="relative z-10">
-        <div className="text-center">
-          <p>
-            <Title
-              title="home.travel_community.bringing"
-              titleColor="text-secondary"
-              className="text-clamp-[22px,3.6vw,36px]"
-            />
-            <Title
-              title="home.travel_community.travel"
-              titleColor="text-primary"
-              className="text-clamp-[22px,3.6vw,36px]"
-            />
-            <Title
-              title="home.travel_community.together"
-              titleColor="text-secondary"
-              className="text-clamp-[22px,3.6vw,36px]"
-            />
-          </p>
-          <Description
-            Description="home.travel_community.subtitle"
-            DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.7rem]"
-          />
-          <Description
-            Description="home.travel_community.description"
-            DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.7rem]"
-          />
-        </div>
-        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
-          {data.map((item, index) => (
-            <Box
-              key={index}
-              title={item.title}
-              description={item.description}
-              subDescription={item.subDescription}
-              icon={item.icon}
-              index={index}
-              buttons={item.buttons}
-            />
-          ))}
-        </div>
-
-        <div className="block sm:hidden mt-6">
-          <ScrollableCards
-            options={data}
-            renderCard={(option, index) => (
-              <Box
-                index={index}
-                {...option}
-                className="w-[340px] min-h-[450px]"
+    <div className="pt-16  bg-gradient-to-b from-[#D7EFF1] via-[#F9DBE8] to-[#D7EFF1] ">
+      <CustomContainer className="bg-[url(../../assets/images/OurCommunity.png)] bg-cover bg-center ">
+        <div className="relative z-10">
+          <div className="text-center">
+            <p>
+              <Title
+                title="home.travel_community.bringing"
+                titleColor="text-secondary"
+                className="md:text-[32px] text-[22px] font-medium"
               />
-            )}
-          />
+              <Title
+                title="home.travel_community.travel"
+                titleColor="text-primary"
+                className="md:text-[32px] text-[22px] font-medium"
+              />
+              <Title
+                title="home.travel_community.together"
+                titleColor="text-secondary"
+                className="md:text-[32px] text-[22px] font-medium"
+              />
+            </p>
+            <Description
+              Description="home.travel_community.subtitle"
+              DescriptionColor="text-grayText"
+              className=" md:text-[.8rem] text-[.5rem]"
+            />
+            <Description
+              Description="home.travel_community.description"
+              DescriptionColor="text-grayText"
+              className="md:block hidden md:text-[.8rem] text-[.5rem]"
+            />
+          </div>
+          <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
+            {data.map((item, index) => (
+              <Box
+                key={index}
+                title={item.title}
+                description={item.description}
+                subDescription={item.subDescription}
+                icon={item.icon}
+                index={index}
+                buttons={item.buttons}
+              />
+            ))}
+          </div>
+
+          <div className="block sm:hidden mt-6">
+            <ScrollableCards
+              options={data}
+              renderCard={(option, index) => (
+                <Box
+                  index={index}
+                  {...option}
+                  className="w-[340px] min-h-[450px]"
+                />
+              )}
+            />
+          </div>
         </div>
-      </div>
-    </CustomContainer>
+      </CustomContainer>
+    </div>
   );
 }
 

@@ -63,12 +63,12 @@ function WhyTuRbo() {
             <Title
               title="common.our"
               titleColor="text-secondary"
-              className="text-clamp-[22px,3.6vw,36px]"
+              className="md:text-[32px] text-[22px] font-medium"
             />{" "}
             <Title
               title="common.turbo"
               titleColor="text-primary"
-              className="text-clamp-[22px,3.6vw,36px]"
+              className="md:text-[32px] text-[22px] font-medium"
             />
             <Description
               Description="home.why_turbo.empower_business_platform"
@@ -78,7 +78,7 @@ function WhyTuRbo() {
             <Description
               Description="home.why_turbo.streamline_reservations"
               DescriptionColor="text-grayText"
-              className="md:text-[.8rem] text-[.5rem]"
+              className="md:block hidden md:text-[.8rem] text-[.5rem]"
             />
           </div>
 

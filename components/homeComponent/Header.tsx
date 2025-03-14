@@ -9,8 +9,8 @@ import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
 function Header() {
   return (
     <div className="bg-[#F7FCFC] pt-4 w-full">
-      <CustomContainer className=" pt-[16px]  pb-0  flex items-center justify-between flex-col-reverse lg:flex-row ">
-        <div className="2xl:w-[50rem] xl:w-[40rem] w-full ">
+      <CustomContainer className=" pt-[16px]  pb-0  flex items-center justify-between flex-col lg:flex-row md:gap-0 gap-5 ">
+        <div className="2xl:w-[50rem] xl:w-[40rem] w-full  flex flex-col gap-1">
           {" "}
           {/* Add padding for better spacing */}
           <Title
@@ -52,7 +52,7 @@ function Header() {
         <Image
           src={images.animatedHeaderImage}
           alt="headerImage"
-          className="w-[22rem] max-w-full"
+          className="w-[26rem] max-w-full"
           width={400}
           height={400}
           priority

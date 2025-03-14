@@ -42,22 +42,22 @@ function TurboBookingSuite() {
           <Title
             title="common.turbo"
             titleColor="text-secondary"
-            className="lg:text-[22px] text-[16px]"
+            className="md:text-[36px] text-[22px] font-medium"
           />{" "}
           <Title
             title="home.booking_suite.booking_suite"
             titleColor="text-primary"
-            className="lg:text-[22px] text-[16px]"
+            className="md:text-[36px] text-[22px] font-medium"
           />
           <Description
             Description="home.booking_suite.improve_client_experiences"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="text-[12px] "
           />
           <Description
             Description="home.booking_suite.empower_business"
             DescriptionColor="text-grayText"
-            className="text-[12px]"
+            className="md:block hidden md:text-[.8rem] text-[.7rem]"
           />
         </div>
         <div className="hidden sm:grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-4 mt-6">

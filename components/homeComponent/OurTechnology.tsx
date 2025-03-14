@@ -29,36 +29,38 @@ const data = [
 
 function OurTechnology() {
   return (
-    <CustomContainer className="pt-[44px]">
-      <div className="bg-[url(../../assets/images/OurTechnologyBg.jpg)] bg-cover bg-center relative rounded-[26px] overflow-hidden px-4 py-6 sm:p-[48px] min-[1920px]:px-[173px] 2xl:py-[50px]">
-        <div className="inset-0 absolute bg-[#224A9A] opacity-[.8]"></div>
-        <div className="relative z-10">
-          <div className="text-center">
-            <Title
-              title="home.our_technology.explore_technology"
-              titleColor="text-white"
-              className="text-clamp-[22px,3.6vw,36px] font-medium"
-            />
-            <Description
-              Description="home.our_technology.read_more_technologies"
-              DescriptionColor="text-white"
-              className="md:text-[.8rem] text-[.5rem]"
-            />
-          </div>
-          {/* Responsive Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
-            {data.map((item, index) => (
-              <Box
-                key={index}
-                title={item.title}
-                description={item.description}
-                index={index}
+    <div className="pt-16 bg-[#D7EFF1]">
+      <CustomContainer className="pt-[44px]">
+        <div className="bg-[url(../../assets/images/OurTechnologyBg.jpg)] bg-cover bg-center relative rounded-[26px] overflow-hidden px-4 py-6 sm:p-[48px] min-[1920px]:px-[173px] 2xl:py-[50px]">
+          <div className="inset-0 absolute bg-[#224A9A] opacity-[.8]"></div>
+          <div className="relative z-10">
+            <div className="text-center">
+              <Title
+                title="home.our_technology.explore_technology"
+                titleColor="text-white"
+                className="text-clamp-[22px,3.6vw,36px] font-medium"
               />
-            ))}
+              <Description
+                Description="home.our_technology.read_more_technologies"
+                DescriptionColor="text-white"
+                className="md:text-[.8rem] text-[.5rem]"
+              />
+            </div>
+            {/* Responsive Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
+              {data.map((item, index) => (
+                <Box
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  index={index}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </CustomContainer>
+      </CustomContainer>
+    </div>
   );
 }
 
