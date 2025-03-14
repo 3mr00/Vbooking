@@ -45,7 +45,7 @@ const UniqueProductsItems = [
 
 function UniqueProducts() {
   return (
-    <div className="pt-16 bg-gradient-to-b from-[#F7FCFC] to-[#D7EFF1]">
+    <div className=" bg-gradient-to-b from-[#F7FCFC] to-[#D7EFF1]">
       <CustomContainer>
         <Title
           title="common.our"

@@ -56,7 +56,7 @@ const items = [
 ];
 function WhyTuRbo() {
   return (
-    <div className="pt-16 bg-[#D7EFF1]">
+    <div className=" bg-[#D7EFF1]">
       <CustomContainer>
         <div className=" p-8 rounded-[20px] bg-[#F8E6F9]">
           <div className="text-center">

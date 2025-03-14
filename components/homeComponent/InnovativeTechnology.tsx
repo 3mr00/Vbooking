@@ -40,7 +40,7 @@ const items = [
 ];
 function InnovativeTechnology() {
   return (
-    <div className="pt-16 bg-[#D7EFF1]">
+    <div className=" bg-[#D7EFF1]">
       <CustomContainer>
         <div className="text-center">
           <Title

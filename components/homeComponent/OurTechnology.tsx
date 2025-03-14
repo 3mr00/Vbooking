@@ -29,7 +29,7 @@ const data = [
 
 function OurTechnology() {
   return (
-    <div className="pt-16 bg-[#D7EFF1]">
+    <div className=" bg-[#D7EFF1]">
       <CustomContainer className="pt-[44px]">
         <div className="bg-[url(../../assets/images/OurTechnologyBg.jpg)] bg-cover bg-center relative rounded-[26px] overflow-hidden px-4 py-6 sm:p-[48px] min-[1920px]:px-[173px] 2xl:py-[50px]">
           <div className="inset-0 absolute bg-[#224A9A] opacity-[.8]"></div>

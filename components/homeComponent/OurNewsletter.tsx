@@ -6,7 +6,7 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 
 function OurNewsletter() {
   return (
-    <div className="py-16 bg-[#D7EFF1]">
+    <div className=" bg-[#D7EFF1]">
       <CustomContainer>
         <div className="bg-primary w-[90%] lg:w-[879px] mx-auto text-center p-8 rounded-[24px]">
           <Title

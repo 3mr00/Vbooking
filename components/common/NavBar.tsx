@@ -109,8 +109,8 @@ function NavBar() {
   };
 
   return (
-    <header className="bg-white h-[72px] w-full">
-      <CustomContainer className=" py-[16px]">
+    <header className="bg-white  w-full">
+      <CustomContainer className=" !py-4">
         <div className="flex items-center justify-between gap-[48px] w-full">
           {/* Logo on the left */}
           <Link href="#">
