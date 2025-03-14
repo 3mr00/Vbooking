@@ -44,7 +44,7 @@ export default function RootLayout({
       dir={locale === "ar" ? "rtl" : "ltr"}
       className={`${
         locale === "ar" ? CairoFont.className : PoppinsFont.className
-      } 2xl:text-[25px] xl:text-[16px] text-[16px] `}
+      }  xl:text-[16px] text-[16px] `}
     >
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

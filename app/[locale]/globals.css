@@ -138,7 +138,11 @@ body::-webkit-scrollbar-thumb {
   transition: max-height 0.3s ease-in;
 }
 
+.bg-radial {
+  background: radial-gradient(circle, rgba(168, 220, 225, 0.9) 15%, #D7EFF1 30%);
+  background-repeat: no-repeat;
 
+}
 
 @layer base {
   :root {

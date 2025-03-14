@@ -1,9 +1,9 @@
 {
   "common": {
-    "our": "Our",
-    "turbo": "Turbo",
-    "book_demo": "Book Demo",
-    "learn_more": "Learn More"
+    "our": "Our ",
+    "turbo": "Turbo ",
+    "book_demo": "Book Demo ",
+    "learn_more": "Learn More "
   },
   "home": {
     "navbar": {
@@ -22,7 +22,7 @@
       "login_agent": " Login Agent"
     },
     "header": {
-      "empowering_tourism": "Empowering Tourism",
+      "empowering_tourism": "Empowering Tourism,",
       "elevating_experiences": "Elevating Experiences.",
       "vbooking_your_partner_in_seamless_travel_solutions": "VBooking: Your Partner in Seamless Travel Solutions.",
       "revolutionizing_global_travel_with_cutting_edge_ai": "Revolutionizing global travel with cutting-edge AI and automated systems, we empower your business with innovative tools and seamless all-in-one solutions, driving ultimate efficiency, innovation, and success in the digital age.",

@@ -56,38 +56,40 @@ const items = [
 ];
 function WhyTuRbo() {
   return (
-    <CustomContainer>
-      <div className="bg-[#F8E6F9] p-8 rounded-[20px]">
-        <div className="text-center">
-          <Title
-            title="common.our"
-            titleColor="text-secondary"
-            className="text-clamp-[22px,3.6vw,36px]"
-          />{" "}
-          <Title
-            title="common.turbo"
-            titleColor="text-primary"
-            className="text-clamp-[22px,3.6vw,36px]"
-          />
-          <Description
-            Description="home.why_turbo.empower_business_platform"
-            DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.5rem]"
-          />
-          <Description
-            Description="home.why_turbo.streamline_reservations"
-            DescriptionColor="text-grayText"
-            className="md:text-[.8rem] text-[.5rem]"
-          />
-        </div>
+    <div className="pt-16 bg-[#D7EFF1]">
+      <CustomContainer>
+        <div className=" p-8 rounded-[20px] bg-[#F8E6F9]">
+          <div className="text-center">
+            <Title
+              title="common.our"
+              titleColor="text-secondary"
+              className="text-clamp-[22px,3.6vw,36px]"
+            />{" "}
+            <Title
+              title="common.turbo"
+              titleColor="text-primary"
+              className="text-clamp-[22px,3.6vw,36px]"
+            />
+            <Description
+              Description="home.why_turbo.empower_business_platform"
+              DescriptionColor="text-grayText"
+              className="md:text-[.8rem] text-[.5rem]"
+            />
+            <Description
+              Description="home.why_turbo.streamline_reservations"
+              DescriptionColor="text-grayText"
+              className="md:text-[.8rem] text-[.5rem]"
+            />
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-4">
-          {items.map((item, index) => (
-            <Box key={index} index={index} {...item} />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mt-4">
+            {items.map((item, index) => (
+              <Box key={index} index={index} {...item} />
+            ))}
+          </div>
         </div>
-      </div>
-    </CustomContainer>
+      </CustomContainer>
+    </div>
   );
 }
 

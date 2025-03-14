@@ -40,34 +40,36 @@ const items = [
 ];
 function InnovativeTechnology() {
   return (
-    <CustomContainer>
-      <div className="text-center">
-        <Title
-          title="common.our"
-          titleColor="text-secondary"
-          className="text-clamp-[22px,3.6vw,36px]"
-        />{" "}
-        <Title
-          title="home.InnovativeTechnology.innovative_technology"
-          titleColor="text-primary"
-          className="text-clamp-[22px,3.6vw,36px]"
-        />
-        <Description
-          Description="home.InnovativeTechnology.transformation_to_advanced_technology"
-          DescriptionColor="text-grayText"
-          className="md:text-[.8rem] text-[.7rem]"
-        />
-      </div>
-      <div className="hidden sm:grid grid-cols-1 gap-4 lg:grid-cols-2 mt-6">
-        {items.map((item, index) => (
-          <Box key={index} {...item} />
-        ))}
-      </div>
+    <div className="pt-16 bg-[#D7EFF1]">
+      <CustomContainer>
+        <div className="text-center">
+          <Title
+            title="common.our"
+            titleColor="text-secondary"
+            className="text-clamp-[22px,3.6vw,36px]"
+          />{" "}
+          <Title
+            title="home.InnovativeTechnology.innovative_technology"
+            titleColor="text-primary"
+            className="text-clamp-[22px,3.6vw,36px]"
+          />
+          <Description
+            Description="home.InnovativeTechnology.transformation_to_advanced_technology"
+            DescriptionColor="text-grayText"
+            className="md:text-[.8rem] text-[.7rem]"
+          />
+        </div>
+        <div className="hidden sm:grid grid-cols-1 gap-4 lg:grid-cols-2 mt-6">
+          {items.map((item, index) => (
+            <Box key={index} {...item} />
+          ))}
+        </div>
 
-      <div className="sm:hidden mt-6">
-        <AccordionBox items={items} />
-      </div>
-    </CustomContainer>
+        <div className="sm:hidden mt-6">
+          <AccordionBox items={items} />
+        </div>
+      </CustomContainer>
+    </div>
   );
 }
 
@@ -80,20 +82,26 @@ interface BoxProps {
 }
 const Box = ({ title, image, description }: BoxProps) => {
   return (
-    <div className="bg-white p-4 flex items-center gap-4 rounded-lg">
+    <div className="bg-white p-[16px] flex  gap-[16px] rounded-lg">
       <div>
-        <Image src={image} alt={title} />
+        <Image
+          src={image}
+          alt={title}
+          width={800}
+          height={800}
+          className=" w-[8rem]  h-[8rem]"
+        />
       </div>
       <div className="w-[222px] min-[450px]:w-full">
         <Title
           title={title}
           titleColor="text-secondary"
-          className="text-clamp-[16px,3vw,19px] font-semibold text-wrap"
+          className="text-[19px] font-semibold text-wrap"
         />
         <Description
           Description={description}
           DescriptionColor="text-grayText"
-          className="md:text-[.8rem] text-[.7rem] font-normal text-wrap"
+          className="text-[11px] font-normal text-wrap"
         />
       </div>
     </div>

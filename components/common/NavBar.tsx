@@ -13,6 +13,7 @@ import {
   AArrowDown,
   ArrowDown,
   ChevronDownCircle,
+  Globe,
 } from "lucide-react";
 import AccordionSidebar from "./AccordionSidebar";
 
@@ -108,21 +109,31 @@ function NavBar() {
   };
 
   return (
-    <CustomContainer className="mt-[36px] !py-0">
-      <header className="bg-white h-[80px]">
-        <div className=" flex items-center gap-[3rem]">
-          <a href="#">
-            <Image src={images.logo} alt="logo" />
-          </a>
+    <header className="bg-white h-[72px] w-full">
+      <CustomContainer className=" py-[16px]">
+        <div className=" flex items-center gap-[48px]">
+          <Link href="#">
+            <Image
+              src={images.logo}
+              alt="logo"
+              width={800}
+              height={800}
+              className=" xl:w-[12rem] w-[10rem] h-auto"
+            />
+          </Link>
           <div className="flex flex-1 items-center justify-end xl:justify-between">
             <nav aria-label="Global" className="hidden xl:block">
-              <ul className="flex items-center gap-3 text-sm">
+              <ul className="flex items-center gap-[22px] text-sm">
                 {links.map((link, index) => (
                   <li key={index} className="relative">
                     {link.links && link.links.length > 0 ? (
                       <DropdownMenu>
-                        <DropdownMenuTrigger className="flex items-center gap-1 text-gray-600 hover:text-secondary transition text-[1rem] outline-none">
-                          <Title title={link.title} titleColor="" />
+                        <DropdownMenuTrigger className="flex items-center gap-[8px] hover:text-secondary transition  outline-none text-[#004CA6] text-[16px] font-normal">
+                          <Title
+                            title={link.title}
+                            titleColor=""
+                            className="text-[#004CA6] text-[13px] font-normal"
+                          />
                           <ChevronDown className="w-4 h-4" />
                         </DropdownMenuTrigger>
 
@@ -131,7 +142,7 @@ function NavBar() {
                             <DropdownMenuItem key={subIndex} asChild>
                               <Link
                                 href={sublink.url}
-                                className="w-full block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                                className="w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100"
                               >
                                 {sublink.title}
                               </Link>
@@ -142,7 +153,7 @@ function NavBar() {
                     ) : (
                       <Link
                         href="#"
-                        className="text-gray-600 hover:text-secondary transition text-[1rem]"
+                        className="text-[#004CA6] font-normal text-[13px]"
                       >
                         <Title title={link.title} titleColor="" />
                       </Link>
@@ -195,41 +206,41 @@ function NavBar() {
             </div>
           </div>
         </div>
-      </header>
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-white z-50 xl:hidden overflow-y-auto">
-          <div className="p-4">
-            <div className="flex justify-between items-center my-[18px]">
-              <a href="#">
-                <Image src={images.smallLogo} alt="logo" />
-              </a>
-              <CloseIcon onClick={toggleMenu} className="cursor-pointer" />
-            </div>
-
-            <AccordionSidebar
-              items={links}
-              className=" text-grayText bg-white"
-            />
-
-            <div className="mt-8 space-y-4">
-              {/* Mobile buttons section */}
-              <div className="grid grid-cols-2 gap-4 mt-6">
-                <Button className="text-white bg-primary flex items-center justify-center gap-2 h-[40px] rounded-[25px] px-4">
-                  {t("home.navbar.login_supplier")}
-                </Button>
-
-                <Button className="text-white bg-primary flex items-center justify-center gap-2 h-[40px] rounded-[25px] px-4">
-                  {t("home.navbar.login_agent")}
-                </Button>
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div className="fixed inset-0 bg-white z-50 xl:hidden overflow-y-auto">
+            <div className="p-4">
+              <div className="flex justify-between items-center my-[18px]">
+                <Link href="/">
+                  <Image src={images.smallLogo} alt="logo" />
+                </Link>
+                <CloseIcon onClick={toggleMenu} className="cursor-pointer" />
               </div>
-              <LanguageSwitcher />
+
+              <AccordionSidebar
+                items={links}
+                className=" text-grayText bg-white"
+              />
+
+              <div className="mt-8 space-y-4">
+                {/* Mobile buttons section */}
+                <div className="grid grid-cols-2 gap-4 mt-6">
+                  <Button className="text-white bg-primary flex items-center justify-center gap-2 h-[40px] rounded-[25px] px-4">
+                    {t("home.navbar.login_supplier")}
+                  </Button>
+
+                  <Button className="text-white bg-primary flex items-center justify-center gap-2 h-[40px] rounded-[25px] px-4">
+                    {t("home.navbar.login_agent")}
+                  </Button>
+                </div>
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </CustomContainer>
+        )}
+      </CustomContainer>
+    </header>
   );
 }
 

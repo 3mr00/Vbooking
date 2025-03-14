@@ -1,6 +1,7 @@
 import { ArrowButton } from "@/icons";
 import React from "react";
 import Title from "./Title";
+
 interface ButtonProps {
   text: string;
   className: string;

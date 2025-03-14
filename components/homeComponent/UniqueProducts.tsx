@@ -45,37 +45,39 @@ const UniqueProductsItems = [
 
 function UniqueProducts() {
   return (
-    <CustomContainer className="pt-16">
-      <Title
-        title="common.our"
-        titleColor="text-secondary"
-        className="text-clamp-[22px,3.6vw,28px]"
-      />
-      <Title
-        title="home.unique_products.unique_products"
-        titleColor="text-primary"
-        className="text-clamp-[22px,3.6vw,28px]"
-      />
-      <Description
-        Description="home.unique_products.crafting_unique_products_from_innovative_technology"
-        DescriptionColor="text-grayText"
-        className="md:text-[.8rem] text-[.7rem]"
-      />
-      <div className="hidden sm:flex flex-wrap gap-[0.5rem] mt-6">
-        {UniqueProductsItems.map((item, index) => (
-          <Box key={index} title={item.title} icon={item.icon} />
-        ))}
-      </div>
-
-      <div className="block sm:hidden mt-6">
-        <ScrollableCards
-          options={UniqueProductsItems}
-          renderCard={(option) => (
-            <Box title={option.title} icon={option.icon} />
-          )}
+    <div className="pt-16 bg-gradient-to-b from-[#F7FCFC] to-[#D7EFF1]">
+      <CustomContainer>
+        <Title
+          title="common.our"
+          titleColor="text-secondary"
+          className="md:text-[28px] text-[22px] font-medium"
         />
-      </div>
-    </CustomContainer>
+        <Title
+          title="home.unique_products.unique_products"
+          titleColor="text-primary"
+          className="md:text-[28px] text-[22px] font-medium"
+        />
+        <Description
+          Description="home.unique_products.crafting_unique_products_from_innovative_technology"
+          DescriptionColor="text-grayText"
+          className="md:text-[.8rem] text-[.7rem]"
+        />
+        <div className="hidden sm:flex flex-wrap gap-[0.5rem] mt-6">
+          {UniqueProductsItems.map((item, index) => (
+            <Box key={index} title={item.title} icon={item.icon} />
+          ))}
+        </div>
+
+        <div className="block sm:hidden mt-6">
+          <ScrollableCards
+            options={UniqueProductsItems}
+            renderCard={(option) => (
+              <Box title={option.title} icon={option.icon} />
+            )}
+          />
+        </div>
+      </CustomContainer>
+    </div>
   );
 }
 
