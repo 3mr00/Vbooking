@@ -19,7 +19,7 @@ interface AccordionItem {
 interface AccordionSidebarProps {
   items: AccordionItem[];
   className?: string;
-  toggleMenu: () => void;
+  toggleMenu?: () => void;
 }
 
 export default function AccordionSidebar({
