@@ -22,15 +22,7 @@ import { ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "../ui/button";
@@ -110,7 +102,7 @@ function NavBar() {
       <CustomContainer className=" !py-4">
         <div className="flex items-center justify-between gap-[48px] w-full">
           {/* Logo on the left */}
-          <Link href="/">
+          <Link href="/" onClick={toggleMenu}>
             <Image
               src={images.logo}
               alt="logo"
@@ -219,13 +211,14 @@ function NavBar() {
           <div className="fixed inset-0 bg-white z-50 xl:hidden overflow-y-auto">
             <div className="p-4">
               <div className="flex justify-between items-center my-[18px]">
-                <Link href="/">
+                <Link href="/" onClick={toggleMenu}>
                   <Image src={images.smallLogo} alt="logo" />
                 </Link>
                 <CloseIcon onClick={toggleMenu} className="cursor-pointer" />
               </div>
 
               <AccordionSidebar
+                toggleMenu={toggleMenu}
                 items={links}
                 className=" text-grayText bg-white"
               />

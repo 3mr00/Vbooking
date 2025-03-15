@@ -33,9 +33,9 @@ export default function EnhancedServices() {
 
   return (
     <>
-      <CustomContainer className="!py-12">
+      <CustomContainer className="">
         {/* Header Section */}
-        <div className="mx-auto px-4 py-12 text-center">
+        <div className="mx-auto px-4 pb-12  text-center">
           <h1 className="text-[#2d63cf] md:text-[30px] text-[22px] font-medium">
             {t("Title")}{" "}
             <span className="text-[#9c25a0] md:text-[30px] text-[22px] font-medium">

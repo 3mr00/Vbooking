@@ -19,11 +19,13 @@ interface AccordionItem {
 interface AccordionSidebarProps {
   items: AccordionItem[];
   className?: string;
+  toggleMenu: () => void;
 }
 
 export default function AccordionSidebar({
   items,
   className = "",
+  toggleMenu,
 }: AccordionSidebarProps) {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
@@ -70,12 +72,17 @@ export default function AccordionSidebar({
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="pl-6 pb-3 gap-3">
+                <div
+                  className={`${
+                    t("lang.lang") === "en" ? "pl-6" : "pr-6"
+                  }  pb-3 gap-3`}
+                >
                   {item.links.map((link, index) => (
                     <Link
+                      onClick={toggleMenu}
                       key={index}
                       href={link.url || "#"}
-                      className={`block text-sm text-inherit transition-all  hover:text-inherit ${
+                      className={`block text-sm mb-3  text-secondary transition-all  hover:text-inherit ${
                         t("lang.lang") === "en"
                           ? "hover:translate-x-[-4px]"
                           : "hover:translate-x-1"
