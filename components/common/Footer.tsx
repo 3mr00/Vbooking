@@ -1,6 +1,6 @@
 "use client";
 
-import { images } from "@/assets";
+import { images } from "@/assets/images";
 import {
   FaceBookIcon,
   InstagramIcon,
@@ -163,7 +163,7 @@ function footer() {
         <div className="mt-[44px]">
           <div
             className={`${
-              t("language.lang") === "ar" ? "sm:divide-x-reverse" : ""
+              t("lang.lang") === "ar" ? "sm:divide-x-reverse" : ""
             } sm:divide-slate-500 sm:divide-x-2 flex flex-wrap gap-3 justify-center`}
           >
             <Title
@@ -193,7 +193,7 @@ function footer() {
           </div>
           <div
             className={`${
-              t("language.lang") === "ar" ? "sm:divide-x-reverse" : ""
+              t("lang.lang") === "ar" ? "sm:divide-x-reverse" : ""
             }  sm:divide-slate-500 sm:divide-x-2 flex flex-wrap gap-3 justify-center mt-4`}
           >
             <Title

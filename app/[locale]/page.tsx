@@ -14,7 +14,6 @@ import React from "react";
 export default function Home() {
   return (
     <div className="w-full">
-      <NavBar />
       <Header />
       <div className="bg-gradient-to-b from-[#F7FCFC] to-[#D7EFF1]">
         <UniqueProducts />
@@ -26,7 +25,6 @@ export default function Home() {
         <OurPartners />
         <OurNewsletter />
       </div>
-      <Footer />
     </div>
   );
 }

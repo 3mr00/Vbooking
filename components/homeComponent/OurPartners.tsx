@@ -2,7 +2,7 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 import React from "react";
 import Title from "../common/Title";
 import Description from "../common/Description";
-import { images } from "@/assets";
+import { images } from "@/assets/images";
 import Image from "next/image";
 
 const data = [

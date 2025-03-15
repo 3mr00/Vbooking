@@ -77,7 +77,7 @@ const data = [
 function TravelCommunity() {
   return (
     <div className=" bg-gradient-to-b from-[#D7EFF1] via-[#F9DBE8] to-[#D7EFF1] ">
-      <CustomContainer className="bg-[url(../../assets/images/OurCommunity.png)] bg-cover bg-center ">
+      <CustomContainer className="bg-[url(../../assets/images/image/OurCommunity.png)] bg-cover bg-center ">
         <div className="relative z-10">
           <div className="text-center">
             <p>

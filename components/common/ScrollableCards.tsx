@@ -17,7 +17,7 @@ const ScrollableCards = <T,>({
         {options.map((option, index) => (
           <div
             className={`flex-shrink-0 ${
-              t("language.lang") === "en" ? "mr-4" : "ml-4"
+              t("lang.lang") === "en" ? "mr-4" : "ml-4"
             } `}
             key={index}
           >

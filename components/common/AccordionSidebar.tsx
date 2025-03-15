@@ -76,7 +76,7 @@ export default function AccordionSidebar({
                       key={index}
                       href={link.url || "#"}
                       className={`block text-sm text-inherit transition-all  hover:text-inherit ${
-                        t("language.lang") === "en"
+                        t("lang.lang") === "en"
                           ? "hover:translate-x-[-4px]"
                           : "hover:translate-x-1"
                       }`}

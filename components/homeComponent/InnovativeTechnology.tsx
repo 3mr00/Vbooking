@@ -3,7 +3,7 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 import React, { useState } from "react";
 import Title from "../common/Title";
 import Description from "../common/Description";
-import { images } from "@/assets";
+import { images } from "@/assets/images";
 import Image, { StaticImageData } from "next/image";
 
 const items = [

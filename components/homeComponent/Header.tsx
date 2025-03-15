@@ -1,5 +1,5 @@
 "use client";
-import { images } from "@/assets";
+import { images } from "@/assets/images";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Image from "next/image";
 import Button from "../common/Button";

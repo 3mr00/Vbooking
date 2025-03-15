@@ -1,5 +1,5 @@
 "use client";
-import { images } from "@/assets";
+import { images } from "@/assets/images";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -18,7 +18,7 @@ import {
 import AccordionSidebar from "./AccordionSidebar";
 
 import { ChevronDown } from "lucide-react";
-import { Link } from "@/navigation";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -35,6 +35,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation";
 
 type LinkType = {
   title: string;
@@ -45,24 +46,20 @@ const links: LinkType[] = [
     title: "home.navbar.turbo",
     links: [
       {
-        title: "AI and Machine Learning",
-        url: "",
+        title: "home.booking_suite.wholesale_tour_operators_b2b_b2c",
+        url: "/turbo/1",
       },
       {
-        title: "AI and Machine Learning",
-        url: "",
+        title: "home.booking_suite.incoming_agencies_dmcs",
+        url: "/turbo/2",
       },
       {
-        title: "AI and Machine Learning",
-        url: "",
+        title: "home.booking_suite.online_travel_agencies_otas",
+        url: "/turbo/3",
       },
       {
-        title: "AI and Machine Learning",
-        url: "",
-      },
-      {
-        title: "AI and Machine Learning",
-        url: "",
+        title: "home.booking_suite.holiday_rental_managers",
+        url: "/turbo/4",
       },
     ],
   },
@@ -113,7 +110,7 @@ function NavBar() {
       <CustomContainer className=" !py-4">
         <div className="flex items-center justify-between gap-[48px] w-full">
           {/* Logo on the left */}
-          <Link href="#">
+          <Link href="/">
             <Image
               src={images.logo}
               alt="logo"
@@ -141,14 +138,21 @@ function NavBar() {
                         />
                         <ChevronDown className="w-4 h-4" />
                       </DropdownMenuTrigger>
-                      <DropdownMenuContent className="w-auto bg-white shadow-lg rounded-md">
+                      <DropdownMenuContent
+                        align={t("lang.lang") === "en" ? "start" : "end"}
+                        className="w-auto bg-white shadow-lg rounded-md"
+                      >
                         {link.links.map((sublink, subIndex) => (
                           <DropdownMenuItem key={subIndex} asChild>
                             <Link
                               href={sublink.url}
                               className="w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100"
                             >
-                              {sublink.title}
+                              <Title
+                                title={sublink.title}
+                                titleColor=""
+                                className="text-[#004CA6] text-[13px] font-normal"
+                              />
                             </Link>
                           </DropdownMenuItem>
                         ))}
