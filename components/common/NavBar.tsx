@@ -102,7 +102,7 @@ function NavBar() {
       <CustomContainer className=" !py-4">
         <div className="flex items-center justify-between gap-[48px] w-full">
           {/* Logo on the left */}
-          <Link href="/" onClick={toggleMenu}>
+          <Link href="/" onClick={() => setIsMenuOpen(false)}>
             <Image
               src={images.logo}
               alt="logo"
