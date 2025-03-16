@@ -59,8 +59,28 @@ const links: LinkType[] = [
     title: "home.navbar.our_technology",
     links: [
       {
-        title: "AI and Machine Learning",
-        url: "",
+        title: "technology.turbo_booking_engine",
+        url: "/technology/1",
+      },
+      {
+        title: "technology.ai_agent",
+        url: "/technology/1",
+      },
+      {
+        title: "technology.travel_crm",
+        url: "/technology/1",
+      },
+      {
+        title: "technology.engaging_holiday",
+        url: "/technology/1",
+      },
+      {
+        title: "technology.live_booking_desk",
+        url: "/technology/1",
+      },
+      {
+        title: "technology.operator_app",
+        url: "/technology/1",
       },
     ],
   },
@@ -135,10 +155,14 @@ function NavBar() {
                         className="w-auto bg-white shadow-lg rounded-md"
                       >
                         {link.links.map((sublink, subIndex) => (
-                          <DropdownMenuItem key={subIndex} asChild>
+                          <DropdownMenuItem
+                            dir={t("lang.dir")}
+                            key={subIndex}
+                            asChild
+                          >
                             <Link
                               href={sublink.url}
-                              className="w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100"
+                              className={`w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100 `}
                             >
                               <Title
                                 title={sublink.title}

@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --primary:"#9c25a0";
-  --primary-foreground:"#9C25A0";
-  --tw-ring-color:
+:root {
+  --primary: "#9c25a0";
+  --primary-foreground: "#9C25A0";
+  --tw-ring-color: ;
 }
 body {
   text-wrap: wrap;
@@ -139,9 +139,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bg-radial {
-  background: radial-gradient(circle, rgba(168, 220, 225, 0.9) 15%, #D7EFF1 30%);
+  background: radial-gradient(
+    circle,
+    rgba(168, 220, 225, 0.9) 15%,
+    #d7eff1 30%
+  );
   background-repeat: no-repeat;
-
+}
+.bg-radial-tech {
+  background: radial-gradient(circle, #ebb3ed 70%, #d7eff1 100%);
+  background-repeat: no-repeat;
 }
 
 @layer base {
@@ -197,8 +204,6 @@ body::-webkit-scrollbar-thumb {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

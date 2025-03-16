@@ -28,6 +28,8 @@ import Enhanced3 from "@/assets/images/image/Enhanced3.png";
 import Enhanced4 from "@/assets/images/image/Enhanced4.png";
 import Enhanced5 from "@/assets/images/image/Enhanced5.png";
 import vsymbolsmall from "@/assets/images/image/vsymbolsmall.png";
+import techHeader from "@/assets/images/image/techHeader.png";
+import techBooking from "@/assets/images/image/techBooking.png";
 
 export default {
   logo,
@@ -59,5 +61,7 @@ export default {
   Enhanced3,
   Enhanced4,
   Enhanced5,
-  vsymbolsmall
+  vsymbolsmall,
+  techHeader,
+  techBooking,
 };

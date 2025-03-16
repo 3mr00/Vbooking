@@ -80,7 +80,7 @@ const KeyFeatures = () => {
 
                 return (
                   <div key={subKey} className="flex gap-3">
-                    <FaCircleCheck className="h-5 w-5 text-[#2d63cf] flex-shrink-0 mt-1" />
+                    <FaCircleCheck className="h-5 w-5 text-[#2d63cf] flex-shrink-0 " />
                     <div>
                       <p className="font-semibold md:text-base text-sm">
                         {featureContent.Title}
