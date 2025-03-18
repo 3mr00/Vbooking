@@ -361,14 +361,26 @@
     }
   },
   "technology": {
-    "turbo_booking_engine": "محرك الحجز السريع",
-    "ai_agent": "وكيل الذكاء الاصطناعي",
-    "travel_crm": "إدارة علاقات العملاء للسفر",
-    "engaging_holiday": "عطلة ممتعة",
-    "live_booking_desk": "مكتب الحجز المباشر",
-    "operator_app": "تطبيق المشغل"
+    "Navbar": {
+      "turbo_booking_engine": "محرك الحجز السريع",
+      "ai_agent": "وكيل الذكاء الاصطناعي",
+      "travel_crm": "إدارة علاقات العملاء للسفر",
+      "engaging_holiday": "عطلة ممتعة",
+      "live_booking_desk": "مكتب الحجز المباشر",
+      "operator_app": "تطبيق المشغل"
+    }
   },
 
+  "products": {
+    "Navbar": {
+      "turbo_booking_engine": "محرك الحجز السريع",
+      "ai_agent": "وكيل الذكاء الاصطناعي",
+      "travel_crm": "إدارة علاقات العملاء للسفر",
+      "engaging_holiday": "عطلة ممتعة",
+      "live_booking_desk": "مكتب الحجز المباشر",
+      "operator_app": "تطبيق المشغل"
+    }
+  },
   "lang": {
     "dir": "rtl",
     "lang": "ar",

@@ -26,3 +26,7 @@ export * from "./src/linkedin";
 export * from "./src/whatusApp";
 export * from "./src/enFlag";
 export * from "./src/close";
+export * from "./src/Prodouctsvoice";
+export * from "./src/ProdouctsBeh";
+export * from "./src/Prodouctsknow";
+export * from "./src/ProdouctsVector";

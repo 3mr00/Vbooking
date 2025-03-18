@@ -59,27 +59,27 @@ const links: LinkType[] = [
     title: "home.navbar.our_technology",
     links: [
       {
-        title: "technology.turbo_booking_engine",
+        title: "technology.Navbar.turbo_booking_engine",
         url: "/technology/1",
       },
       {
-        title: "technology.ai_agent",
+        title: "technology.Navbar.ai_agent",
         url: "/technology/1",
       },
       {
-        title: "technology.travel_crm",
+        title: "technology.Navbar.travel_crm",
         url: "/technology/1",
       },
       {
-        title: "technology.engaging_holiday",
+        title: "technology.Navbar.engaging_holiday",
         url: "/technology/1",
       },
       {
-        title: "technology.live_booking_desk",
+        title: "technology.Navbar.live_booking_desk",
         url: "/technology/1",
       },
       {
-        title: "technology.operator_app",
+        title: "technology.Navbar.operator_app",
         url: "/technology/1",
       },
     ],
@@ -88,8 +88,28 @@ const links: LinkType[] = [
     title: "home.navbar.our_product",
     links: [
       {
-        title: "AI and Machine Learning",
-        url: "",
+        title: "products.Navbar.turbo_booking_engine",
+        url: "/products/1",
+      },
+      {
+        title: "products.Navbar.ai_agent",
+        url: "/products/1",
+      },
+      {
+        title: "products.Navbar.travel_crm",
+        url: "/products/1",
+      },
+      {
+        title: "products.Navbar.engaging_holiday",
+        url: "/products/1",
+      },
+      {
+        title: "products.Navbar.live_booking_desk",
+        url: "/products/1",
+      },
+      {
+        title: "products.Navbar.operator_app",
+        url: "/products/1",
       },
     ],
   },

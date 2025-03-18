@@ -30,6 +30,7 @@ import Enhanced5 from "@/assets/images/image/Enhanced5.png";
 import vsymbolsmall from "@/assets/images/image/vsymbolsmall.png";
 import techHeader from "@/assets/images/image/techHeader.png";
 import techBooking from "@/assets/images/image/techBooking.png";
+import productsHeader from "@/assets/images/image/productsHeader.png";
 
 export default {
   logo,
@@ -64,4 +65,5 @@ export default {
   vsymbolsmall,
   techHeader,
   techBooking,
+  productsHeader,
 };
