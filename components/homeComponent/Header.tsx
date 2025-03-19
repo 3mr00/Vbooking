@@ -1,16 +1,12 @@
-"use client";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Description from "../common/Description";
 import Title from "../common/Title";
 import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
-import dynamic from "next/dynamic";
-import animationHomeLogo from "../../icons/src/animationHomeLogo.json";
+import LottieAnimation from "./LottieAnimation";
 
 // Dynamically import Lottie with SSR disabled
 
 function Header() {
-  const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-
   return (
     <div className="bg-[#F7FCFC] pt-4 w-full">
       <CustomContainer className=" pt-[16px]  pb-0  flex items-center justify-between flex-col lg:flex-row md:gap-0 gap-5 ">
@@ -60,7 +56,7 @@ function Header() {
           </div>
         </div>
         <div className="w-[26rem] max-w-full">
-          <Lottie animationData={animationHomeLogo} loop={true} />
+          <LottieAnimation />
         </div>
       </CustomContainer>
     </div>
