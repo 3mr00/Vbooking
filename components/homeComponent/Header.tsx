@@ -55,9 +55,7 @@ function Header() {
             />
           </div>
         </div>
-        <div className="w-[26rem] max-w-full">
-          <LottieAnimation />
-        </div>
+        <div className="w-[26rem] max-w-full">{/* <LottieAnimation /> */}</div>
       </CustomContainer>
     </div>
   );
