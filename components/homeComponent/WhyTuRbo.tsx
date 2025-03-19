@@ -14,43 +14,43 @@ import Title from "../common/Title";
 
 const items = [
   {
-    title: "home.why_turbo.all_in_one_platform",
-    description: "home.why_turbo.manage_travel_business",
+    title: "why_turbo.all_in_one_platform",
+    description: "why_turbo.manage_travel_business",
     icon: <OnePlatFormIcon />,
   },
   {
-    title: "home.why_turbo.advanced_itinerary_builder",
-    description: "home.why_turbo.design_travel_plans",
+    title: "why_turbo.advanced_itinerary_builder",
+    description: "why_turbo.design_travel_plans",
     icon: <ItineraryBuilderIcon />,
   },
   {
-    title: "home.why_turbo.real_time_booking_management",
-    description: "home.why_turbo.stay_updated_availability",
+    title: "why_turbo.real_time_booking_management",
+    description: "why_turbo.stay_updated_availability",
     icon: <BookingManagementIcon />,
   },
   {
-    title: "home.why_turbo.dynamic_quotation_system",
-    description: "home.why_turbo.create_customize_quotes",
+    title: "why_turbo.dynamic_quotation_system",
+    description: "why_turbo.create_customize_quotes",
     icon: <QuotationSystemIcon />,
   },
   {
-    title: "home.why_turbo.engaging_holiday_packages",
-    description: "home.why_turbo.offer_customizable_travel",
+    title: "why_turbo.engaging_holiday_packages",
+    description: "why_turbo.offer_customizable_travel",
     icon: <HolidayPackagesIcon />,
   },
   {
-    title: "home.why_turbo.supplier_inventory_management",
-    description: "home.why_turbo.streamline_operations",
+    title: "why_turbo.supplier_inventory_management",
+    description: "why_turbo.streamline_operations",
     icon: <InventoryManagementIcon />,
   },
   {
-    title: "home.why_turbo.automation_efficiency",
-    description: "home.why_turbo.save_time_automation",
+    title: "why_turbo.automation_efficiency",
+    description: "why_turbo.save_time_automation",
     icon: <AutomationIcon />,
   },
   {
-    title: "home.why_turbo.ai_powered_tools",
-    description: "home.why_turbo.enhance_efficiency_with_ai",
+    title: "why_turbo.ai_powered_tools",
+    description: "why_turbo.enhance_efficiency_with_ai",
     icon: <AiToolIcon />,
   },
 ];
@@ -61,22 +61,26 @@ function WhyTuRbo() {
         <div className=" p-8 rounded-[20px] bg-[#F8E6F9]">
           <div className="text-center">
             <Title
+              TransPage="home"
               title="common.our"
               titleColor="text-secondary"
               className="md:text-[32px] text-[22px] font-medium"
             />{" "}
             <Title
+              TransPage="home"
               title="common.turbo"
               titleColor="text-primary"
               className="md:text-[32px] text-[22px] font-medium"
             />
             <Description
-              Description="home.why_turbo.empower_business_platform"
+              TransPage="home"
+              Description="why_turbo.empower_business_platform"
               DescriptionColor="text-grayText"
               className="md:text-[.8rem] text-[.5rem]"
             />
             <Description
-              Description="home.why_turbo.streamline_reservations"
+              TransPage="home"
+              Description="why_turbo.streamline_reservations"
               DescriptionColor="text-grayText"
               className="md:block hidden md:text-[.8rem] text-[.5rem]"
             />
@@ -119,11 +123,13 @@ const Box = ({ title, description, icon, index }: BoxProps) => {
       <div>{icon}</div>
       <div className="mt-4">
         <Title
+          TransPage="home"
           title={title}
           titleColor="text-secondary"
           className="text-[18px] mb-8 font-semibold"
         />
         <Description
+          TransPage="home"
           Description={description}
           DescriptionColor="text-grayText md:text-[.8rem] text-[.7rem]"
         />

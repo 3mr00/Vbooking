@@ -11,30 +11,30 @@ import { Link } from "@/navigation";
 
 const items = [
   {
-    title: "home.booking_suite.wholesale_tour_operators_b2b_b2c",
+    title: "booking_suite.wholesale_tour_operators_b2b_b2c",
     image: images.laptop,
-    description: "home.booking_suite.automate_operations_manage_inventories",
+    description: "booking_suite.automate_operations_manage_inventories",
     url: "/turbo/1",
   },
   {
-    title: "home.booking_suite.incoming_agencies_dmcs",
+    title: "booking_suite.incoming_agencies_dmcs",
     image: images.laptop,
     description:
-      "home.booking_suite.improve_customer_satisfaction_with_fast_searches",
+      "booking_suite.improve_customer_satisfaction_with_fast_searches",
     url: "/turbo/2",
   },
   {
-    title: "home.booking_suite.online_travel_agencies_otas",
+    title: "booking_suite.online_travel_agencies_otas",
     image: images.laptop,
     description:
-      "home.booking_suite.improve_customer_satisfaction_with_fast_searches",
+      "booking_suite.improve_customer_satisfaction_with_fast_searches",
     url: "/turbo/3",
   },
   {
-    title: "home.booking_suite.holiday_rental_managers",
+    title: "booking_suite.holiday_rental_managers",
     image: images.laptop,
     description:
-      "home.booking_suite.streamline_bookings_pricing_guest_communication",
+      "booking_suite.streamline_bookings_pricing_guest_communication",
     url: "/turbo/4",
   },
 ];
@@ -45,22 +45,26 @@ function TurboBookingSuite() {
       <CustomContainer className="pt-[44px]">
         <div className="text-center">
           <Title
+            TransPage="home"
             title="common.turbo"
             titleColor="text-secondary"
             className="md:text-[36px] text-[22px] font-medium"
           />{" "}
           <Title
-            title="home.booking_suite.booking_suite"
+            TransPage="home"
+            title="booking_suite.booking_suite"
             titleColor="text-primary"
             className="md:text-[36px] text-[22px] font-medium"
           />
           <Description
-            Description="home.booking_suite.improve_client_experiences"
+            TransPage="home"
+            Description="booking_suite.improve_client_experiences"
             DescriptionColor="text-grayText"
             className="text-[12px] "
           />
           <Description
-            Description="home.booking_suite.empower_business"
+            TransPage="home"
+            Description="booking_suite.empower_business"
             DescriptionColor="text-grayText"
             className="md:block hidden md:text-[.8rem] text-[.7rem]"
           />
@@ -102,11 +106,13 @@ const Box = ({ title, image, description, className, url }: BoxProps) => {
       <Image src={image} alt={title} className="mb-4" />
 
       <Title
+        TransPage="home"
         title={title}
         titleColor="text-secondary"
         className="text-wrap text-center font-semibold text-clamp-[16px,3vw,19px]"
       />
       <Description
+        TransPage="home"
         Description={description}
         DescriptionColor="text-grayText"
         className="text-wrap text-center md:text-[.8rem] text-[.7rem]"
@@ -114,6 +120,7 @@ const Box = ({ title, image, description, className, url }: BoxProps) => {
       <div className="mt-6 flex gap-3">
         <Link href={url}>
           <ButtonShadcn
+            TransPage="home"
             style="outline"
             text="common.learn_more"
             className="px-4 py-2 border text-clamp-[16px,3vw,16px] border-[#D0D5DD] text-black bg-white"
@@ -121,6 +128,7 @@ const Box = ({ title, image, description, className, url }: BoxProps) => {
         </Link>
         <Link href={url}>
           <ButtonShadcn
+            TransPage="home"
             text="common.book_demo"
             className="text-white bg-primary px-4 py-2"
           />

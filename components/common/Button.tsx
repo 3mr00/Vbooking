@@ -10,7 +10,12 @@ interface ButtonProps {
 function Button({ text, className, withIcon }: ButtonProps) {
   return (
     <button className={` rounded-[50px]  ${className}`}>
-      <Title title={text} titleColor="" className=" text-[.8rem]" />
+      <Title
+        TransPage="home"
+        title={text}
+        titleColor=""
+        className=" text-[.8rem]"
+      />
       {withIcon && <ArrowButton />}
     </button>
   );

@@ -13,6 +13,7 @@ interface ButtonProps {
     | "secondary"
     | "ghost"
     | "link";
+  TransPage: string;
 }
 
 const ButtonShadcn: React.FC<ButtonProps> = ({
@@ -20,8 +21,9 @@ const ButtonShadcn: React.FC<ButtonProps> = ({
   icon,
   text,
   style,
+  TransPage,
 }: ButtonProps) => {
-  const t = useTranslations();
+  const t = useTranslations(TransPage);
 
   return (
     <Button variant={style} className={`rounded-[50px] ${className}`}>

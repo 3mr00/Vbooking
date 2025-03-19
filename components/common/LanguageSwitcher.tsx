@@ -36,7 +36,8 @@ export default function LanguageSwitcher() {
           />
         )}
         <Title
-          title={locale === "en" ? "lang.ar" : "lang.en"}
+          TransPage="lang"
+          title={locale === "en" ? "ar" : "en"}
           titleColor="text-grayText"
           className=" p-1"
         />

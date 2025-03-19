@@ -1,0 +1,12 @@
+{
+  "technology": {
+    "Navbar": {
+      "turbo_booking_engine": "محرك الحجز السريع",
+      "ai_agent": "وكيل الذكاء الاصطناعي",
+      "travel_crm": "إدارة علاقات العملاء للسفر",
+      "engaging_holiday": "عطلة ممتعة",
+      "live_booking_desk": "مكتب الحجز المباشر",
+      "operator_app": "تطبيق المشغل"
+    }
+  }
+}

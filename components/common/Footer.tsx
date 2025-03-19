@@ -18,66 +18,66 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 
 const data = [
   {
-    title: "home.footer.ourTechnology",
+    title: "footer.ourTechnology",
     links: [
-      { title: "home.footer.links.aiAndML", url: "" },
-      { title: "home.footer.links.nlpSearch", url: "" },
-      { title: "home.footer.links.dataOps", url: "" },
-      { title: "home.footer.links.automation", url: "" },
-      { title: "home.footer.links.metaverse", url: "" },
-      { title: "home.footer.links.decentralisedServers", url: "" },
+      { title: "footer.links.aiAndML", url: "" },
+      { title: "footer.links.nlpSearch", url: "" },
+      { title: "footer.links.dataOps", url: "" },
+      { title: "footer.links.automation", url: "" },
+      { title: "footer.links.metaverse", url: "" },
+      { title: "footer.links.decentralisedServers", url: "" },
     ],
   },
   {
-    title: "home.footer.ourProduct",
+    title: "footer.ourProduct",
     links: [
-      { title: "home.footer.links.turboBooking", url: "" },
-      { title: "home.footer.links.aiAgent", url: "" },
-      { title: "home.footer.links.travelCrm", url: "" },
-      { title: "home.footer.links.engagingHoliday", url: "" },
-      { title: "home.footer.links.liveBookingDesk", url: "" },
-      { title: "home.footer.links.operatorApp", url: "" },
+      { title: "footer.links.turboBooking", url: "" },
+      { title: "footer.links.aiAgent", url: "" },
+      { title: "footer.links.travelCrm", url: "" },
+      { title: "footer.links.engagingHoliday", url: "" },
+      { title: "footer.links.liveBookingDesk", url: "" },
+      { title: "footer.links.operatorApp", url: "" },
     ],
   },
   {
-    title: "home.footer.ourCommunity",
+    title: "footer.ourCommunity",
     links: [
-      { title: "home.footer.links.joinTraveler", url: "" },
-      { title: "home.footer.links.academy", url: "" },
-      { title: "home.footer.links.moments", url: "" },
-      { title: "home.footer.links.vBookingHub", url: "" },
-      { title: "home.footer.links.networking", url: "" },
-      { title: "home.footer.links.metaverse", url: "" },
+      { title: "footer.links.joinTraveler", url: "" },
+      { title: "footer.links.academy", url: "" },
+      { title: "footer.links.moments", url: "" },
+      { title: "footer.links.vBookingHub", url: "" },
+      { title: "footer.links.networking", url: "" },
+      { title: "footer.links.metaverse", url: "" },
     ],
   },
   {
-    title: "home.footer.doBusinessWithUs",
+    title: "footer.doBusinessWithUs",
     links: [
-      { title: "home.footer.links.listProperty", url: "" },
-      { title: "home.footer.links.claimBusiness", url: "" },
-      { title: "home.footer.links.turboTravelSuite", url: "" },
-      { title: "home.footer.links.travelExpertProgram", url: "" },
-      { title: "home.footer.links.agentPortal", url: "" },
+      { title: "footer.links.listProperty", url: "" },
+      { title: "footer.links.claimBusiness", url: "" },
+      { title: "footer.links.turboTravelSuite", url: "" },
+      { title: "footer.links.travelExpertProgram", url: "" },
+      { title: "footer.links.agentPortal", url: "" },
     ],
   },
   {
-    title: "home.footer.contact",
+    title: "footer.contact",
     links: [
-      { title: "home.footer.links.aboutUs", url: "" },
-      { title: "home.footer.links.contactUs", url: "" },
-      { title: "home.footer.links.enquiries", url: "" },
-      { title: "home.footer.links.investorRelations", url: "" },
-      { title: "home.footer.links.partnerWithUs", url: "" },
-      { title: "home.footer.links.supportEmail", url: "support@vbooking.com" },
+      { title: "footer.links.aboutUs", url: "" },
+      { title: "footer.links.contactUs", url: "" },
+      { title: "footer.links.enquiries", url: "" },
+      { title: "footer.links.investorRelations", url: "" },
+      { title: "footer.links.partnerWithUs", url: "" },
+      { title: "footer.links.supportEmail", url: "support@vbooking.com" },
     ],
   },
   {
-    title: "home.footer.resources",
+    title: "footer.resources",
     links: [
-      { title: "home.footer.links.blog", url: "" },
-      { title: "home.footer.links.faqs", url: "" },
-      { title: "home.footer.links.training", url: "" },
-      { title: "home.footer.links.privacyPolicy", url: "" },
+      { title: "footer.links.blog", url: "" },
+      { title: "footer.links.faqs", url: "" },
+      { title: "footer.links.training", url: "" },
+      { title: "footer.links.privacyPolicy", url: "" },
     ],
   },
 ];
@@ -106,7 +106,8 @@ const socialLinks = [
 ];
 
 function footer() {
-  const t = useTranslations();
+  const thome = useTranslations("home");
+  const tLang = useTranslations("lang");
 
   return (
     <footer className="py-16 bg-gradient-to-b from-[#224A9A] to-[#1C3D80]  text-white ">
@@ -119,7 +120,7 @@ function footer() {
             {data.map((item, index) => (
               <div key={index}>
                 <h3 className="text-[.9rem] font-semibold mb-4">
-                  {t(item.title)}
+                  {thome(item.title)}
                 </h3>
                 <ul>
                   {item.links.map((link, i) => (
@@ -128,7 +129,7 @@ function footer() {
                         href={link.url}
                         className="text-gray-300 hover:text-white transition text-sm"
                       >
-                        {t(link.title)}
+                        {thome(link.title)}
                       </Link>
                     </li>
                   ))}
@@ -144,7 +145,8 @@ function footer() {
 
         <div className="flex items-center justify-between sm:justify-end mt-8">
           <Title
-            title="home.footer.connectWithUs"
+            TransPage="home"
+            title="footer.connectWithUs"
             titleColor="text-white"
             className=""
           />
@@ -163,22 +165,25 @@ function footer() {
         <div className="mt-[44px]">
           <div
             className={`${
-              t("lang.lang") === "ar" ? "sm:divide-x-reverse" : ""
+              tLang("lang") === "ar" ? "sm:divide-x-reverse" : ""
             } sm:divide-slate-500 sm:divide-x-2 flex flex-wrap gap-3 justify-center`}
           >
             <Title
-              title="home.footer.awards"
+              TransPage="home"
+              title="footer.awards"
               titleColor="text-white"
               className="text-center"
             />
             <Title
-              title="home.footer.trusted"
+              TransPage="home"
+              title="footer.trusted"
               titleColor="text-white"
               className="ps-3 text-center"
             />
             <div className="flex gap-3">
               <Title
-                title="home.footer.securePayments"
+                TransPage="home"
+                title="footer.securePayments"
                 titleColor="text-white"
                 className="ps-3 text-center"
               />
@@ -193,15 +198,17 @@ function footer() {
           </div>
           <div
             className={`${
-              t("lang.lang") === "ar" ? "sm:divide-x-reverse" : ""
+              tLang("lang") === "ar" ? "sm:divide-x-reverse" : ""
             }  sm:divide-slate-500 sm:divide-x-2 flex flex-wrap gap-3 justify-center mt-4`}
           >
             <Title
-              title="home.footer.copyright"
+              TransPage="home"
+              title="footer.copyright"
               titleColor="text-white text-center"
             />
             <Title
-              title="home.footer.poweredBy"
+              TransPage="home"
+              title="footer.poweredBy"
               titleColor="text-white"
               className="ps-3 text-center"
             />

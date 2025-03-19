@@ -10,15 +10,13 @@ const ScrollableCards = <T,>({
   options,
   renderCard,
 }: ScrollableCardsProps<T>) => {
-  const t = useTranslations();
+  const t = useTranslations("lang");
   return (
     <div className="w-full scroll-bar-hide">
       <div className="flex overflow-x-auto pb-2 scrollbar-none">
         {options.map((option, index) => (
           <div
-            className={`flex-shrink-0 ${
-              t("lang.lang") === "en" ? "mr-4" : "ml-4"
-            } `}
+            className={`flex-shrink-0 ${t("lang") === "en" ? "mr-4" : "ml-4"} `}
             key={index}
           >
             {renderCard(option, index)}

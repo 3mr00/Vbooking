@@ -6,24 +6,24 @@ import Button from "../common/Button";
 
 const data = [
   {
-    title: "home.our_technology.ai_machine_learning",
-    description: "home.our_technology.ai_description",
+    title: "our_technology.ai_machine_learning",
+    description: "our_technology.ai_description",
   },
   {
-    title: "home.our_technology.advanced_metaverse_technology",
-    description: "home.our_technology.metaverse_description",
+    title: "our_technology.advanced_metaverse_technology",
+    description: "our_technology.metaverse_description",
   },
   {
-    title: "home.our_technology.htmx",
-    description: "home.our_technology.htmx_description",
+    title: "our_technology.htmx",
+    description: "our_technology.htmx_description",
   },
   {
-    title: "home.our_technology.data_operations_automation",
-    description: "home.our_technology.data_operations_description",
+    title: "our_technology.data_operations_automation",
+    description: "our_technology.data_operations_description",
   },
   {
-    title: "home.our_technology.decentralized_servers",
-    description: "home.our_technology.decentralized_servers_description",
+    title: "our_technology.decentralized_servers",
+    description: "our_technology.decentralized_servers_description",
   },
 ];
 
@@ -36,12 +36,14 @@ function OurTechnology() {
           <div className="relative z-10">
             <div className="text-center">
               <Title
-                title="home.our_technology.explore_technology"
+                TransPage="home"
+                title="our_technology.explore_technology"
                 titleColor="text-white"
                 className="text-clamp-[22px,3.6vw,36px] font-medium"
               />
               <Description
-                Description="home.our_technology.read_more_technologies"
+                TransPage="home"
+                Description="our_technology.read_more_technologies"
                 DescriptionColor="text-white"
                 className="md:text-[.8rem] text-[.5rem]"
               />
@@ -86,11 +88,13 @@ const Box = ({ title, description, index }: BoxProps) => {
       className={`p-4 rounded-[16px] bg-[#EFF9FA] ${gridClasses[index]} sm:col-span-1 md:col-span-1 animations-box`}
     >
       <Title
+        TransPage="home"
         title={title}
         titleColor="text-primary"
         className="text-[16px] block font-bold mb-6"
       />
       <Description
+        TransPage="home"
         Description={description}
         DescriptionColor="text-grayText"
         className="md:text-[.8rem] text-[.7rem]"

@@ -35,95 +35,92 @@ type LinkType = {
 };
 const links: LinkType[] = [
   {
-    title: "home.navbar.turbo",
+    title: "navbar.turbo",
     links: [
       {
-        title: "home.booking_suite.wholesale_tour_operators_b2b_b2c",
+        title: "navbar.turboLinks.wholesale_tour_operators_b2b_b2c",
         url: "/turbo/1",
       },
       {
-        title: "home.booking_suite.incoming_agencies_dmcs",
+        title: "navbar.turboLinks.incoming_agencies_dmcs",
         url: "/turbo/2",
       },
       {
-        title: "home.booking_suite.online_travel_agencies_otas",
+        title: "navbar.turboLinks.online_travel_agencies_otas",
         url: "/turbo/3",
       },
       {
-        title: "home.booking_suite.holiday_rental_managers",
+        title: "navbar.turboLinks.holiday_rental_managers",
         url: "/turbo/4",
       },
     ],
   },
   {
-    title: "home.navbar.our_technology",
+    title: "navbar.our_technology",
     links: [
       {
-        title: "technology.Navbar.turbo_booking_engine",
+        title: "navbar.technologyLinks.turbo_booking_engine",
         url: "/technology/1",
       },
       {
-        title: "technology.Navbar.ai_agent",
+        title: "navbar.technologyLinks.ai_agent",
         url: "/technology/1",
       },
       {
-        title: "technology.Navbar.travel_crm",
+        title: "navbar.technologyLinks.travel_crm",
         url: "/technology/1",
       },
       {
-        title: "technology.Navbar.engaging_holiday",
+        title: "navbar.technologyLinks.engaging_holiday",
         url: "/technology/1",
       },
       {
-        title: "technology.Navbar.live_booking_desk",
+        title: "navbar.technologyLinks.live_booking_desk",
         url: "/technology/1",
       },
       {
-        title: "technology.Navbar.operator_app",
+        title: "navbar.technologyLinks.operator_app",
         url: "/technology/1",
       },
     ],
   },
   {
-    title: "home.navbar.our_product",
+    title: "navbar.our_product",
     links: [
       {
-        title: "products.Navbar.turbo_booking_engine",
-        url: "/products/1",
+        title: "navbar.productsLinks.ai_agent",
+        url: "/products/AiTravel",
+      },
+
+      {
+        title: "navbar.productsLinks.engaging_holiday",
+        url: "/products/EngagementPackage",
       },
       {
-        title: "products.Navbar.ai_agent",
-        url: "/products/1",
+        title: "navbar.productsLinks.live_booking_desk",
+        url: "/products/LiveBooking",
       },
       {
-        title: "products.Navbar.travel_crm",
-        url: "/products/1",
+        title: "navbar.productsLinks.operator_app",
+        url: "/products/OperatorApp",
       },
       {
-        title: "products.Navbar.engaging_holiday",
-        url: "/products/1",
-      },
-      {
-        title: "products.Navbar.live_booking_desk",
-        url: "/products/1",
-      },
-      {
-        title: "products.Navbar.operator_app",
-        url: "/products/1",
+        title: "navbar.productsLinks.turbo_booking_engine",
+        url: "/products/TurboBooking",
       },
     ],
   },
   {
-    title: "home.navbar.why_us",
+    title: "navbar.why_us",
   },
   {
-    title: "home.navbar.contacts",
+    title: "navbar.contacts",
   },
   {
-    title: "home.navbar.resources",
+    title: "navbar.resources",
     links: [
       {
-        title: "AI and Machine Learning",
+        title: "navbar.productsLinks.operator_app",
         url: "",
       },
     ],
@@ -132,7 +129,8 @@ const links: LinkType[] = [
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const t = useTranslations();
+  const tHome = useTranslations("home");
+  const tLang = useTranslations("lang");
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -164,6 +162,7 @@ function NavBar() {
                     <DropdownMenu>
                       <DropdownMenuTrigger className="flex items-center gap-[8px] hover:text-secondary transition outline-none text-[#004CA6] text-[16px] font-normal">
                         <Title
+                          TransPage="home"
                           title={link.title}
                           titleColor=""
                           className="text-[#004CA6] text-[13px] font-normal"
@@ -171,12 +170,12 @@ function NavBar() {
                         <ChevronDown className="w-4 h-4" />
                       </DropdownMenuTrigger>
                       <DropdownMenuContent
-                        align={t("lang.lang") === "en" ? "start" : "end"}
+                        align={tLang("lang") === "en" ? "start" : "end"}
                         className="w-auto bg-white shadow-lg rounded-md"
                       >
                         {link.links.map((sublink, subIndex) => (
                           <DropdownMenuItem
-                            dir={t("lang.dir")}
+                            dir={tLang("dir")}
                             key={subIndex}
                             asChild
                           >
@@ -185,6 +184,7 @@ function NavBar() {
                               className={`w-full block px-4 py-2 text-[#004CA6] hover:bg-gray-100 `}
                             >
                               <Title
+                                TransPage="home"
                                 title={sublink.title}
                                 titleColor=""
                                 className="text-[#004CA6] text-[13px] font-normal"
@@ -199,7 +199,11 @@ function NavBar() {
                       href="#"
                       className="text-[#004CA6] font-normal text-[13px]"
                     >
-                      <Title title={link.title} titleColor="" />
+                      <Title
+                        TransPage="home"
+                        title={link.title}
+                        titleColor=""
+                      />
                     </Link>
                   )}
                 </li>
@@ -213,15 +217,15 @@ function NavBar() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button className="rounded-[50px] py-3 px-4 text-white bg-primary flex items-center gap-2 h-[40px]">
-                  {t("home.navbar.login")} <ChevronDown />
+                  {tHome("navbar.login")} <ChevronDown />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-auto">
                 <DropdownMenuItem>
-                  {t("home.navbar.login_supplier")}
+                  {tHome("navbar.login_supplier")}
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  {t("home.navbar.login_agent")}
+                  {tHome("navbar.login_agent")}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -271,11 +275,11 @@ function NavBar() {
                 {/* Mobile buttons section */}
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <Button className="text-white bg-primary flex items-center justify-center gap-2 h-[40px] rounded-[25px] px-4">
-                    {t("home.navbar.login_supplier")}
+                    {tHome("navbar.login_supplier")}
                   </Button>
 
                   <Button className="text-white bg-primary flex items-center justify-center gap-2 h-[40px] rounded-[25px] px-4">
-                    {t("home.navbar.login_agent")}
+                    {tHome("navbar.login_agent")}
                   </Button>
                 </div>
                 <LanguageSwitcher />

@@ -8,33 +8,33 @@ import Image, { StaticImageData } from "next/image";
 
 const items = [
   {
-    title: "home.InnovativeTechnology.html_to_htmx",
-    description: "home.InnovativeTechnology.html_to_htmx_description",
+    title: "InnovativeTechnology.html_to_htmx",
+    description: "InnovativeTechnology.html_to_htmx_description",
     image: images.InnovativeTechnology1,
   },
   {
-    title: "home.InnovativeTechnology.cold_calls_to_ai_automation",
-    description: "home.InnovativeTechnology.ai_customer_support",
+    title: "InnovativeTechnology.cold_calls_to_ai_automation",
+    description: "InnovativeTechnology.ai_customer_support",
     image: images.InnovativeTechnology2,
   },
   {
-    title: "home.InnovativeTechnology.2d_media_to_metaverse",
-    description: "home.InnovativeTechnology.metaverse_transition",
+    title: "InnovativeTechnology.2d_media_to_metaverse",
+    description: "InnovativeTechnology.metaverse_transition",
     image: images.InnovativeTechnology3,
   },
   {
-    title: "home.InnovativeTechnology.big_data_to_dataops",
-    description: "home.InnovativeTechnology.dataops_approach",
+    title: "InnovativeTechnology.big_data_to_dataops",
+    description: "InnovativeTechnology.dataops_approach",
     image: images.InnovativeTechnology4,
   },
   {
-    title: "home.InnovativeTechnology.traditional_search_to_nlp",
-    description: "home.InnovativeTechnology.nlp_search",
+    title: "InnovativeTechnology.traditional_search_to_nlp",
+    description: "InnovativeTechnology.nlp_search",
     image: images.InnovativeTechnology5,
   },
   {
-    title: "home.InnovativeTechnology.centralized_to_decentralized_servers",
-    description: "home.InnovativeTechnology.decentralized_servers",
+    title: "InnovativeTechnology.centralized_to_decentralized_servers",
+    description: "InnovativeTechnology.decentralized_servers",
     image: images.InnovativeTechnology6,
   },
 ];
@@ -44,17 +44,20 @@ function InnovativeTechnology() {
       <CustomContainer>
         <div className="text-center">
           <Title
+            TransPage="home"
             title="common.our"
             titleColor="text-secondary"
             className="text-clamp-[22px,3.6vw,36px]"
           />{" "}
           <Title
-            title="home.InnovativeTechnology.innovative_technology"
+            TransPage="home"
+            title="InnovativeTechnology.innovative_technology"
             titleColor="text-primary"
             className="text-clamp-[22px,3.6vw,36px]"
           />
           <Description
-            Description="home.InnovativeTechnology.transformation_to_advanced_technology"
+            TransPage="home"
+            Description="InnovativeTechnology.transformation_to_advanced_technology"
             DescriptionColor="text-grayText"
             className="md:text-[.8rem] text-[.7rem]"
           />
@@ -88,11 +91,13 @@ const Box = ({ title, image, description }: BoxProps) => {
       </div>
       <div className="w-[222px] min-[450px]:w-full">
         <Title
+          TransPage="home"
           title={title}
           titleColor="text-secondary"
           className="text-[19px] font-semibold text-wrap"
         />
         <Description
+          TransPage="home"
           Description={description}
           DescriptionColor="text-grayText"
           className="text-[10px] font-normal text-wrap"
@@ -119,7 +124,11 @@ const AccordionBox = ({ items }: any) => {
             }`}
             onClick={() => handleToggle(index)}
           >
-            <Title title={item.title} titleColor="text-secondary" />
+            <Title
+              TransPage="home"
+              title={item.title}
+              titleColor="text-secondary"
+            />
           </div>
           <div
             className={`accordion-content rounded-[16px] ${

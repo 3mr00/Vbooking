@@ -15,32 +15,39 @@ import { Link } from "@/navigation";
 
 const UniqueProductsItems = [
   {
-    title: "home.unique_products.turbo_search_engine",
+    title: "unique_products.turbo_search_engine",
     icon: <TuRboSearchEngineIcon />,
+    Link: "/products/EngagementPackage",
   },
   {
-    title: "home.unique_products.ai_travel_agent",
+    title: "unique_products.ai_travel_agent",
     icon: <AITravelAgentIcon />,
+    Link: "/products/AiTravel",
   },
   {
-    title: "home.unique_products.engagement_holiday_builder",
+    title: "unique_products.engagement_holiday_builder",
     icon: <EngagementHolidayBuilderIcon />,
+    Link: "/products/EngagementPackage",
   },
   {
-    title: "home.unique_products.turbo_travel_crm",
+    title: "unique_products.turbo_travel_crm",
     icon: <TuRboSearchEngineIcon />,
+    Link: "/products/TurboBooking",
   },
   {
-    title: "home.unique_products.live_booking_desk",
+    title: "unique_products.live_booking_desk",
     icon: <LiveBookingDeskIcon />,
+    Link: "/products/LiveBooking",
   },
   {
-    title: "home.unique_products.operator_app",
+    title: "unique_products.operator_app",
     icon: <OperatorAppIcon />,
+    Link: "/products/OperatorApp",
   },
   {
-    title: "home.unique_products.vbooking_hub",
+    title: "unique_products.vbooking_hub",
     icon: <VBookingHubIcon />,
+    Link: "/products/TurboBooking",
   },
 ];
 
@@ -49,17 +56,20 @@ function UniqueProducts() {
     <div className=" bg-gradient-to-b from-[#F7FCFC] to-[#D7EFF1]">
       <CustomContainer>
         <Title
+          TransPage="home"
           title="common.our"
           titleColor="text-secondary"
           className="md:text-[28px] text-[22px] font-medium"
         />
         <Title
-          title="home.unique_products.unique_products"
+          TransPage="home"
+          title="unique_products.unique_products"
           titleColor="text-primary"
           className="md:text-[28px] text-[22px] font-medium"
         />
         <Description
-          Description="home.unique_products.crafting_unique_products_from_innovative_technology"
+          TransPage="home"
+          Description="unique_products.crafting_unique_products_from_innovative_technology"
           DescriptionColor="text-grayText"
           className="md:text-[.8rem] text-[.7rem]"
         />
@@ -92,6 +102,7 @@ const Box = ({ title, icon }: any) => {
     >
       {icon}
       <Title
+        TransPage="home"
         title={title}
         titleColor="text-secondary"
         className="text-wrap text-center font-semibold bg-gradient-to-r from-[#1C3D80] to-[#4676D7] inline-block text-transparent bg-clip-text text-[14px]"

@@ -15,60 +15,60 @@ import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
 
 const data = [
   {
-    title: "home.travel_community.networkingPlatform.title",
-    description: "home.travel_community.networkingPlatform.description",
-    subDescription: "home.travel_community.networkingPlatform.subDescription",
+    title: "travel_community.networkingPlatform.title",
+    description: "travel_community.networkingPlatform.description",
+    subDescription: "travel_community.networkingPlatform.subDescription",
     icon: <NetworkingPlatformIcon />,
     buttons: [
       {
-        title: "home.travel_community.networkingPlatform.buttons.traveler",
+        title: "travel_community.networkingPlatform.buttons.traveler",
       },
       {
-        title: "home.travel_community.networkingPlatform.buttons.travelExpert",
+        title: "travel_community.networkingPlatform.buttons.travelExpert",
       },
       {
-        title: "home.travel_community.networkingPlatform.buttons.travelAgent",
+        title: "travel_community.networkingPlatform.buttons.travelAgent",
       },
     ],
   },
   {
-    title: "home.travel_community.vbookingAcademy.title",
-    description: "home.travel_community.vbookingAcademy.description",
+    title: "travel_community.vbookingAcademy.title",
+    description: "travel_community.vbookingAcademy.description",
     icon: <VBookingAcademyIcon />,
     buttons: [
       {
-        title: "home.travel_community.vbookingAcademy.buttons.enroll",
+        title: "travel_community.vbookingAcademy.buttons.enroll",
       },
     ],
   },
   {
-    title: "home.travel_community.exhibitionCenters.title",
-    description: "home.travel_community.exhibitionCenters.description",
-    subDescription: "home.travel_community.exhibitionCenters.subDescription",
+    title: "travel_community.exhibitionCenters.title",
+    description: "travel_community.exhibitionCenters.description",
+    subDescription: "travel_community.exhibitionCenters.subDescription",
     icon: <ExhibitionCentersIcon />,
     buttons: [
       {
-        title: "home.travel_community.exhibitionCenters.buttons.register",
+        title: "travel_community.exhibitionCenters.buttons.register",
       },
     ],
   },
   {
-    title: "home.travel_community.worldTravelLibrary.title",
-    description: "home.travel_community.worldTravelLibrary.description",
+    title: "travel_community.worldTravelLibrary.title",
+    description: "travel_community.worldTravelLibrary.description",
     icon: <WorldTravelLibraryIcon />,
     buttons: [
       {
-        title: "home.travel_community.worldTravelLibrary.buttons.explore",
+        title: "travel_community.worldTravelLibrary.buttons.explore",
       },
     ],
   },
   {
-    title: "home.travel_community.vbookingHub.title",
-    description: "home.travel_community.vbookingHub.description",
+    title: "travel_community.vbookingHub.title",
+    description: "travel_community.vbookingHub.description",
     icon: <VBookingHubIcon width={100} height={100} />,
     buttons: [
       {
-        title: "home.travel_community.vbookingHub.buttons.access",
+        title: "travel_community.vbookingHub.buttons.access",
       },
     ],
   },
@@ -82,28 +82,33 @@ function TravelCommunity() {
           <div className="text-center">
             <p>
               <Title
-                title="home.travel_community.bringing"
+                TransPage="home"
+                title="travel_community.bringing"
                 titleColor="text-secondary"
                 className="md:text-[32px] text-[22px] font-medium"
               />
               <Title
-                title="home.travel_community.travel"
+                TransPage="home"
+                title="travel_community.travel"
                 titleColor="text-primary"
                 className="md:text-[32px] text-[22px] font-medium"
               />
               <Title
-                title="home.travel_community.together"
+                TransPage="home"
+                title="travel_community.together"
                 titleColor="text-secondary"
                 className="md:text-[32px] text-[22px] font-medium"
               />
             </p>
             <Description
-              Description="home.travel_community.subtitle"
+              TransPage="home"
+              Description="travel_community.subtitle"
               DescriptionColor="text-grayText"
               className=" md:text-[.8rem] text-[.5rem]"
             />
             <Description
-              Description="home.travel_community.description"
+              TransPage="home"
+              Description="travel_community.description"
               DescriptionColor="text-grayText"
               className="md:block hidden md:text-[.8rem] text-[.5rem]"
             />
@@ -173,17 +178,20 @@ const Box = ({
       <div className="flex-grow">
         {icon}
         <Title
+          TransPage="home"
           title={title}
           titleColor="text-primary"
           className="text-[22px]"
         />
         <Description
+          TransPage="home"
           Description={description}
           DescriptionColor="text-grayText"
           className="md:text-[.9rem] text-[.8rem]"
         />
         {subDescription && (
           <Description
+            TransPage="home"
             Description={subDescription}
             DescriptionColor="text-secondary h-[24px]"
             className="md:text-[.9rem] text-[.8rem] mt-4"
@@ -194,6 +202,7 @@ const Box = ({
       <div className="flex flex-wrap gap-3 mt-8">
         {buttons.map((button, index) => (
           <ButtonShadcn
+            TransPage="home"
             style="outline"
             text={button.title}
             key={index}

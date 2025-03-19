@@ -1,0 +1,12 @@
+{
+  "technology": {
+    "Navbar": {
+      "turbo_booking_engine": "Turbo Booking Engine",
+      "ai_agent": "AI Agent",
+      "travel_crm": "Travel CRM",
+      "engaging_holiday": "Engaging Holiday",
+      "live_booking_desk": "Live Booking Desk",
+      "operator_app": "Operator App"
+    }
+  }
+}

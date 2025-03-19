@@ -5,10 +5,11 @@ interface TitleProps {
   title: string;
   titleColor: string;
   className?: string;
+  TransPage: string;
 }
 
-function Title({ title, titleColor, className }: TitleProps) {
-  const t = useTranslations();
+function Title({ title, titleColor, className, TransPage }: TitleProps) {
+  const t = useTranslations(TransPage);
 
   return (
     <span className={`break-words break-normal ${titleColor} ${className}`}>

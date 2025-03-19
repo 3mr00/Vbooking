@@ -33,7 +33,8 @@ export default function AccordionSidebar({
     setOpenItem(openItem === itemTitle ? null : itemTitle);
   };
 
-  const t = useTranslations();
+  const thome = useTranslations("home");
+  const tLang = useTranslations("lang");
 
   return (
     <div className={`bg-[#2a4795]  p-4 rounded-sm ${className}`}>
@@ -58,15 +59,16 @@ export default function AccordionSidebar({
                   </div>
                 )}
                 <Title
+                  TransPage="home"
                   title={item.title}
                   titleColor=""
-                  className="text-inherit font-semibold"
+                  className={`${className}  transition text-sm font-semibold`}
                 />
               </div>
             </button>
             {item.links && item.links.length > 0 && (
               <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                className={`overflow-hidden px-12   transition-all duration-300 ease-in-out ${
                   openItem === item.title
                     ? "max-h-[500px] opacity-100"
                     : "max-h-0 opacity-0"
@@ -74,7 +76,7 @@ export default function AccordionSidebar({
               >
                 <div
                   className={`${
-                    t("lang.lang") === "en" ? "pl-6" : "pr-6"
+                    tLang("lang") === "en" ? "pl-6" : "pr-6"
                   }  pb-3 gap-3`}
                 >
                   {item.links.map((link, index) => (
@@ -82,13 +84,13 @@ export default function AccordionSidebar({
                       onClick={toggleMenu}
                       key={index}
                       href={link.url || "#"}
-                      className={`block text-sm mb-3  text-secondary transition-all  hover:text-inherit ${
-                        t("lang.lang") === "en"
+                      className={`block text-sm mb-3 ${className} transition-all  hover:text-inherit ${
+                        tLang("lang") === "en"
                           ? "hover:translate-x-[-4px]"
                           : "hover:translate-x-1"
                       }`}
                     >
-                      {t(link.title)}
+                      {thome(link.title)}
                     </Link>
                   ))}
                 </div>

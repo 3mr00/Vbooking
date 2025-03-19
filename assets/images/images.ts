@@ -30,7 +30,13 @@ import Enhanced5 from "@/assets/images/image/Enhanced5.png";
 import vsymbolsmall from "@/assets/images/image/vsymbolsmall.png";
 import techHeader from "@/assets/images/image/techHeader.png";
 import techBooking from "@/assets/images/image/techBooking.png";
-import productsHeader from "@/assets/images/image/productsHeader.png";
+
+// Product-specific header images
+import AiTravel from "@/assets/images/image/Products/AiTravel.png";
+import EngagementPackage from "@/assets/images/image/Products/EngagementPackage.png";
+import LiveBooking from "@/assets/images/image/Products/LiveBooking.png";
+import OperatorApp from "@/assets/images/image/Products/OperatorApp.png";
+import TurboBooking from "@/assets/images/image/Products/TurboBooking.png";
 
 export default {
   logo,
@@ -65,5 +71,10 @@ export default {
   vsymbolsmall,
   techHeader,
   techBooking,
-  productsHeader,
+  // Product-specific header images
+  AiTravel,
+  EngagementPackage,
+  LiveBooking,
+  OperatorApp,
+  TurboBooking,
 };
