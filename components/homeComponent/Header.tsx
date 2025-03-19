@@ -2,9 +2,12 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Description from "../common/Description";
 import Title from "../common/Title";
 import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
-import LottieAnimation from "./LottieAnimation";
+import dynamic from "next/dynamic";
+import animationData from "../../icons/src/animationHomeLogo.json"; // Adjust path to your JSON file
 
-// Dynamically import Lottie with SSR disabled
+const LottieAnimation = dynamic(() => import("@/icons/src/LottieAnimation"), {
+  ssr: false,
+});
 
 function Header() {
   return (
@@ -55,7 +58,10 @@ function Header() {
             />
           </div>
         </div>
-        <div className="w-[26rem] max-w-full">{/* <LottieAnimation /> */}</div>
+        <div className="w-[26rem] max-w-full">
+          {" "}
+          <LottieAnimation />
+        </div>
       </CustomContainer>
     </div>
   );
