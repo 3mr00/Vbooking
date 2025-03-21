@@ -86,7 +86,11 @@ const KeyFeatures = ({ turboId }: { turboId: string }) => {
                 className="p-4 rounded-full md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] relative"
               >
                 <Image
-                  src={iconMap[section?.id]} // Fallback to prevent errors
+                  src={
+                    iconMap[section?.id]
+                      ? iconMap[section?.id]
+                      : icons.inventory
+                  } // Fallback to prevent errors
                   alt={`${section.title} Icon`}
                   className="object-contain"
                   fill
