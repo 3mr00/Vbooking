@@ -5,8 +5,8 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Image from "next/image";
 import React from "react";
 
-const WhyChooseSection = () => {
-  const t = useTranslations("turbo.WhyChooseSection");
+const WhyChooseSection = ({ turboId }: { turboId: string }) => {
+  const t = useTranslations(`turbo.EnhancedSec.${turboId}.WhyChooseSection`);
 
   return (
     <div>

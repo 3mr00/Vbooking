@@ -20,7 +20,6 @@ import payment3 from "@/assets/images/image/payment3.png";
 import EnFlag from "@/assets/images/image/en-flag.png";
 import smallLogo from "@/assets/images/image/smallLogo.png";
 import EgyptFlag from "@/assets/images/image/eg-flag.png";
-import turboheader from "@/assets/images/image/turboheader.png";
 import OurCommunity from "@/assets/images/image/OurCommunity.png";
 import Enhanced1 from "@/assets/images/image/Enhanced1.png";
 import Enhanced2 from "@/assets/images/image/Enhanced2.png";
@@ -28,15 +27,27 @@ import Enhanced3 from "@/assets/images/image/Enhanced3.png";
 import Enhanced4 from "@/assets/images/image/Enhanced4.png";
 import Enhanced5 from "@/assets/images/image/Enhanced5.png";
 import vsymbolsmall from "@/assets/images/image/vsymbolsmall.png";
-import techHeader from "@/assets/images/image/techHeader.png";
 import techBooking from "@/assets/images/image/techBooking.png";
 
 // Product-specific header images
-import AiTravel from "@/assets/images/image/Products/AiTravel.png";
-import EngagementPackage from "@/assets/images/image/Products/EngagementPackage.png";
-import LiveBooking from "@/assets/images/image/Products/LiveBooking.png";
-import OperatorApp from "@/assets/images/image/Products/OperatorApp.png";
-import TurboBooking from "@/assets/images/image/Products/TurboBooking.png";
+import AiTravel from "@/assets/images/image/ProductsPage/AiTravel.png";
+import EngagementPackage from "@/assets/images/image/ProductsPage/EngagementPackage.png";
+import LiveBooking from "@/assets/images/image/ProductsPage/LiveBooking.png";
+import OperatorApp from "@/assets/images/image/ProductsPage/OperatorApp.png";
+import TurboBooking from "@/assets/images/image/ProductsPage/TurboBooking.png";
+
+// tech header images
+import AlAndMachineLearning from "@/assets/images/image/TechPage/AlAndMachineLearning.png";
+import Metaverse from "@/assets/images/image/TechPage/Metaverse.png";
+import HTMX from "@/assets/images/image/TechPage/HTMX.png";
+import DecentraliseServers from "@/assets/images/image/TechPage/DecentraliseServers.png";
+import Automation from "@/assets/images/image/TechPage/Automation.png";
+
+// turbo header images
+import incomingAgencies from "@/assets/images/image/TurboPage/incomingAgencies.png";
+import holidayRental from "@/assets/images/image/TurboPage/holidayRental.png";
+import onlineTravel from "@/assets/images/image/TurboPage/onlineTravel.png";
+import wholesaleTour from "@/assets/images/image/TurboPage/wholesaleTour.png";
 
 export default {
   logo,
@@ -61,7 +72,6 @@ export default {
   smallLogo,
   EgyptFlag,
   animatedHeaderImage,
-  turboheader,
   OurCommunity,
   Enhanced1,
   Enhanced2,
@@ -69,7 +79,6 @@ export default {
   Enhanced4,
   Enhanced5,
   vsymbolsmall,
-  techHeader,
   techBooking,
   // Product-specific header images
   AiTravel,
@@ -77,4 +86,17 @@ export default {
   LiveBooking,
   OperatorApp,
   TurboBooking,
+
+  // tech-specific header images
+  AlAndMachineLearning,
+  Metaverse,
+  HTMX,
+  DecentraliseServers,
+  Automation,
+
+  // turbo-specific header images
+  incomingAgencies,
+  holidayRental,
+  onlineTravel,
+  wholesaleTour,
 };

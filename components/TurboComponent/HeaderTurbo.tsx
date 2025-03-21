@@ -3,9 +3,25 @@ import Image from "next/image";
 import { images } from "@/assets/images";
 import { useTranslations } from "next-intl";
 
-const HeaderTurbo = () => {
-  const tTurbo = useTranslations("turbo");
+const HeaderTurbo = ({ turboId }: { turboId: string }) => {
+  const t = useTranslations("turbo.Header");
   const tLang = useTranslations("lang");
+
+  // Image mapping
+  const imageMapping = {
+    IncomingAgencies: images.incomingAgencies, // Replace with actual image import
+    HolidayRental: images.holidayRental, // Replace with actual image import
+    OnlineTravel: images.onlineTravel, // Replace with actual image import
+    WholesaleTour: images.wholesaleTour, // Replace with actual image import
+  };
+
+  // Fetch translations dynamically based on turboId
+  const masterBookings = t(`${turboId}.MasterBookings`);
+  const empower = t(`${turboId}.Empower`);
+  const efficiency = t(`${turboId}.Efficiency`);
+  const description = t(`${turboId}.Description`);
+  // Get the image based on turboId
+  const imageSrc = imageMapping[turboId as keyof typeof imageMapping];
 
   return (
     <div
@@ -15,29 +31,28 @@ const HeaderTurbo = () => {
           : "lg:pr-[120px] px-[1.5rem]"
       }  py-6 `}
     >
-      <div className="   grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-[#2d63cf] lg:text-sm text-xs font-medium mb-2">
-            {tTurbo("Header.MasterBookings")}
+            {masterBookings}
           </h2>
           <h1 className="md:text-[2.5rem] text-[1.6rem] font-medium mb-4">
-            <span className="text-[#9c25a0]">{tTurbo("Header.Empower")}</span>
+            <span className="text-[#9c25a0]">{empower}</span>
             <br />
-            <span className="text-[#2d63cf]">
-              {tTurbo("Header.Efficiency")}
-            </span>
+            <span className="text-[#2d63cf]">{efficiency}</span>
           </h1>
           <p className="text-[#667085] mb-[6px] md:text-[.8rem] text-[.6rem] font-normal">
-            {tTurbo("Header.Description")}
+            {description}
           </p>
         </div>
         <div className="relative">
+          {/* Dynamic Image */}
           <Image
-            src={images.turboheader}
-            alt="Turbo Booking Engine Platform Interface"
+            src={imageSrc}
+            alt={`${turboId} Image`}
             width={600}
             height={500}
-            className=" w-full"
+            className="w-full"
           />
         </div>
       </div>

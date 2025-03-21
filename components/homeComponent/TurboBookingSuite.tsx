@@ -48,13 +48,13 @@ function TurboBookingSuite() {
             TransPage="home"
             title="common.turbo"
             titleColor="text-secondary"
-            className="md:text-[36px] text-[22px] font-medium"
+            className="md:text-[30px] text-[22px] font-medium"
           />{" "}
           <Title
             TransPage="home"
             title="booking_suite.booking_suite"
             titleColor="text-primary"
-            className="md:text-[36px] text-[22px] font-medium"
+            className="md:text-[30px] text-[22px] font-medium"
           />
           <Description
             TransPage="home"

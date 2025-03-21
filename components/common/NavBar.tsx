@@ -33,25 +33,26 @@ type LinkType = {
   title: string;
   links?: { title: string; url: string }[];
 };
+
 const links: LinkType[] = [
   {
     title: "navbar.turbo",
     links: [
       {
-        title: "navbar.turboLinks.wholesale_tour_operators_b2b_b2c",
-        url: "/turbo/1",
-      },
-      {
         title: "navbar.turboLinks.incoming_agencies_dmcs",
-        url: "/turbo/2",
-      },
-      {
-        title: "navbar.turboLinks.online_travel_agencies_otas",
-        url: "/turbo/3",
+        url: "/turbo/IncomingAgencies",
       },
       {
         title: "navbar.turboLinks.holiday_rental_managers",
-        url: "/turbo/4",
+        url: "/turbo/HolidayRental",
+      },
+      {
+        title: "navbar.turboLinks.online_travel_agencies_otas",
+        url: "/turbo/OnlineTravel",
+      },
+      {
+        title: "navbar.turboLinks.wholesale_tour_operators_b2b_b2c",
+        url: "/turbo/WholesaleTour",
       },
     ],
   },
@@ -59,28 +60,24 @@ const links: LinkType[] = [
     title: "navbar.our_technology",
     links: [
       {
-        title: "navbar.technologyLinks.turbo_booking_engine",
-        url: "/technology/1",
+        title: "navbar.technologyLinks.Metaverse",
+        url: "/technology/Metaverse ",
       },
       {
-        title: "navbar.technologyLinks.ai_agent",
-        url: "/technology/1",
+        title: "navbar.technologyLinks.AlAndMachineLearning",
+        url: "/technology/AlAndMachineLearning ",
       },
       {
-        title: "navbar.technologyLinks.travel_crm",
-        url: "/technology/1",
+        title: "navbar.technologyLinks.Automation",
+        url: "/technology/Automation",
       },
       {
-        title: "navbar.technologyLinks.engaging_holiday",
-        url: "/technology/1",
+        title: "navbar.technologyLinks.DecentraliseServers",
+        url: "/technology/DecentraliseServers ",
       },
       {
-        title: "navbar.technologyLinks.live_booking_desk",
-        url: "/technology/1",
-      },
-      {
-        title: "navbar.technologyLinks.operator_app",
-        url: "/technology/1",
+        title: "navbar.technologyLinks.HTMX",
+        url: "/technology/HTMX",
       },
     ],
   },

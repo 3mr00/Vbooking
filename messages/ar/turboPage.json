@@ -1,146 +1,742 @@
 {
   "turbo": {
     "Header": {
-      "MasterBookings": "أتقن حجوزاتك، ارفع مبيعاتك!",
-      "Empower": "مكن وجهتك",
-      "Efficiency": "مع كفاءة توربو",
-      "Description": "Turbo Booking Engine هو منصة متطورة وشاملة مصممة خصيصًا لشركات إدارة الوجهات (DMCs) ووكالات السفر الواردة. هذا الحل المتقدم يمنحك سيطرة كاملة على فنادقك، جولاتك، وخدمات النقل، مما يساعدك على تبسيط العمليات وزيادة إيراداتك بشكل كبير."
+      "IncomingAgencies": {
+        "MasterBookings": "أتقن حجوزاتك، وارفع مبيعاتك!",
+        "Empower": "مكن وجهتك",
+        "Efficiency": "مع كفاءة توربو",
+        "Description": "توربو بوكينج إنجين هو منصة متكاملة ومتطورة مصممة خصيصًا لشركات إدارة الوجهات (DMCs) ووكالات السفر الواردة. تمنحك هذه الحلول المتقدمة تحكمًا كاملاً في فنادقك وجولاتك وخدمات النقل، مما يساعدك على تبسيط العمليات وزيادة الإيرادات بشكل كبير. سواء كنت تدير وكالة صغيرة أو عملية كبيرة، توربو بوكينج إنجين يزودك بأدوات متطورة لرفع جودة الخدمة وتعزيز نمو الأعمال."
+      },
+      "HolidayRental": {
+        "MasterBookings": "أتقن حجوزاتك، وارفع مبيعاتك!",
+        "Empower": "حلك النهائي",
+        "Efficiency": "لإدارة إيجارات العطلات بسلاسة",
+        "Description": "إدارة إيجارات العطلات لا يجب أن تكون مرهقة. مع VBooking، تحصل على منصة متكاملة ومتطورة مصممة خصيصًا لتبسيط وتعزيز إدارة إيجارات العطلات. توفر منصتنا مجموعة شاملة من الأدوات لتبسيط العمليات وتحسين تجارب الضيوف وزيادة الإيرادات. سواء كنت تدير عقارًا واحدًا أو محفظة كبيرة، VBooking يزودك بالأدوات التي تحتاجها للنجاح."
+      },
+      "OnlineTravel": {
+        "MasterBookings": "أتقن حجوزاتك، وارفع مبيعاتك!",
+        "Empower": "تمكين وكالات السفر عبر الإنترنت",
+        "Efficiency": "مع كفاءة توربو",
+        "Description": "في VBooking، نحن ملتزمون بتحويل عمليات وكالات السفر عبر الإنترنت (OTAs) من خلال حلول السفر المتقدمة والشفافة والمبتكرة. هدفنا هو تزويد OTAs بالأدوات والدعم اللازمين للتفوق في سوق السفر التنافسي للغاية. منتجنا الرئيسي، توربو بوكينج إنجين، مصمم لتعزيز كفاءة OTAs وتجربة المستخدم والوصول العالمي، مما يساعدك على تقديم قيمة استثنائية للعملاء."
+      },
+      "WholesaleTour": {
+        "MasterBookings": "أتقن حجوزاتك، وارفع مبيعاتك!",
+        "Empower": "بسّط، وحسّن، وازدهر",
+        "Efficiency": "مع توربو بوكينج إنجين من VBooking",
+        "Description": "في صناعة السفر التنافسية اليوم، تلعب شركات الجولات بالجملة دورًا حيويًا في ربط مقدمي الخدمات ووكلاء السفر. في VBooking، ندرك التحديات الفريدة التي تواجهها الشركاء B2B وملتزمون بدعمهم بأدوات وتقنيات حديثة. تم تصميم حلولنا لتبسيط العمليات وزيادة الكفاءة وتعزيز التعاون، مما يضمن ازدهار أعمالك في مشهد السفر المتطور باستمرار."
+      }
     },
+
     "KeyFeatures": {
-      "Title": "الميزات الرئيسية",
-      "Subtitle": "لمحرك الحجوزات توربو",
-      "ComprehensiveInventoryManagement": {
-        "Title": "إدارة المخزون الشاملة",
-        "DirectHotelContracts": {
-          "Title": "عقود الفنادق المباشرة:",
-          "Description": "قم بتحميل وإدارة فنادقك المتعاقد عليها بسهولة، مع التعامل مع حصص الغرف والأسعار وسياسات الحجز بدقة. حافظ على سيطرة كاملة على مخزون الفنادق الخاص بك، مما يضمن حصول العملاء دائمًا على أفضل الأسعار والتوافر."
-        },
-        "TourExcursionManagement": {
-          "Title": "إدارة الجولات والرحلات:",
-          "Description": "نظم وعرض مجموعة متنوعة من الجولات والرحلات. أضف أوصافًا مفصلة وصورًا جذابة ومعلومات أساسية لجذب العملاء وتقديم تجارب فريدة لا تُنسى."
-        },
-        "TransfersManagement": {
-          "Title": "إدارة خدمات النقل:",
-          "Description": "بسّط تنسيق خدمات النقل، مما يوفر لعملائك حلول سفر سلسة من الوصول إلى المغادرة."
-        }
+      "IncomingAgencies": {
+        "title": "الميزات الرئيسية لمحرك الحجز السريع",
+        "sections": [
+          {
+            "id": "inventory",
+            "title": "إدارة شاملة للمخزون",
+            "features": [
+              {
+                "title": "عقود الفنادق المباشرة",
+                "points": [
+                  "قم بتحميل وإدارة فنادقك المتعاقد عليها بسهولة، مع التحكم في الحصص الغرفية والأسعار وسياسات الحجز بدقة.",
+                  "احتفظ بالسيطرة الكاملة على مخزون الفنادق، مما يضمن حصول العملاء دائمًا على أفضل الأسعار والتوافر."
+                ]
+              },
+              {
+                "title": "إدارة الجولات والرحلات",
+                "points": [
+                  "نظم وعرض مجموعة متنوعة من الجولات والرحلات.",
+                  "أضف أوصافًا تفصيلية وصورًا جذابة ومعلومات أساسية لجذب العملاء وتقديم تجارب فريدة لا تُنسى."
+                ]
+              },
+              {
+                "title": "إدارة خدمات النقل",
+                "points": [
+                  "بسّط تنسيق خدمات النقل، مما يوفر لعملائك حلول سفر سلسة من الوصول إلى المغادرة."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "booking",
+            "title": "قدرات حجز متقدمة",
+            "features": [
+              {
+                "title": "العروض الثابتة والديناميكية",
+                "points": [
+                  "قم بإدارة نماذج التسعير الثابتة والديناميكية للفنادق بكفاءة، مع التكيف مع اتجاهات السوق واحتياجات العملاء.",
+                  "تعزز هذه المرونة إمكانات الإيرادات وتحسن استخدام المخزون."
+                ]
+              },
+              {
+                "title": "تكامل REST / JSON API",
+                "points": [
+                  "وسّع نطاق وصولك من خلال تكامل API، مما يسمح لأنظمة الطرف الثالث بالوصول إلى مخزونك.",
+                  "قم بتخصيص هياكل التسعير لتوسيع قنوات التوزيع وجذب أسواق جديدة."
+                ]
+              },
+              {
+                "title": "قاعدة بيانات فنادق شاملة",
+                "points": [
+                  "قم بالوصول إلى قاعدة بيانات شاملة تضم 1.5 مليون فندق مع صور عالية الجودة وتفاصيل شاملة، مما يمنح عملائك مجموعة متنوعة من الخيارات ويعزز معدلات التحويل."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "control",
+            "title": "تحكم كامل وتخصيص",
+            "features": [
+              {
+                "title": "تكامل B2B/B2C",
+                "points": [
+                  "قم بتكامل محرك الحجز السريع مع منصات B2B أو B2C الحالية بسلاسة، مما يوفر تجربة سلسة للشركاء التجاريين والعملاء على حد سواء."
+                ]
+              },
+              {
+                "title": "وصول API مع تسعير مخصص",
+                "points": [
+                  "قدم وصول API خاضع للتحكم إلى منصات الطرف الثالث مع تسعير مخصص، مصمم وفقًا لمتطلبات العملاء المحددة واتفاقيات التوزيع."
+                ]
+              },
+              {
+                "title": "دعم متعدد اللغات والعملات",
+                "points": [
+                  "اجذب جمهورًا عالميًا من خلال توفير خيارات متعددة للغات والعملات، مما يجعل المعاملات سلسة ومتاحة للعملاء في جميع أنحاء العالم."
+                ]
+              },
+              {
+                "title": "قدرة تعدد اللغات DIY",
+                "points": [
+                  "قم بتكييف إعدادات اللغة لتلائم احتياجات سوقك، مع توفير خيارات التخصيص لتتناسب مع العملاء المتنوعين."
+                ]
+              },
+              {
+                "title": "مرونة تعريف المنتج",
+                "points": [
+                  "قم بتعريف وإدارة مجموعة متنوعة من المنتجات – من الفنادق والفيلات إلى الجولات والشقق وخدمات النقل. تلبي هذه الميزة مجموعة واسعة من تفضيلات السفر ومتطلبات السوق."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "operations",
+            "title": "إدارة العمليات",
+            "features": [
+              {
+                "title": "إدارة الحجوزات",
+                "points": [
+                  "احصل على تحكم كامل في إدارة الحجوزات، من الحجوزات الجديدة إلى الإلغاءات والتأكيدات، مما يضمن الحد الأدنى من الأخطاء وزيادة رضا العملاء."
+                ]
+              },
+              {
+                "title": "إدارة الحصص",
+                "points": [
+                  "قم بتحقيق أقصى استفادة من المخزون من خلال التخصيص الفعال للغرف وإدارة المبيعات المفتوحة، مما يساعدك على تحقيق التوازن بين العرض والطلب."
+                ]
+              },
+              {
+                "title": "إدارة أدوار المستخدمين",
+                "points": [
+                  "بسّط العمليات وحماية البيانات من خلال الوصول الآمن القائم على الأدوار لفريقك. حدد الصلاحيات للحفاظ على الكفاءة والسرية."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "functionalities",
+            "title": "وظائف شاملة",
+            "features": [
+              {
+                "title": "أدوات CRM والتسويق",
+                "points": [
+                  "عزز علاقات العملاء ودفع نمو المبيعات من خلال أدوات CRM المتكاملة. قم بإدارة العملاء المحتملين، وجذب العملاء، وتحويل الفرص إلى إيرادات دائمة."
+                ]
+              },
+              {
+                "title": "أدوات المحاسبة",
+                "points": [
+                  "قم بتتبع المعاملات المالية بسلاسة داخل المنصة. قم بإدارة الإيصالات النقدية وحسابات الوكالات الفرعية والفواتير والمزيد لتحقيق إدارة مالية فعالة."
+                ]
+              },
+              {
+                "title": "الذكاء التجاري والتحليلات",
+                "points": [
+                  "استفد من أدوات التحليلات وإعداد التقارير المتعمقة للحصول على رؤى حول الأداء، وتحسين صنع القرار، وصقل استراتيجياتك."
+                ]
+              },
+              {
+                "title": "وحدة تسعير مرنة",
+                "points": [
+                  "قم بزيادة إمكانات الإيرادات من خلال تخصيص التسعير لقطاعات السوق المختلفة. قم بتخصيص الأسعار لتلبية الاحتياجات الفريدة لكل عميل ومنطقة."
+                ]
+              },
+              {
+                "title": "تخصيص الواجهة الأمامية",
+                "points": [
+                  "عزز هوية العلامة التجارية من خلال قوالب تصميم الويب القابلة للتخصيص والأدوات. تأكد من تقديم عرض متسق واحترافي عبر جميع نقاط الاتصال مع العملاء."
+                ]
+              },
+              {
+                "title": "لوحة تحكم الحجوزات",
+                "points": [
+                  "قم بإدارة ومراقبة جميع الحجوزات في منصة واحدة مخصصة، مما يسمح بتتبع ومعالجة كل حجز بكفاءة."
+                ]
+              }
+            ]
+          }
+        ]
       },
-      "AdvancedBookingCapabilities": {
-        "Title": "قدرات الحجز المتقدمة",
-        "StaticDynamicDeals": {
-          "Title": "الصفقات الثابتة والديناميكية:",
-          "Description": "قم بإدارة نماذج التسعير الثابتة والديناميكية للفنادق بكفاءة، لتلبية احتياجات العملاء المختلفة. هذه المرونة تعزز إمكانات الإيرادات وتحسن استخدام المخزون."
-        },
-        "RestJsonApiIntegration": {
-          "Title": "تكامل REST / JSON API:",
-          "Description": "وسّع نطاق وصولك من خلال تكامل API، مما يسمح لأنظمة الطرف الثالث بالوصول إلى مخزونك. قم بتخصيص هياكل التسعير لتوسيع قنوات التوزيع وجذب أسواق جديدة."
-        },
-        "ExtensiveHotelDatabase": {
-          "Title": "قاعدة بيانات الفنادق الواسعة:",
-          "Description": "قم بالوصول إلى قاعدة بيانات واسعة تضم 1.5 مليون فندق مع صور عالية الجودة وتفاصيل شاملة، مما يمنح عملائك مجموعة متنوعة من الخيارات ويحسن معدلات التحويل."
-        }
+      "HolidayRental": {
+        "title": "الميزات الأساسية لتأجير العطلات",
+        "sections": [
+          {
+            "id": "propertymanagement",
+            "title": "أدوات إدارة الممتلكات الشاملة",
+            "features": [
+              {
+                "title": "لوحة تحكم موحدة",
+                "points": [
+                  "قم بإدارة جميع الممتلكات من لوحة تحكم بديهية واحدة.",
+                  "توفر واجهة VBooking الموحدة نظرة شاملة على عملياتك بالكامل، مما يتيح لك مراقبة الحجوزات والتوافر ومقاييس الأداء في الوقت الفعلي."
+                ]
+              },
+              {
+                "title": "نظام حجز آلي",
+                "points": [
+                  "بسّط عملية الحجز بالكامل.",
+                  "يتعامل نظامنا الآلي مع كل شيء من التحقق من التوافر إلى إرسال تأكيدات الحجز، مما يقلل من العمل اليدوي ويقلل من الأخطاء."
+                ]
+              },
+              {
+                "title": "مزامنة التقويم في الوقت الفعلي",
+                "points": [
+                  "احتفظ بتقويماتك متزامنة تمامًا عبر منصات الحجز الرئيسية.",
+                  "مع التحديثات في الوقت الفعلي، أصبحت الحجوزات المزدوجة شيئًا من الماضي، مما يمنحك الثقة في توافرك."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "guestcommunication",
+            "title": "تحسين التواصل مع الضيوف والدعم",
+            "features": [
+              {
+                "title": "الرسائل الآلية للضيوف",
+                "points": [
+                  "تفاعل مع الضيوف طوال رحلتهم من خلال الرسائل الآلية، من تعليمات ما قبل الوصول إلى تذكيرات التسجيل والمتابعة بعد الإقامة، مما يضمن أنهم دائمًا على اطلاع جيد."
+                ]
+              },
+              {
+                "title": "دعم الضيوف على مدار الساعة",
+                "points": [
+                  "وفر راحة البال مع دعم الضيوف على مدار الساعة، المتاح للرد على أي استفسارات أو مشكلات، مما يخلق تجربة سلسة وممتعة."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "revenue",
+            "title": "إدارة الإيرادات المتقدمة",
+            "features": [
+              {
+                "title": "أدوات التسعير الديناميكي",
+                "points": [
+                  "قم بتحسين أرباحك من خلال نظام التسعير الديناميكي الذي يعدل الأسعار بناءً على الطلب والموسمية واتجاهات السوق، مما يضمن بقاء ممتلكاتك بسعر تنافسي."
+                ]
+              },
+              {
+                "title": "تقارير الإيرادات والتحليلات",
+                "points": [
+                  "اتخذ قرارات مدعومة بالبيانات مع رؤى إيرادات مفصلة. تتبع الأداء المالي، وقم بتحسين التسعير، وتعرف على مجالات النمو لتعزيز الربحية."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "maintenance",
+            "title": "إدارة الصيانة والخدمات المنزلية",
+            "features": [
+              {
+                "title": "نظام طلبات الصيانة",
+                "points": [
+                  "احتفظ بالممتلكات في أفضل حالة من خلال إدارة طلبات الصيانة مباشرة عبر VBooking.",
+                  "يمكن للضيوف الإبلاغ عن المشكلات، ويمكنك تتبع التقدم حتى الحل، مما يضمن خدمة سريعة."
+                ]
+              },
+              {
+                "title": "جدولة الخدمات المنزلية",
+                "points": [
+                  "قم بتنسيق وتخصيص مهام الخدمات المنزلية بسهولة.",
+                  "تساعد أدوات الجدولة في VBooking على إبقاء الممتلكات جاهزة للضيوف في جميع الأوقات، مما يعزز رضا الضيوف."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "marketing",
+            "title": "التسويق والتوزيع",
+            "features": [
+              {
+                "title": "إدارة القنوات",
+                "points": [
+                  "اجذب جمهورًا أوسع من خلال إدارة القنوات المتكاملة.",
+                  "يتصل VBooking بمنصات مثل Airbnb وBooking.com وغيرها، مما يعزز رؤية ممتلكاتك."
+                ]
+              },
+              {
+                "title": "أدوات تحسين محركات البحث والتسويق عبر الإنترنت",
+                "points": [
+                  "عزز وجودك على الإنترنت من خلال القوائم المحسنة لتحسين محركات البحث وأدوات التسويق.",
+                  "قم بتحسين الاكتشاف ودفع المزيد من الحجوزات مع زيادة التعرض عبر المنصات الرقمية."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "payment",
+            "title": "إدارة الدفع والمالية",
+            "features": [
+              {
+                "title": "حلول دفع متكاملة",
+                "points": [
+                  "قم بإدارة المدفوعات بأمان من خلال نظام معالجة الدفع السلس لدينا.",
+                  "اقبل الحجوزات والودائع والرسوم الإضافية بسهولة، مع ضمان الأمان المالي."
+                ]
+              },
+              {
+                "title": "تقارير مالية شاملة",
+                "points": [
+                  "ابقَ على اطلاع دائم على الشؤون المالية مع تقارير مالية مفصلة.",
+                  "تتبع الدخل والمصروفات والربحية للحفاظ على عمل مالي صحي."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "customization",
+            "title": "التخصيص والعلامة التجارية",
+            "features": [
+              {
+                "title": "موقع ويب مخصص للعلامة التجارية",
+                "points": [
+                  "ارفع من مستوى علامتك التجارية من خلال موقع ويب مخصص يعرض ممتلكاتك ويعكس هوية علامتك التجارية، مما يساعدك على التميز في السوق."
+                ]
+              },
+              {
+                "title": "تجارب ضيوف مخصصة",
+                "points": [
+                  "ميّز خدمتك من خلال تجارب ضيوف مخصصة، من الرسائل المخصصة إلى الخدمات الحصرية، مما يخلق إقامات لا تُنسى تؤدي إلى حجوزات متكررة."
+                ]
+              }
+            ]
+          }
+        ]
       },
-      "FullControlCustomization": {
-        "Title": "التحكم الكامل والتخصيص",
-        "B2BB2CIntegration": {
-          "Title": "تكامل B2B/B2C:",
-          "Description": "قم بدمج Turbo Booking Engine بسلاسة مع منصات B2B أو B2C الحالية الخاصة بك، مما يوفر تجربة سلسة للشركاء التجاريين والعملاء على حد سواء."
-        },
-        "ApiAccessCustomPricing": {
-          "Title": "وصول API مع تسعير مخصص:",
-          "Description": "قدم وصولًا متحكمًا به إلى API لمنصات الطرف الثالث مع تسعير مخصص، مصمم وفقًا لمتطلبات العملاء المحددة واتفاقيات التوزيع."
-        },
-        "MultiLanguageMultiCurrencySupport": {
-          "Title": "دعم متعدد اللغات والعملات:",
-          "Description": "وصل إلى جمهور عالمي من خلال توفير خيارات متعددة للغات والعملات، مما يجعل المعاملات سلسة ويمكن الوصول إليها للعملاء في جميع أنحاء العالم."
-        },
-        "DiyMultiLanguageCapability": {
-          "Title": "قدرة DIY متعددة اللغات:",
-          "Description": "قم بتكييف إعدادات اللغة لتناسب احتياجات السوق الخاصة بك، مما يوفر خيارات الترجمة التي تتناسب مع العملاء المتنوعين."
-        },
-        "ProductDefinitionFlexibility": {
-          "Title": "مرونة تعريف المنتج:",
-          "Description": "قم بتعريف وإدارة مجموعة متنوعة من المنتجات – من الفنادق والفيلات إلى الجولات والشقق وخدمات النقل. هذه الميزة تستوعب مجموعة واسعة من تفضيلات السفر ومتطلبات السوق."
-        }
+      "OnlineTravel": {
+        "title": "الميزات الأساسية للسفر عبر الإنترنت",
+        "sections": [
+          {
+            "id": "bookingengine",
+            "title": "محرك حجز ذكي وقابل للتخصيص",
+            "features": [
+              {
+                "title": "45 تصميم ويب حديث",
+                "points": [
+                  "اختر من مجموعة متنوعة من 45 قالب ويب احترافي ومركّز على المستخدم.",
+                  "كل قالب قابل للتخصيص بالكامل ليعكس هوية علامتك التجارية، مما يضمن تجربة مستخدم سلسة وجذابة في كل نقطة اتصال."
+                ]
+              },
+              {
+                "title": "بوابة B2C",
+                "points": [
+                  "مكن العملاء من حجز خدمات السفر بسهولة، من تصفح الخيارات إلى الدفع الآمن وإصدار التذاكر الإلكترونية، كل ذلك عبر الإنترنت.",
+                  "توفر بوابة B2C تجربة حجز شاملة تعطي الأولوية للراحة والكفاءة."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rapiddeployment",
+            "title": "نشر سريع لدخول سريع إلى السوق",
+            "features": [
+              {
+                "title": "حلول كاملة قابلة للتسليم في أسبوعين",
+                "points": [
+                  "في صناعة السفر سريعة الخطى، السرعة هي المفتاح.",
+                  "تم تصميم محرك الحجز السريع للنشر السريع، مما يسمح لك بتشغيل عملك في أقل من أسبوعين، حتى تتمكن من بدء تحقيق الإيرادات والاستحواذ على حصة السوق بسرعة."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "suppliernetwork",
+            "title": "شبكة موردين واسعة لتسعير تنافسي",
+            "features": [
+              {
+                "title": "أسعار NET من أكثر من 550 مورد عالمي",
+                "points": [
+                  "قم بالوصول إلى أسعار NET تنافسية من شبكة واسعة تضم أكثر من 550 مورد عالمي، تشمل الرحلات الجوية والفنادق وتأجير السيارات والجولات والمزيد.",
+                  "توفر هذه الشبكة الواسعة أفضل العروض، مما يمنح عملك ميزة تنافسية."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "multilingualsupport",
+            "title": "خدمة عملاء متعددة اللغات بسلاسة",
+            "features": [
+              {
+                "title": "دعم متعدد اللغات",
+                "points": [
+                  "اجذب جمهورًا عالميًا من خلال تقديم خدمة عملاء سلسة متعددة اللغات.",
+                  "تمكنك هذه الميزة من تقديم دعم استثنائي للعملاء في جميع أنحاء العالم، مما يعزز الثقة والرضا."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "automatedprocesses",
+            "title": "عمليات آلية لتعزيز الكفاءة",
+            "features": [
+              {
+                "title": "إصدار وإلغاء وإبطال تلقائي",
+                "points": [
+                  "مع إصدار التذاكر والإلغاء والإبطال التلقائي بالكامل، يقوم VBooking بتبسيط عملياتك وتقليل الأخطاء اليدوية، مما يمكن فريقك من التركيز على أنشطة النمو الاستراتيجية."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "travelmodules",
+            "title": "وحدات سفر متقدمة لعروض خدمات متنوعة",
+            "features": [
+              {
+                "title": "وحدة السفر المتعددة",
+                "points": [
+                  "وفر للعملاء مجموعة متنوعة من خدمات السفر – من الرحلات الجوية والفنادق إلى تأجير السيارات وحزم العطلات.",
+                  "تجعل وحدة السفر المتعددة والبحث البديهي من السهل على العملاء العثور على ما يحتاجون إليه وحجزه."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "paymentfinance",
+            "title": "إدارة دفع ومالية قوية",
+            "features": [
+              {
+                "title": "بوابة دفع متكاملة وخط ائتمان",
+                "points": [
+                  "معالجة الدفع الآمنة أمر بالغ الأهمية. تضمن منصتنا معاملات مالية سلسة وآمنة مع دعم بوابة دفع متكاملة، بالإضافة إلى إدارة مرنة لخط الائتمان.",
+                  "بالإضافة إلى ذلك، يكافئ برنامج الولاء العملاء المتكررين، مما يعزز العلاقات طويلة الأمد."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "backoffice",
+            "title": "إدارة المكتب الخلفي لتبسيط العمليات",
+            "features": [
+              {
+                "title": "مكتب خلفي سهل الاستخدام",
+                "points": [
+                  "قم بإدارة وكالة السفر الخاصة بك بكفاءة من خلال نظام مكتب خلفي قوي يدير إدارة الحجوزات وضبط العلامات والتفاعل مع العملاء.",
+                  "يركز المكتب الخلفي على الأدوات الأساسية، مما يساعدك على تحسين العمليات اليومية بسهولة."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "customersupport",
+            "title": "دعم عملاء شامل لتعزيز الرضا",
+            "features": [
+              {
+                "title": "دعم مركز الاتصال على مدار الساعة",
+                "points": [
+                  "تأكد من حصول عملائك على المساعدة متى احتاجوا إليها، مع دعم مركز الاتصال على مدار الساعة."
+                ]
+              },
+              {
+                "title": "مدير حساب رئيسي شخصي",
+                "points": [
+                  "استمتع بمدير حساب مخصص يركز على مساعدتك في تحقيق أهداف عملك.",
+                  "يوفر هذا الدعم الشخصي شريكًا موثوقًا به يفهم احتياجاتك ويقدم التوجيه مع تطور عملك."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "scalability",
+            "title": "عدد غير محدود من المستخدمين للتوسع",
+            "features": [
+              {
+                "title": "حل قابل للتوسع",
+                "points": [
+                  "مع نمو وكالة السفر الخاصة بك، يتوسع محرك الحجز السريع معك، مما يدعم عددًا غير محدود من المستخدمين دون الحاجة إلى ترقيات مكلفة.",
+                  "سواء كنت وكالة سفر ناشئة أو لاعبًا راسخًا في السوق، تم تصميم VBooking لدعم مسار نموك."
+                ]
+              }
+            ]
+          }
+        ]
       },
-      "ComprehensiveFunctionalities": {
-        "Title": "الوظائف الشاملة",
-        "CrmMarketingTools": {
-          "Title": "أدوات CRM والتسويق:",
-          "Description": "عزز علاقات العملاء ودفع نمو المبيعات باستخدام أدوات CRM المتكاملة. قم بإدارة العملاء المحتملين، وجذب العملاء، وتحويل الفرص إلى إيرادات دائمة."
-        },
-        "AccountingTools": {
-          "Title": "أدوات المحاسبة:",
-          "Description": "قم بتتبع المعاملات المالية بسلاسة داخل المنصة. قم بإدارة الإيصالات النقدية وحسابات الوكالات الفرعية والفواتير والمزيد لتحقيق إدارة مالية فعالة."
-        },
-        "BusinessIntelligenceAnalytics": {
-          "Title": "الذكاء التجاري والتحليلات:",
-          "Description": "استفد من أدوات التحليلات وإعداد التقارير المتعمقة للحصول على رؤى حول الأداء، وتحسين صنع القرار، وصقل استراتيجياتك."
-        },
-        "FlexiblePricingModule": {
-          "Title": "وحدة التسعير المرنة:",
-          "Description": "قم بزيادة إمكانات الإيرادات من خلال تخصيص التسعير لقطاعات السوق المختلفة. قم بتخصيص التسعير لتلبية الاحتياجات الفريدة لكل عميل ومنطقة."
-        },
-        "FrontEndCustomization": {
-          "Title": "تخصيص الواجهة الأمامية:",
-          "Description": "اعرض هوية علامتك التجارية باستخدام قوالب تصميم الويب القابلة للتخصيص والأدوات. تأكد من تقديم عرض احترافي ومتسق عبر جميع نقاط الاتصال مع العملاء."
-        },
-        "BookingsDashboard": {
-          "Title": "لوحة تحكم الحجوزات:",
-          "Description": "قم بإدارة ومراقبة جميع الحجوزات في منصة واحدة مخصصة، مما يسمح بتتبع ومعالجة كل حجز بكفاءة."
-        }
-      },
-      "OperationalManagement": {
-        "Title": "إدارة العمليات",
-        "ReservationManagement": {
-          "Title": "إدارة الحجوزات:",
-          "Description": "احصل على سيطرة كاملة على إدارة الحجوزات، من الحجوزات الجديدة إلى الإلغاء والتأكيدات، مما يضمن تقليل الأخطاء وزيادة رضا العملاء."
-        },
-        "AllotmentManagement": {
-          "Title": "إدارة الحصص:",
-          "Description": "قم بزيادة استخدام المخزون من خلال التخصيص الفعال للغرف وإدارة المبيعات المفتوحة، مما يساعدك على تحقيق التوازن بين العرض والطلب."
-        },
-        "UserRoleManagement": {
-          "Title": "إدارة أدوار المستخدمين:",
-          "Description": "بسّط العمليات وحماية البيانات من خلال الوصول الآمن القائم على الأدوار لفريقك. قم بتحديد الأذونات للحفاظ على الكفاءة والسرية."
-        }
+      "WholesaleTour": {
+        "title": "الميزات الرئيسية للجولات بالجملة",
+        "sections": [
+          {
+            "id": "inventorymanagement",
+            "title": "إدارة مخزون شاملة",
+            "features": [
+              {
+                "title": "إدارة الحجوزات بالجملة",
+                "points": [
+                  "بسّط الحجوزات ذات الحجم الكبير من خلال واجهتنا البديهية، مما يقلل من العمل اليدوي ويزيد الإنتاجية."
+                ]
+              },
+              {
+                "title": "عقود الفنادق المباشرة",
+                "points": [
+                  "قم بإدارة فنادقك المتعاقد عليها مباشرة من خلال التحكم في الحصص والأسعار والسياسات للحفاظ على تحديث مخزونك."
+                ]
+              },
+              {
+                "title": "إدارة الجولات والرحلات",
+                "points": [
+                  "نظم وعرض الجولات والرحلات مع أوصاف تفصيلية وصور ومعلومات أساسية."
+                ]
+              },
+              {
+                "title": "إدارة خدمات النقل",
+                "points": [
+                  "قم بتنسيق وإدارة خدمات النقل بسلاسة، مما يوفر للعملاء تجربة خالية من المتاعب."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "suppliersportal",
+            "title": "بوابة الموردين",
+            "features": [
+              {
+                "title": "إدارة العلاقات مع جميع الموردين من خلال بوابة واحدة",
+                "points": [
+                  "من الفنادق إلى مزودي النقل، توفر بوابة الموردين تنسيقًا سلسًا وإدارة فعالة للعروض، مما يضمن أن جميع الموردين يبقون محدثين ومتناسقين مع احتياجات عملك."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "advancedbooking",
+            "title": "قدرات حجز متقدمة",
+            "features": [
+              {
+                "title": "عروض ثابتة وديناميكية",
+                "points": [
+                  "قدم عروض فنادق مرنة، مما يسمح بتعديل الأسعار والتوافر لتتناسب مع طلب السوق."
+                ]
+              },
+              {
+                "title": "REST / JSON API",
+                "points": [
+                  "وسّع نطاق وصولك من خلال تمكين وصول الطرف الثالث إلى مخزونك، مما يسهل التسعير المخصص والتوزيع الأوسع."
+                ]
+              },
+              {
+                "title": "بيانات 1.5 مليون فندق",
+                "points": [
+                  "قم بالوصول إلى قاعدة بيانات واسعة عالية الجودة لمعلومات الفنادق والصور، مما يثري عروضك لجذب المزيد من العملاء."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fullcontrol",
+            "title": "تحكم كامل وتخصيص",
+            "features": [
+              {
+                "title": "تكامل B2B/B2C",
+                "points": [
+                  "قم بتكامل محرك الحجز السريع بسلاسة مع منصات التوزيع الخاصة بك لضمان عمليات سلسة ومتسقة."
+                ]
+              },
+              {
+                "title": "تكامل API",
+                "points": [
+                  "قدم اتصالات API مرنة للوصول من الطرف الثالث إلى مخزونك، مما يسمح بتعديلات التسعير والتوافر المخصصة."
+                ]
+              },
+              {
+                "title": "متعدد اللغات والعملات",
+                "points": [
+                  "اجذب سوقًا عالميًا مع دعم متعدد اللغات والعملات، مما يوفر تجربة مخصصة."
+                ]
+              },
+              {
+                "title": "قدرة تعدد اللغات DIY",
+                "points": [
+                  "قم بتخصيص خيارات اللغة لتلبية احتياجات العمل المحددة، مما يعزز إمكانية الوصول."
+                ]
+              },
+              {
+                "title": "تعريف المنتج",
+                "points": [
+                  "قم بتعريف وإدارة مجموعة متنوعة من المنتجات – بما في ذلك الفنادق والفيلات والمنتجعات والشقق ومواقع التخييم والجولات وخدمات النقل – على منصة واحدة."
+                ]
+              }
+            ]
+          }
+        ]
       }
     },
-
-    "EnhancedServices": {
-      "Title": "خدمات محسنة",
-      "Subtitle": "لإدارة شاملة",
-      "HolidayPackagesManagement": {
-        "Title": "إدارة حزم العطلات",
-        "Description": "وسّع عروضك من خلال شبكة خارجية مخصصة لإدارة حزم العطلات. أنشئ وادمج وقم بتسويق حزم متنوعة مصممة وفقًا لاهتمامات العملاء بسهولة."
+    "EnhancedSec": {
+      "IncomingAgencies": {
+        "EnhancedServices": {
+          "Title": "Enhanced Services",
+          "Subtitle": "for Comprehensive Management",
+          "HolidayPackagesManagement": {
+            "Title": "Holiday Packages Management",
+            "Description": "Expand your offerings with a dedicated extranet for managing holiday packages. Easily create, manage, and market diverse packages tailored to client interests."
+          },
+          "TransfersInventoryManagement": {
+            "Title": "Transfers Inventory Management",
+            "Description": "Maintain streamlined control over transfer services to guarantee smooth client journeys at every stage."
+          },
+          "CharterServicesManagement": {
+            "Title": "Charter Services Management",
+            "Description": "Easily manage charter services, from flights to boats, through a specialized extranet. Enhance logistics coordination and customer experience with ease."
+          },
+          "ChannelManagerIntegration": {
+            "Title": "Channel Manager Integration",
+            "Description": "Broaden your market presence by connecting to multiple distribution channels, enhancing visibility and driving sales."
+          },
+          "IntegratedPaymentGateway": {
+            "Title": "Integrated Payment Gateway",
+            "Description": "Ensure secure, reliable transactions with our payment gateway integration, providing clients with peace of mind throughout their booking experience."
+          }
+        },
+        "WhyChooseSection": {
+          "Title1": "Why Choose",
+          "Title2": "vbooking",
+          "Title3": "for Destination Management?",
+          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network.",
+          "Description2": "Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction. Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
+          "CTATitle": "Get Started with vbooking",
+          "CTADescription": "Ready to transform your travel business? From tour operators and DMCs to online travel agencies and holiday property managers, vbooking provides the tools and technology you need to succeed. Reach out to us today to learn more about how our solutions can elevate your operations.",
+          "CTAButton1": "Contact Us",
+          "CTAButton2": "Request a Demo"
+        }
       },
-      "IntegratedPaymentGateway": {
-        "Title": "بوابة دفع متكاملة",
-        "Description": "تأمين معاملات آمنة وموثوقة من خلال تكامل بوابة الدفع، مما يوفر للعملاء راحة البال طوال تجربة الحجز."
+      "HolidayRental": {
+        "EnhancedServices": {
+          "Title": "Enhanced Services",
+          "Subtitle": "for Holiday Rental Management",
+          "HolidayPackagesManagement": {
+            "Title": "Property Management",
+            "Description": "Centralize all your management tasks, from booking to guest communication, allowing you to focus on delivering exceptional guest experiences while minimizing daily administrative burdens."
+          },
+          "TransfersInventoryManagement": {
+            "Title": "Dynamic Pricing Tools",
+            "Description": "Leverage dynamic pricing tools and increased visibility through integrated channels to drive occupancy, boost income, and improve your bottom line."
+          },
+          "CharterServicesManagement": {
+            "Title": "Guest Communication",
+            "Description": "Automated messaging keeps guests informed, while 24/7 support provides peace of mind. These features foster positive experiences, leading to repeat bookings and favorable reviews."
+          },
+          "ChannelManagerIntegration": {
+            "Title": "Maintenance Management",
+            "Description": "Efficient maintenance and housekeeping tools ensure your properties remain in excellent condition, ready to welcome guests at any time and reducing operational downtime."
+          },
+          "IntegratedPaymentGateway": {
+            "Title": "Secure Payment Processing",
+            "Description": "Our integrated payment and financial reporting solutions offer a secure, transparent view of your finances, helping you maintain control and financial stability."
+          }
+        },
+        "WhyChooseSection": {
+          "Title1": "Why Choose",
+          "Title2": "VBooking",
+          "Title3": "for Holiday Rentals?",
+          "Description1": "VBooking centralizes all your management tasks, from booking to guest communication, allowing you to focus on delivering exceptional guest experiences while minimizing daily administrative burdens. Gain insights from detailed reports and analytics, enabling you to refine pricing, improve operations, and make informed decisions to support long-term growth.",
+          "Description2": "Strengthen your brand with a unique website and personalized guest experiences, establishing a distinct identity and encouraging guest loyalty. Our integrated payment and financial reporting solutions offer a secure, transparent view of your finances, helping you maintain control and financial stability.",
+          "CTATitle": "Get Started with VBooking",
+          "CTADescription": "Ready to elevate your holiday Rental business? Whether you're a tour operator, destination management company, online travel agency, or independent holiday Rental manager, VBooking offers the innovative solutions you need to succeed. Contact us today to learn how VBooking can transform your operations and help you achieve your business goals.",
+          "CTAButton1": "Contact Us",
+          "CTAButton2": "Request a Demo"
+        }
       },
-      "CharterServicesManagement": {
-        "Title": "إدارة خدمات الشحن",
-        "Description": "قم بإدارة خدمات الشحن بسهولة، من الرحلات الجوية إلى القوارب، من خلال شبكة خارجية متخصصة. عزز تنسيق الخدمات اللوجستية وتحسين تجربة العملاء بسلاسة."
+      "OnlineTravel": {
+        "EnhancedServices": {
+          "Title": "Enhanced Services",
+          "Subtitle": "for Online Travel Agencies",
+          "HolidayPackagesManagement": {
+            "Title": "Turbocharged Booking Engine",
+            "Description": "The Turbo Booking Engine minimizes manual tasks, enhancing your operational workflow and reducing turnaround times, contributing to a smooth customer experience."
+          },
+          "TransfersInventoryManagement": {
+            "Title": "Customizable Interface",
+            "Description": "Choose from 45 modern designs and tailor your booking experience to reflect your brand with intuitive navigation, making it easier for customers to find and book services."
+          },
+          "CharterServicesManagement": {
+            "Title": "Global Market Access",
+            "Description": "Access to 550+ suppliers and multilingual support lets you offer competitive pricing across a broad range of travel services while reaching a global audience."
+          },
+          "ChannelManagerIntegration": {
+            "Title": "Revenue Optimization",
+            "Description": "Flexible rate management tools let you optimize pricing strategies to maximize profit margins while remaining competitive in the market."
+          },
+          "IntegratedPaymentGateway": {
+            "Title": "24/7 Support & Deployment",
+            "Description": "Customers benefit from round-the-clock assistance, while our fast deployment process gets your OTA up and running within two weeks."
+          }
+        },
+        "WhyChooseSection": {
+          "Title1": "Why Choose",
+          "Title2": "VBooking",
+          "Title3": "for Online Travel?",
+          "Description1": "VBooking's platform grows with you, supporting an unlimited number of users as your business expands. Our adaptable platform accommodates businesses of all sizes and adapts to specific requirements, ensuring seamless scalability.",
+          "Description2": "By reducing overhead and boosting efficiency, VBooking helps improve your OTA's profitability, enabling reinvestment in growth. The combination of rapid deployment and efficient operations gives your business a strong edge in the market.",
+          "CTATitle": "Get Started with VBooking",
+          "CTADescription": "Are you ready to transform your OTA and deliver unmatched travel experiences? VBooking empowers wholesale tour operators, destination management companies, OTAs, and holiday home managers with the tools and technology needed to thrive. Contact us today to explore our solutions and discover how we can revolutionize your business.",
+          "CTAButton1": "Contact Us",
+          "CTAButton2": "Request a Demo"
+        }
       },
-      "ChannelManagerIntegration": {
-        "Title": "تكامل مدير القنوات",
-        "Description": "وسّع وجودك في السوق من خلال الاتصال بقنوات توزيع متعددة، مما يعزز الرؤية ويدفع المبيعات."
-      },
-      "TransfersInventoryManagement": {
-        "Title": "إدارة مخزون خدمات النقل",
-        "Description": "حافظ على سيطرة مبسطة على خدمات النقل لضمان رحلات سلسة للعملاء في كل مرحلة."
+      "WholesaleTour": {
+        "EnhancedServices": {
+          "Title": "Enhanced Services",
+          "Subtitle": "for Wholesale Tour Operators",
+          "HolidayPackagesManagement": {
+            "Title": "Streamlined Operations",
+            "Description": "Streamlined operations reduce manual work, boosting productivity across your business and allowing you to focus on growth."
+          },
+          "TransfersInventoryManagement": {
+            "Title": "Inventory Management",
+            "Description": "With full control over your inventory and customizable options, easily adapt to changing market demands and optimize your offerings."
+          },
+          "CharterServicesManagement": {
+            "Title": "Global Distribution",
+            "Description": "Multi-language and multi-currency support, combined with channel manager access, empowers you to serve a diverse global audience."
+          },
+          "ChannelManagerIntegration": {
+            "Title": "Customer Relationship Tools",
+            "Description": "By providing a seamless booking experience, you build lasting relationships with your clients and improve retention rates."
+          },
+          "IntegratedPaymentGateway": {
+            "Title": "Secure Payment Processing",
+            "Description": "Our integrated payment solutions ensure secure transactions while providing comprehensive financial reporting for your business."
+          }
+        },
+        "WhyChooseSection": {
+          "Title1": "Why Choose",
+          "Title2": "VBooking",
+          "Title3": "for Wholesale Tour Operations?",
+          "Description1": "VBooking provides wholesale tour operators with a comprehensive platform that streamlines operations, enhances flexibility, and expands your global reach. Our solution is designed specifically for the unique challenges of wholesale tour management.",
+          "Description2": "With VBooking, you'll gain access to powerful tools that help you manage inventory, process bookings efficiently, and deliver exceptional service to your clients. Our platform grows with your business, ensuring you can scale operations without disruption.",
+          "CTATitle": "Get Started with VBooking",
+          "CTADescription": "Ready to streamline your operations and expand your market? Discover how VBooking can elevate your wholesale operations today!",
+          "CTAButton1": "Contact Us",
+          "CTAButton2": "Request a Demo"
+        }
       }
-    },
-
-    "WhyChooseSection": {
-      "Title1": "لماذا تختار",
-      "Title2": "vbooking لإدارة",
-      "Title3": "الوجهات؟",
-      "Description1": "في vbooking، نختص في تلبية الاحتياجات الفريدة لشركات إدارة الوجهات من خلال منصة بديهية تبسط العمليات، وتعزز تقديم الخدمات، وتزيد الإيرادات. يعتمد محرك الحجوزات توربو الخاص بنا على تقنية رائدة في الصناعة، مدعومة بخبرة واسعة في إدارة الوجهات، وشبكة عالمية. يتمتع vbooking بثقة مئات شركات إدارة الوجهات حول العالم، وقد أثبت تأثيره من خلال تعزيز الكفاءة التشغيلية، وزيادة المبيعات، وتحسين رضا العملاء.",
-      "Description2": "انضم إلى مجتمع vbooking واكتشف كيف يمكن لحلولنا تمكين عملك، مما يبقيك قادرًا على المنافسة وجاهزًا للتوسع في سوق السفر الديناميكي.",
-      "CTATitle": "ابدأ مع vbooking",
-      "CTADescription": "هل أنت مستعد لتحويل عملك في مجال السفر؟ من مشغلي الرحلات وشركات إدارة الوجهات إلى وكالات السفر عبر الإنترنت ومديري عقارات العطلات، يوفر vbooking الأدوات والتقنية التي تحتاجها للنجاح. تواصل معنا اليوم لمعرفة المزيد عن كيفية تحسين حلولنا لعملياتك.",
-      "CTAButton1": "طلب عرض تجريبي",
-      "CTAButton2": "الحصول على عرض سعر"
     }
   }
 }

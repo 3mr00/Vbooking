@@ -30,3 +30,5 @@ export * from "./src/Prodouctsvoice";
 export * from "./src/ProdouctsBeh";
 export * from "./src/Prodouctsknow";
 export * from "./src/ProdouctsVector";
+export * from "./src/Turboinventory";
+export * from "./src/Turbobooking";
