@@ -10,7 +10,7 @@ function CallToAction() {
       {" "}
       <div className="bg-[#d7eff1]">
         <div className="py-8 md:py-8">
-          <div className="container mx-auto px-4">
+          <div className="">
             <div className="text-center">
               <p
                 className="text-[#647087] text-center font-['Poppins'] text-[18px] font-normal leading-[27px] max-w-4xl mx-auto mb-6 md:mb-8"

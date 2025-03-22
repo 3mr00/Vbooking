@@ -37,52 +37,52 @@
       },
       "items": [
         {
-          "id": 1,
+          "id": 0,
           "title": "Booking Engine",
           "description": "A seamless and efficient system to handle all client bookings effortlessly."
         },
         {
-          "id": 2,
+          "id": 1,
           "title": "CRM",
           "description": "Advanced tools to manage client relationships and enhance engagement."
         },
         {
-          "id": 3,
+          "id": 2,
           "title": "Website",
           "description": "A professional, responsive online presence integrated with your services."
         },
         {
-          "id": 4,
+          "id": 3,
           "title": "AI Agent",
           "description": "Smart automation for customer inquiries, bookings, and 24/7 support."
         },
         {
-          "id": 5,
+          "id": 4,
           "title": "Management Tools",
           "description": "Real-time tracking and control of your business operations."
         },
         {
-          "id": 6,
+          "id": 5,
           "title": "Holiday Builder",
           "description": "Easily craft unique, customized holiday packages for your clients."
         },
         {
-          "id": 7,
+          "id": 6,
           "title": "Itinerary Builder",
           "description": "Effortlessly design and share stunning, dynamic itineraries."
         },
         {
-          "id": 8,
+          "id": 7,
           "title": "Operations App",
           "description": "Streamline day-to-day tasks with mobile-friendly tools for management on the go."
         },
         {
-          "id": 9,
+          "id": 8,
           "title": "Live Booking Desk",
           "description": "Real-time support to handle complex booking needs and inquiries."
         },
         {
-          "id": 10,
+          "id": 9,
           "title": "Inventory and Supplier Management",
           "description": "Optimize and manage your inventory and supplier network seamlessly."
         }

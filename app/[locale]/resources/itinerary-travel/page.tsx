@@ -8,41 +8,43 @@ import CallToAction from "@/components/ItineraryTravelComponent/CallToAction";
 import WhyTuRbo from "@/components/ItineraryTravelComponent/WhyTuRbo";
 import DMCsCustomers from "@/components/ItineraryTravelComponent/DMCsCustomers";
 import SuperchargeSection from "@/components/ItineraryTravelComponent/SuperchargeSection";
-
+import { CustomContainer } from "@/Wrapper/CustomContainer";
 export default function JinTravelerPage() {
   const t = useTranslations("Traveler");
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <HeroSection />
+    <>
+      <CustomContainer className="bg-[#f7fcfc] p-0 my-0 relative overflow-hidden">
+        {/* Hero Section */}
+        <HeroSection />
+      </CustomContainer>
 
-      {/* Power of TuRbo Section */}
-      <PowerOfTuRbo />
-
-      {/* Features Section */}
-      <FeaturesSection />
+      <CustomContainer className="bg-[#daf0f2] py-0">
+        {/* Power of TuRbo Section */}
+        <PowerOfTuRbo />
+        {/* Features Section */}
+        <FeaturesSection />
+      </CustomContainer>
 
       {/* Auto-scrolling Features Section */}
-      <div className="bg-[#d7eff1] w-full">
-        <AutoScrollFeatures />
-      </div>
+      <AutoScrollFeatures />
 
-      {/* Productivity Changes Section */}
+      <CustomContainer className="bg-[#daf0f2] py-0">
+        {/* Productivity Changes Section */}
+        <ProductivityChanges />
+        {/* Call to Action Section */}
+        <CallToAction />
 
-      <ProductivityChanges />
-      {/* Call to Action Section */}
-      <CallToAction />
+        {/* Why TuRbo Section */}
 
-      {/* Why TuRbo Section */}
+        <WhyTuRbo />
 
-      <WhyTuRbo />
+        {/* DMCs Customers Section */}
+        <DMCsCustomers />
 
-      {/* DMCs Customers Section */}
-      <DMCsCustomers />
-
-      {/* Supercharge Section */}
-      <SuperchargeSection />
-    </div>
+        {/* Supercharge Section */}
+        <SuperchargeSection />
+      </CustomContainer>
+    </>
   );
 }

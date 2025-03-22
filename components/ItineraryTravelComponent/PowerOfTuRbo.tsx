@@ -9,8 +9,8 @@ const PowerOfTuRbo = () => {
       {" "}
       <div className="bg-[#d7eff1]">
         <div className="py-10 md:py-20 relative overflow-hidden">
-          <div className="container mx-auto px-4 text-center relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
+          <div className="container mx-auto text-center relative z-10">
+            <h2 className="text-[16px] md:text-4xl font-bold mb-4 md:mb-6">
               <span className="text-[#2d63cf]">
                 {t("powerOfTurbo.title.part1")}{" "}
               </span>
@@ -25,7 +25,7 @@ const PowerOfTuRbo = () => {
               </span>
 
               <p
-                className="text-center font-['Poppins'] text-base font-normal leading-6 text-[#647087] text-[16px]"
+                className="text-center font-['Poppins'] text-base font-normal leading-6 text-[#647087]  text-[13px] mdtext-[16px]"
                 style={{ color: "color(display-p3 0.4 0.4392 0.5216)" }}
               >
                 {t("powerOfTurbo.description")}

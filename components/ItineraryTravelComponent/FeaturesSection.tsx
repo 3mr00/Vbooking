@@ -68,10 +68,10 @@ const FeaturesSection = () => {
   return (
     <div>
       <div className="bg-[#d7eff1]">
-        <div className="container mx-auto px-4 py-10 md:py-16">
+        <div className="container mx-auto  py-10 md:py-16">
           <div className="text-center mb-8 md:mb-12">
             <div className="relative">
-              <h2 className="text-3xl md:text-4xl font-bold mb-10 md:mb-16  ">
+              <h2 className="text-[16px] md:text-4xl font-bold mb-4 md:mb-16">
                 <span className="text-[#2d63cf]">
                   {t("features.title.part1")}
                 </span>
@@ -97,7 +97,7 @@ const FeaturesSection = () => {
                     />
                   </div>
                   <div className="">
-                    <h3 className="text-xl font-semibold text-[#9c25a0]">
+                    <h3 className="text-xl font-semibold text-[#9c25a0] pb-2">
                       {t(`features.items.${item.id}.title`)}
                     </h3>
                     <p className="text-gray-600">
