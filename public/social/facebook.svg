@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="facebook">
+<path id="Vector" d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0Z" fill="url(#paint0_linear_2593_34836)" style=""/>
+<path id="Vector_2" d="M22.7056 25.3008H27.8816L28.6946 20.0428H22.7056V17.1688C22.7056 14.9848 23.4196 13.0478 25.4626 13.0478H28.7456V8.45979C28.1686 8.38179 26.9486 8.21179 24.6436 8.21179C19.8296 8.21179 17.0076 10.7538 17.0076 16.5458V20.0438H12.0586V25.3018H17.0066V39.7538C17.9866 39.8998 18.9796 39.9998 19.9986 39.9998C20.9196 39.9998 21.8186 39.9158 22.7056 39.7958V25.3008Z" fill="white" style="fill:white;fill-opacity:1;"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2593_34836" x1="5.993" y1="5.993" x2="36.615" y2="36.615" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2AA4F4" style="stop-color:#2AA4F4;stop-color:color(display-p3 0.1647 0.6431 0.9569);stop-opacity:1;"/>
+<stop offset="1" stop-color="#007AD9" style="stop-color:#007AD9;stop-color:color(display-p3 0.0000 0.4784 0.8510);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+</svg>

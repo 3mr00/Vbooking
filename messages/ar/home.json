@@ -37,6 +37,10 @@
         "engaging_holiday": "عطلة ممتعة",
         "live_booking_desk": "مكتب الحجز المباشر",
         "operator_app": "تطبيق المشغل"
+      },
+      "resourcesLinks": {
+        "join_traveler": "انضم كمسافر",
+        "networking": "التواصل والشبكات"
       }
     },
     "header": {

@@ -1,0 +1,183 @@
+{
+   "Traveler": {
+    "title": "Contact Us",
+    "description": "Contact us to learn more about our services",
+    "hero": {
+      "title": {
+        "part1": "Itinerary & Travel",
+        "part2": "Management Made Easy"
+      },
+      "description": "Simplify and automate your travel business operations with TuRbo Travel Suite – the ultimate solution for MICEs, DMCs, and Travel Agents. Say goodbye to manual processes and hello to streamlined efficiency for you and your team.",
+      "button": "Get Started Now!",
+      "subtext": "Click below to explore how TuRbo Travel Suite can revolutionize your business.",
+      "image": {
+        "alt": "TuRbo Travel Suite illustration"
+      }
+    },
+    "decorative": {
+      "left": {
+        "alt": "Left decorative element"
+      },
+      "right": {
+        "alt": "Right decorative element"
+      }
+    },
+    "powerOfTurbo": {
+      "title": {
+        "part1": "The Power of",
+        "part2": "TuRbo Travel Suite"
+      },
+      "subtitle": "Everything You Need to Grow Your Travel Business",
+      "description": "TuRbo Travel Suite is your all-in-one solution for staying ahead in the competitive travel industry. Designed with the needs of MICEs, DMCs, and Travel Agents in mind, TuRbo provides the tools and technologies required to simplify operations, enhance customer experiences, and drive revenue growth."
+    },
+    "features": {
+      "title": {
+        "part1": "With TuRbo ",
+        "part2": "Travel Suite, you gain access to"
+      },
+      "items": {
+        "1": {
+          "title": "Booking Engine",
+          "description": "A seamless and efficient system to handle all client bookings effortlessly."
+        },
+        "2": {
+          "title": "CRM",
+          "description": "Advanced tools to manage client relationships and enhance engagement."
+        },
+        "3": {
+          "title": "Website",
+          "description": "A professional, responsive online presence integrated with your services."
+        },
+        "4": {
+          "title": "AI Agent",
+          "description": "Smart automation for customer inquiries, bookings, and 24/7 support."
+        },
+        "5": {
+          "title": "Management Tools",
+          "description": "Real-time tracking and control of your business operations."
+        },
+        "6": {
+          "title": "Holiday Builder",
+          "description": "Easily craft unique, customized holiday packages for your clients."
+        },
+        "7": {
+          "title": "Itinerary Builder",
+          "description": "Effortlessly design and share stunning, dynamic itineraries."
+        },
+        "8": {
+          "title": "Operations App",
+          "description": "Streamline day-to-day tasks with mobile-friendly tools for management on the go."
+        },
+        "9": {
+          "title": "Live Booking Desk",
+          "description": "Real-time support to handle complex booking needs and inquiries."
+        },
+        "10": {
+          "title": "Inventory and Supplier Management",
+          "description": "Optimize and manage your inventory and supplier network seamlessly."
+        }
+      }
+    },
+    "autoScroll": {
+      "title": "Powerful Features",
+      "description": "Discover how our platform transforms your travel business",
+      "features": {
+        "1": {
+          "title": "Deliver Exceptional Itineraries",
+          "description": "Impress clients with visually engaging, detailed, and interactive itineraries"
+        },
+        "2": {
+          "title": "Save Time with Automation",
+          "description": "Streamline repetitive tasks like follow-ups, confirmations, and customer communications"
+        },
+        "3": {
+          "title": "Elevate Customer Experiences",
+          "description": "Offer personalized services, quick responses, and AI-powered support"
+        },
+        "4": {
+          "title": "Stay Ahead of Competition",
+          "description": "Leverage cutting-edge technology to outpace competitors and serve customers better"
+        }
+      }
+    },
+    "productivity": {
+      "title": {
+        "part1": "Huge Positive ",
+        "part2": "Changes in Productivity"
+      },
+      "description": "Our customers are experiencing remarkable improvements in their productivity and conversions after adopting TuRbo Travel Suite. Here's how we're transforming their businesses",
+      "pattern": {
+        "alt": "Background pattern"
+      },
+      "items": {
+        "1": {
+          "title": "Increased Productivity",
+          "description": "Up by 80%, freeing up time for strategic growth"
+        },
+        "2": {
+          "title": "Higher Conversions",
+          "description": "Achieving a 42% boost in client bookings"
+        },
+        "3": {
+          "title": "Faster Itinerary Creation",
+          "description": "Create itineraries 15X faster, reducing planning time from hours to minutes"
+        },
+        "4": {
+          "title": "Reduced Manual Work",
+          "description": "Automate repetitive tasks, cutting manual workload by 70%"
+        },
+        "5": {
+          "title": "Enhanced Customer Response Times",
+          "description": "Respond to inquiries 3X faster, ensuring exceptional customer service"
+        },
+        "6": {
+          "title": "Improved Team Collaboration",
+          "description": "Boost team efficiency by 60% with real-time collaboration and streamlined workflows"
+        }
+      }
+    },
+    "cta": {
+      "description": "With TuRbo Travel Suite,businesses are not only working smarter but also achieving greater profitability and client satisfaction.Let us help you unlock your business's full potential!",
+      "button": "Book an intro call"
+    },
+     "whyTurbo": {
+      "title": {
+        "part1": "Why TuRbo is ",
+        "part2": "Your Best Choice"
+      },
+      "designed": {
+        "title": "Designed for Travel Professionals",
+        "description": "Created specifically for MICEs, DMCs, and agents"
+      },
+      "all_in_one": {
+        "title": "All-in-One Solution",
+        "description": "From bookings to itineraries and operations, everything in one place"
+      },
+      "user_friendly": {
+        "title": "User-Friendly",
+        "description": "Intuitive design for quick onboarding and fast results"
+      },
+      "cost_effective": {
+        "title": "Cost-Effective",
+        "description": "Minimize manual work, maximize profits"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Reliable assistance whenever you need it"
+      }
+    },
+    "customers": {
+      "title": {
+        "part1": "Our DMCs",
+        "part2": "Customers"
+      }
+      
+    },
+    "supercharge": {
+      "title": "Supercharge Your Travel Business Today",
+      "description": "Let TuRbo handle the heavy lifting while you focus on delivering incredible travel experiences.",
+      "button1": "Request a Demo",
+      "button2": "Get a Quote"
+    }
+  }
+}
