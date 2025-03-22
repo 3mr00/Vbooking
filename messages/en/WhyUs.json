@@ -1,0 +1,69 @@
+{
+  "WhyUs": {
+    "WhyUs": {
+      "title": "Why Choose VBooking?",
+      "subtitle": "We deliver excellence through innovation, reliability, and customer-focused solutions",
+      "reason1": {
+        "title": "Innovation at Heart",
+        "description": "We constantly evolve and adapt to the latest technologies to provide cutting-edge solutions"
+      },
+      "reason2": {
+        "title": "Reliable Performance",
+        "description": "Our robust platform ensures seamless operations with 99.9% uptime guarantee"
+      },
+      "reason3": {
+        "title": "Expert Support",
+        "description": "24/7 dedicated support team ready to assist you with any queries"
+      },
+      "reason4": {
+        "title": "Customer Success",
+        "description": "Your success is our priority - we grow together with our clients"
+      },
+      "stats": {
+        "title": "Our Impact in Numbers",
+        "clients": "500+",
+        "clientsLabel": "Happy Clients",
+        "projects": "1000+",
+        "projectsLabel": "Successful Projects",
+        "experience": "10+",
+        "experienceLabel": "Years of Experience"
+      }
+    },
+    "whatToExpect": {
+      "title": {
+        "part1": "What You",
+        "part2": "Can Expect"
+      },
+      "cards": [
+        {
+          "alt": "Streamlined Operations",
+          "title": "Streamlined Operations",
+          "description": "Discover how TuRbo can save you time, money, and resources by automating key processes"
+        },
+        {
+          "alt": "Effortless Itinerary Creation",
+          "title": "Effortless Itinerary Creation",
+          "description": "Learn how to create beautiful itineraries, quotes, proposals, and programs in minutes instead of hours"
+        },
+        {
+          "alt": "Tailored Solutions",
+          "title": "Tailored Solutions",
+          "description": "Understand how TuRbo aligns with your business goals to enhance productivity and drive growth"
+        },
+        {
+          "alt": "Quick & Convenient",
+          "title": "Quick & Convenient",
+          "description": "Just 15 minutes, no commitments, and a wealth of insights to take your travel business to the next level"
+        },
+        {
+          "alt": "AI-Driven Efficiency",
+          "title": "AI-Driven Efficiency",
+          "description": "Explore how TuRbo's AI agent handles customer inquiries, bookings, and support 24/7, reducing response times"
+        }
+      ],
+      "cta": {
+        "text": "Book an intro call"
+      }
+    }
+  }
+}

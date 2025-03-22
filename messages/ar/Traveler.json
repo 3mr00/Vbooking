@@ -1,0 +1,175 @@
+{
+  "title": "انضم إلى شبكتنا",
+  "description": "تواصل معنا وكن جزءًا من مجتمع السفر المتنامي",
+  "hero": {
+    "title": {
+      "part1": "انضم إلى",
+      "part2": "شبكة السفر"
+    },
+    "description": "انضم إلى شبكة محترفي السفر لدينا واكتشف عالمًا من الفرص. احصل على أدوات وموارد متطورة ستغير طريقة عملك.",
+    "button": "ابدأ الآن",
+    "subtext": "ابدأ رحلتك معنا اليوم واختبر مستقبل أعمال السفر.",
+    "image": {
+      "alt": "محترف السفر"
+    }
+  },
+  "powerOfTurbo": {
+    "title": {
+      "part1": "اختبر قوة",
+      "part2": "تيربو"
+    },
+    "subtitle": "حول أعمال السفر الخاصة بك",
+    "description": "اكتشف كيف يمكن لتيربو أن يحدث ثورة في عمليات أعمال السفر الخاصة بك ويعزز كفاءتك."
+  },
+  "features": {
+    "title": {
+      "part1": "مميزات",
+      "part2": "قوية"
+    },
+    "items": {
+      "1": {
+        "title": "محرك الحجز",
+        "description": "نظام سلس وفعال للتعامل مع جميع حجوزات العملاء بسهولة."
+      },
+      "2": {
+        "title": "إدارة علاقات العملاء",
+        "description": "أدوات متقدمة لإدارة علاقات العملاء وتعزيز المشاركة."
+      },
+      "3": {
+        "title": "موقع إلكتروني",
+        "description": "تواجد احترافي على الإنترنت متكامل مع خدماتك."
+      },
+      "4": {
+        "title": "وكيل ذكاء اصطناعي",
+        "description": "أتمتة ذكية لاستفسارات العملاء والحجوزات والدعم على مدار الساعة."
+      },
+      "5": {
+        "title": "أدوات الإدارة",
+        "description": "تتبع وتحكم في الوقت الفعلي لعمليات عملك."
+      },
+      "6": {
+        "title": "منشئ العطلات",
+        "description": "قم بإنشاء باقات عطلات فريدة ومخصصة لعملائك بسهولة."
+      },
+      "7": {
+        "title": "منشئ خط السير",
+        "description": "صمم وشارك خطط سير رحلات مذهلة وديناميكية بسهولة."
+      },
+      "8": {
+        "title": "تطبيق العمليات",
+        "description": "تبسيط المهام اليومية بأدوات متوافقة مع الأجهزة المحمولة للإدارة أثناء التنقل."
+      },
+      "9": {
+        "title": "مكتب الحجز المباشر",
+        "description": "دعم في الوقت الفعلي للتعامل مع احتياجات واستفسارات الحجز المعقدة."
+      },
+      "10": {
+        "title": "إدارة المخزون والموردين",
+        "description": "تحسين وإدارة مخزونك وشبكة الموردين بسلاسة."
+      }
+    }
+  },
+  "productivity": {
+    "title": {
+      "part1": "عزز",
+      "part2": "إنتاجيتك"
+    },
+    "description": "شاهد كيف يحول تيربو مقاييس أعمالك",
+    "pattern": {
+      "alt": "خلفية النمط"
+    },
+    "items": {
+      "1": {
+        "title": "زيادة الإنتاجية",
+        "description": "ارتفاع بنسبة 80٪، مما يوفر وقتًا للنمو الاستراتيجي."
+      },
+      "2": {
+        "title": "تحويلات أعلى",
+        "description": "تحقيق زيادة بنسبة 42٪ في حجوزات العملاء."
+      },
+      "3": {
+        "title": "إنشاء خط سير أسرع",
+        "description": "إنشاء خطط سير الرحلات أسرع 15 مرة، مما يقلل وقت التخطيط من ساعات إلى دقائق."
+      },
+      "4": {
+        "title": "تقليل العمل اليدوي",
+        "description": "أتمتة المهام المتكررة، مما يقلل عبء العمل اليدوي بنسبة 70٪."
+      },
+      "5": {
+        "title": "تحسين أوقات الاستجابة للعملاء",
+        "description": "الرد على الاستفسارات أسرع 3 مرات، مما يضمن خدمة عملاء استثنائية."
+      },
+      "6": {
+        "title": "تحسين تعاون الفريق",
+        "description": "تعزيز كفاءة الفريق بنسبة 60٪ مع التعاون في الوقت الفعلي وسير العمل المبسط."
+      }
+    }
+  },
+  "cta": {
+    "description": "هل أنت مستعد لتحويل أعمال السفر الخاصة بك؟ انضم إلى تيربو اليوم واختبر الفرق.",
+    "button": "ابدأ الآن"
+  },
+  "whyTurbo": {
+    "title": {
+      "part1": "لماذا تختار",
+      "part2": "تيربو"
+    },
+    "designed": {
+      "title": "مصمم لمحترفي السفر",
+      "description": "مصمم خصيصًا للاحتياجات الفريدة لأعمال السفر"
+    },
+    "all_in_one": {
+      "title": "حل شامل",
+      "description": "كل ما تحتاجه لإدارة أعمال السفر الخاصة بك بكفاءة"
+    },
+    "user_friendly": {
+      "title": "واجهة سهلة الاستخدام",
+      "description": "تصميم بديهي سهل التعلم والاستخدام"
+    },
+    "cost_effective": {
+      "title": "فعال من حيث التكلفة",
+      "description": "حلول بأسعار معقولة تقدم عائد استثمار كبير"
+    },
+    "support": {
+      "title": "دعم على مدار الساعة",
+      "description": "مساعدة على مدار الساعة طوال أيام الأسبوع عندما تحتاج إليها"
+    }
+  },
+  "customers": {
+    "title": {
+      "part1": "موثوق به من قبل شركات",
+      "part2": "السياحة الرائدة"
+    },
+    "logo2": {
+      "alt": "شعار الشريك"
+    }
+  },
+  "supercharge": {
+    "title": "عزز أعمال السفر الخاصة بك",
+    "description": "انضم إلى تيربو اليوم وغير طريقة إدارة أعمالك",
+    "button1": "ابدأ الآن",
+    "button2": "اعرف المزيد"
+  },
+  "autoScroll": {
+    "title": "Powerful Features",
+    "description": "Discover how our platform transforms your travel business",
+    "features": {
+      "1": {
+        "title": "Deliver Exceptional Itineraries",
+        "description": "Impress clients with visually engaging, detailed, and interactive itineraries"
+      },
+      "2": {
+        "title": "Save Time with Automation",
+        "description": "Streamline repetitive tasks like follow-ups, confirmations, and customer communications"
+      },
+      "3": {
+        "title": "Elevate Customer Experiences",
+        "description": "Offer personalized services, quick responses, and AI-powered support"
+      },
+      "4": {
+        "title": "Stay Ahead of Competition",
+        "description": "Leverage cutting-edge technology to outpace competitors and serve customers better"
+      }
+    }
+  }
+}
