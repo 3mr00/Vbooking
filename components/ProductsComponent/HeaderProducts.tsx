@@ -54,10 +54,9 @@ const HeaderProducts: React.FC<HeaderProductsProps> = ({ productId }) => {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
-          <h1 className="md:text-[2.5rem] text-[1.6rem] font-medium mb-4">
-            <span className="text-[#9c25a0]">{headerData.titlePart1}</span>
-            <br />
-            <span className="text-[#2d63cf]">{headerData.titlePart2}</span>
+          <h1 className="flex flex-wrap gap-2 md:text-[2.35rem] text-[1.6rem] font-medium mb-4">
+            <div className="text-[#9c25a0]">{headerData.titlePart1}</div>
+            <div className="text-[#2d63cf]">{headerData.titlePart2}</div>
           </h1>
           <p className="text-[#667085] md:text-[.8rem] text-[.6rem] font-normal mb-4">
             {headerData.description}

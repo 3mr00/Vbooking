@@ -4,6 +4,9 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
 import {
   ProdouctsBeh,
+  ProdouctsBook1,
+  ProdouctsBook2,
+  ProdouctsBook3,
   Prodouctsknow,
   ProdouctsVector,
   Prodouctsvoice,
@@ -42,17 +45,20 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
   // Fetch customization cards data and filter out empty cards
   const customizationCards = [
     {
-      icon: <Prodouctsvoice />,
+      icon:
+        productId === "TurboBooking" ? <ProdouctsBook1 /> : <Prodouctsvoice />,
       title: t(`${productId}.cards.voicePersonalization.title`),
       description: t(`${productId}.cards.voicePersonalization.description`),
     },
     {
-      icon: <ProdouctsVector />,
+      icon:
+        productId === "TurboBooking" ? <ProdouctsBook2 /> : <ProdouctsVector />,
       title: t(`${productId}.cards.avatarCustomization.title`),
       description: t(`${productId}.cards.avatarCustomization.description`),
     },
     {
-      icon: <Prodouctsknow />,
+      icon:
+        productId === "TurboBooking" ? <ProdouctsBook3 /> : <Prodouctsknow />,
       title: t(`${productId}.cards.behaviorSettings.title`),
       description: t(`${productId}.cards.behaviorSettings.description`),
     },
@@ -126,42 +132,88 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
   return (
     <>
       {productId === "AiTravel" || productId === "TurboBooking" ? (
-        <section className="bg-gradient-to-b from-[#ECF8F8] via-[#F9DBE8] to-[#E5F5F6] w-full py-10 flex flex-col justify-start items-start gap-2.5">
-          <CustomContainer className="bg-[url(../../assets/images/image/CustomizationProducts.png)] bg-cover bg-center">
-            <div className="w-full flex flex-col justify-start items-start gap-6">
-              <div className="w-full text-center">
-                <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
-                  {t(`${productId}.title.part1`)}{" "}
-                </span>
-                <span className="text-fuchsia-700 text-2xl md:text-3xl lg:text-4xl font-medium">
-                  {t(`${productId}.title.part2`)}
-                </span>
-              </div>
+        <section className="bg-gradient-to-b from-[#ECF8F8] via-[#F9DBE8] to-[#E5F5F6] w-full flex flex-col justify-start items-center gap-6">
+          <CustomContainer className="bg-[url(../../assets/images/image/CustomizationProducts.png)] bg-cover bg-center w-full py-10 flex flex-col justify-center items-center gap-6">
+            {/* Title */}
+            <div className="text-center">
+              <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
+                {t(`${productId}.title.part1`)}
+              </span>
+              <span className="text-fuchsia-700 text-2xl md:text-3xl lg:text-4xl font-medium">
+                {t(`${productId}.title.part2`)}
+              </span>
+            </div>
 
-              {/* Dynamic Cards Grid */}
-              {customizationCards.length > 0 && (
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {customizationCards.map((card, index) => (
+            {/* Conditional Layout */}
+            {customizationCards.length > 3 ? (
+              /** More than 3 items → Two-column layout */
+              <div className="w-full  bg-white rounded-2xl outline outline-2 outline-offset-[-2px] outline-fuchsia-700 flex flex-wrap justify-center items-stretch">
+                {customizationCards.map((card, index) => {
+                  const isLastInRow =
+                    index % 2 === 1 || index === customizationCards.length - 1;
+
+                  return (
                     <div
                       key={index}
-                      className="w-full bg-white rounded-2xl outline outline-2 outline-offset-[-2px] outline-fuchsia-700 p-6 flex flex-col justify-start items-start gap-2"
+                      className={`w-full md:w-1/2 p-6 border-fuchsia-700 flex flex-col justify-start items-start gap-2 
+                border-b last:border-b-0 
+                md:border-b-0 ${
+                  !isLastInRow
+                    ? tLang("lang") === "en"
+                      ? "md:border-r-2"
+                      : "md:border-l-2"
+                    : ""
+                } 
+                ${
+                  index < customizationCards.length - 2 ? "md:border-b-2" : ""
+                }`}
                     >
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 relative bg-[#F9F5FF] rounded-[100px]">
-                        <div className="w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] absolute left-[0px] top-[0px] sm:top-[0px] overflow-hidden">
-                          {card.icon}
-                        </div>
+                      {/* Icon */}
+                      <div className="w-20 h-20 bg-[#F9F5FF] rounded-full flex justify-start items-start">
+                        <div className="w-16 h-16">{card.icon}</div>
                       </div>
-                      <div className="w-full text-fuchsia-700 text-lg sm:text-xl font-semibold leading-9">
+
+                      {/* Title */}
+                      <div className="text-fuchsia-700 text-xl font-semibold">
                         {card.title}
                       </div>
-                      <div className="w-full text-gray-500 text-sm sm:text-base font-normal leading-tight">
+
+                      {/* Description */}
+                      <div className="text-gray-500 text-base">
                         {card.description}
                       </div>
                     </div>
-                  ))}
-                </div>
-              )}
-            </div>
+                  );
+                })}
+              </div>
+            ) : (
+              /** 3 or fewer items → Single-row flex-grow layout */
+              <div className="w-full  bg-white rounded-2xl outline outline-2 outline-offset-[-2px] outline-fuchsia-700 flex flex-wrap justify-center items-stretch">
+                {customizationCards.map((card, index) => (
+                  <div
+                    key={index}
+                    className={`flex-1 min-w-[280px] p-6 border-fuchsia-700 border-b last:border-b-0 
+                      ${tLang("lang") === "en" ? "md:border-r" : "md:border-l"} 
+                    md:border-b-0 flex flex-col justify-start items-start gap-4`}
+                  >
+                    {/* Icon */}
+                    <div className="w-20 h-20 bg-[#F9F5FF] rounded-full flex justify-start items-start">
+                      <div className="w-16 h-16">{card.icon}</div>
+                    </div>
+
+                    {/* Title */}
+                    <div className="text-fuchsia-700 text-xl font-semibold text-start">
+                      {card.title}
+                    </div>
+
+                    {/* Description */}
+                    <div className="text-gray-500 text-base text-start">
+                      {card.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </CustomContainer>
         </section>
       ) : (
@@ -234,40 +286,42 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
         )}
 
         {/* Features Section */}
-        {productId !== "EngagementPackage" && featuresCards.length > 0 && (
-          <section className="w-full py-10 flex flex-col justify-center items-center gap-2.5">
-            <div className="w-full flex flex-col justify-start items-start gap-6">
-              <div className="w-full text-center">
-                <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
-                  {t(`${productId}.features.title.part1`)}{" "}
-                </span>
-                <span className="text-fuchsia-700 text-2xl md:text-3xl lg:text-4xl font-medium">
-                  {t(`${productId}.features.title.part2`)}{" "}
-                </span>
-                <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
-                  {t(`${productId}.features.title.part3`)}
-                </span>
-              </div>
+        {productId !== "EngagementPackage" &&
+          productId !== "OperatorApp" &&
+          featuresCards.length > 0 && (
+            <section className="w-full py-10 flex flex-col justify-center items-center gap-2.5">
+              <div className="w-full flex flex-col justify-start items-start gap-6">
+                <div className="w-full text-center">
+                  <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
+                    {t(`${productId}.features.title.part1`)}{" "}
+                  </span>
+                  <span className="text-fuchsia-700 text-2xl md:text-3xl lg:text-4xl font-medium">
+                    {t(`${productId}.features.title.part2`)}{" "}
+                  </span>
+                  <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
+                    {t(`${productId}.features.title.part3`)}
+                  </span>
+                </div>
 
-              {/* Features Cards */}
-              <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {featuresCards.map((card, index) => (
-                  <div
-                    key={index}
-                    className="w-full p-6 bg-white rounded-2xl shadow-[8px_9px_0px_0px_rgba(0,0,0,0.10)] outline outline-2 outline-offset-[-2px] outline-fuchsia-700 flex flex-col justify-start items-center gap-4"
-                  >
-                    <div className="w-full text-fuchsia-700 text-lg sm:text-xl font-semibold leading-snug">
-                      {card.title}
+                {/* Features Cards */}
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {featuresCards.map((card, index) => (
+                    <div
+                      key={index}
+                      className="w-full p-6 bg-white rounded-2xl shadow-[8px_9px_0px_0px_rgba(0,0,0,0.10)] outline outline-2 outline-offset-[-2px] outline-fuchsia-700 flex flex-col justify-start items-center gap-4"
+                    >
+                      <div className="w-full text-fuchsia-700 text-lg sm:text-xl font-semibold leading-snug">
+                        {card.title}
+                      </div>
+                      <div className="w-full text-gray-500 text-sm sm:text-base font-normal leading-tight">
+                        {card.description}
+                      </div>
                     </div>
-                    <div className="w-full text-gray-500 text-sm sm:text-base font-normal leading-tight">
-                      {card.description}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          </section>
-        )}
+            </section>
+          )}
 
         {/* CTA Section */}
         <section className="w-full py-10 flex justify-center items-center">

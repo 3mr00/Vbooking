@@ -109,68 +109,72 @@ const KeyBenefitsProducts = ({ productId }: { productId: ProductId }) => {
           {/* Benefits Container */}
           <div className="w-full p-6 bg-white rounded-2xl flex flex-col justify-start items-start gap-6">
             {benefitsData?.map((benefit: BenefitCategory, index: number) => (
-              <div
-                key={index}
-                className="w-full flex flex-col sm:flex-row justify-start items-start gap-6 sm:gap-20"
-              >
-                {/* Category Title */}
-                <div className="w-full sm:w-72 text-start text-fuchsia-700 text-xl font-semibold">
-                  {benefit.category}
+              <>
+                <div
+                  key={index}
+                  className="w-full flex flex-col sm:flex-row justify-start items-start gap-6 sm:gap-20"
+                >
+                  {/* Category Title */}
+                  <div className="w-full sm:w-72 text-start text-fuchsia-700 text-xl font-semibold">
+                    {benefit.category}
+                  </div>
+
+                  {/* Benefit Items */}
+                  <div className="flex-1 flex flex-col justify-center items-start gap-4">
+                    {benefit.items.map((item: BenefitItem, idx: number) => (
+                      <>
+                        <div key={idx}>
+                          <div className="w-full flex items-start gap-2">
+                            {/* Icon */}
+                            <FaCircleCheck className="h-5 w-5 text-[#2d63cf] flex-shrink-0 mt-1" />
+
+                            {/* Text Content */}
+                            <div className="flex-1">
+                              <span className="text-blue-700 text-base font-semibold">
+                                {item.title ? item.title + ":" : item.title}
+                              </span>
+                              <span className="text-gray-500 text-base font-normal">
+                                {" "}
+                                {item.description}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </>
+                    ))}
+                  </div>
                 </div>
 
-                {/* Benefit Items */}
-                <div className="flex-1 flex flex-col justify-center items-start gap-4">
-                  {benefit.items.map((item: BenefitItem, idx: number) => (
-                    <div key={idx}>
-                      <div className="w-full flex items-start gap-2">
-                        {/* Icon */}
-                        <FaCircleCheck className="h-5 w-5 text-[#2d63cf] flex-shrink-0 mt-1" />
-
-                        {/* Text Content */}
-                        <div className="flex-1">
-                          <span className="text-blue-700 text-base font-semibold">
-                            {item.title ? item.title + ":" : item.title}
-                          </span>
-                          <span className="text-gray-500 text-base font-normal">
-                            {" "}
-                            {item.description}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Separator */}
-                      {index < benefitsData.length - 1 && (
-                        <div className="w-full">
-                          <svg
-                            width="100%"
-                            height="2"
-                            viewBox="0 0 1374 2"
-                            fill="none"
-                          >
-                            <path
-                              d="M1373 1.00012L1 1"
-                              stroke="url(#gradient)"
-                              strokeLinecap="round"
-                            />
-                            <defs>
-                              <radialGradient
-                                id="gradient"
-                                cx="0"
-                                cy="0"
-                                r="1"
-                                gradientUnits="userSpaceOnUse"
-                              >
-                                <stop stopColor="#A8DCE1" />
-                                <stop offset="1" stopColor="#D7EFF1" />
-                              </radialGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
+                {/* Separator */}
+                {index < benefitsData.length - 1 && (
+                  <div className="w-full">
+                    <svg
+                      width="100%"
+                      height="2"
+                      viewBox="0 0 1374 2"
+                      fill="none"
+                    >
+                      <path
+                        d="M1373 1.00012L1 1"
+                        stroke="url(#gradient)"
+                        strokeLinecap="round"
+                      />
+                      <defs>
+                        <radialGradient
+                          id="gradient"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#A8DCE1" />
+                          <stop offset="1" stopColor="#D7EFF1" />
+                        </radialGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                )}
+              </>
             ))}
           </div>
         </div>
