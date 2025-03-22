@@ -117,13 +117,13 @@ const links: LinkType[] = [
     title: "navbar.resources",
     links: [
       {
-        title: "navbar.resourcesLinks.join_traveler",
-        url: "/resources/join_traveler",
+        title: "navbar.resourcesLinks.itinerary-travel",
+        url: "/resources/itinerary-travel",
       },
       {
-        title: "navbar.resourcesLinks.networking",
-        url: "/resources/networking",
-      }
+        title: "navbar.resourcesLinks.travel-management",
+        url: "/resources/travel-management",
+      },
     ],
   },
 ];

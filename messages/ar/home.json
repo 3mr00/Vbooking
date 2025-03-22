@@ -39,8 +39,8 @@
         "operator_app": "تطبيق المشغل"
       },
       "resourcesLinks": {
-        "join_traveler": "انضم كمسافر",
-        "networking": "التواصل والشبكات"
+        "itinerary-travel": "بناء مسار السفر",
+        "travel-management": "إدارة السفر"
       }
     },
     "header": {

@@ -43,8 +43,8 @@
         "operator_app": "Operator App"
       },
       "resourcesLinks": {
-        "join_traveler": "Join as a traveler",
-        "networking": "Networking"
+        "itinerary-travel": "Itinerary & Travel",
+        "travel-management": "Travel Management"
       }
     },
 

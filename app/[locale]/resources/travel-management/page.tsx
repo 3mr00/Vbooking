@@ -2,7 +2,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import TestimonialSection from "@/components/joinTravelerComponent/TestimonialSection";
+import TestimonialSection from "@/components/TravelManagement/TestimonialSection";
 
 interface Card {
   icon: string;
@@ -14,7 +14,7 @@ interface Card {
 export const metadata: Metadata = {
   title: "Why Choose Us | VBooking",
   description:
-    "Discover why VBooking is your best choice for booking solutions."
+    "Discover why VBooking is your best choice for booking solutions.",
 };
 
 export default function WhyUsPage() {
@@ -108,7 +108,6 @@ export default function WhyUsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* log whatToExpect */}
-            
 
             {t.raw("whatToExpect.cards").map((card: Card, index: number) => (
               <div
