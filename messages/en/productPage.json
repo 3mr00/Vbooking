@@ -1,25 +1,17 @@
 {
   "products": {
-    "Navbar": {
-      "turbo_booking_engine": "Turbo Booking Engine",
-      "ai_agent": "AI Agent",
-      "travel_crm": "Travel CRM",
-      "engaging_holiday": "Engaging Holiday",
-      "live_booking_desk": "Live Booking Desk",
-      "operator_app": "Operator App"
-    },
     "Header": {
       "AiTravel": {
-        "titlePart1": "AI Travel Agent",
-        "titlePart2": "Revolutionize Your Booking Operations",
-        "description": "Transform your travel agency with AI-powered booking assistance that streamlines operations and enhances client experiences.",
-        "buttonText": "Learn More"
+        "titlePart1": "AI Travel Agent - Revolutionize",
+        "titlePart2": "Your Booking Operations",
+        "description": "Empower your sales team with AI-driven real-time interactions, boosting engagement and conversions.",
+        "buttonText": "Try the Ai Travel Agent Now"
       },
       "EngagementPackage": {
         "titlePart1": "Engagement Package",
         "titlePart2": "Builder",
-        "description": "Create customized travel packages that drive client engagement and boost conversion rates with our intuitive builder tool.",
-        "buttonText": "Learn More"
+        "description": "Empower your travel agency to create customized packages that enhance customer satisfaction and boost sales.",
+        "buttonText": "Explore a Demo"
       },
       "LiveBooking": {
         "titlePart1": "Live Booking Data",
@@ -46,8 +38,8 @@
         "description": "The Ai Travel Agent is a state-of-the-art AI-driven assistant designed to elevate the booking experience for both customers and travel agents. Acting as a virtual sales employee, this AI engages in real-time, providing personalized support through voice and video interactions. It seamlessly integrates into your Live Booking Desk, facilitating smooth and efficient bookings while enhancing customer satisfaction."
       },
       "EngagementPackage": {
-        "title": "Engagement Package Builder",
-        "description": "The Engagement Package Builder is designed to help travel agencies create tailored travel experiences for their clients with ease. In a market where customization is key, this tool enables travel agents and tour operators to assemble personalized packages that combine accommodations, transportation, and activities into seamless offerings."
+        "title": "Over View",
+        "description": "The Engagement Package Builder is designed to help travel agencies create tailored travel experiences for their clients with ease. In a market where customization is key, this tool enables travel agents and tour operators to assemble personalized packages that combine accommodations, transportation, and activities into seamless offerings. Whether selling directly to travelers or collaborating with other travel agents, this product helps you stay competitive, retain clients, and attract new ones by offering unique travel solutions."
       },
       "LiveBooking": {
         "title": "Over View",
@@ -127,7 +119,7 @@
             "category": "Tailored Packages",
             "items": [
               {
-                "title": "Customizable Travel Packages",
+                "title": "",
                 "description": "Easily combine services like hotels, flights, transportation, and activities into one cohesive package that perfectly matches the client's preferences."
               }
             ]
@@ -136,7 +128,7 @@
             "category": "Customer Loyalty",
             "items": [
               {
-                "title": "Personalized Experiences",
+                "title": "",
                 "description": "By providing highly personalized packages, your customers feel valued and satisfied, leading to greater client retention and repeat bookings."
               }
             ]
@@ -145,7 +137,7 @@
             "category": "Ease of Use",
             "items": [
               {
-                "title": "User-Friendly Interface",
+                "title": "",
                 "description": "The tool is designed with a user-friendly interface that makes it simple to create and manage even the most complex itineraries."
               }
             ]
@@ -154,7 +146,7 @@
             "category": "Competitive Edge",
             "items": [
               {
-                "title": "Stand Out from Competitors",
+                "title": "",
                 "description": "Stand out from the competition by offering customizable packages that cater to the specific desires of your clients."
               }
             ]
@@ -163,7 +155,7 @@
             "category": "Integrated Content Support",
             "items": [
               {
-                "title": "Ready-to-Sell Packages",
+                "title": "",
                 "description": "vBooking provides all the necessary content, making it easy to present ready-to-sell packages in a professional manner."
               }
             ]
@@ -172,7 +164,7 @@
             "category": "Multi-Channel Sales",
             "items": [
               {
-                "title": "Expand Sales Channels",
+                "title": "",
                 "description": "Sell your packages either directly to clients via the vBooking app or collaborate with travel agents using our marketplace."
               }
             ]
@@ -452,11 +444,11 @@
     },
 
     "CustomizationProducts": {
-      "title": "Key Benefits",
+      "title": "Customization Options",
       "AiTravel": {
         "title": {
-          "part1": "AI Travel Agent",
-          "part2": "Customization Options"
+          "part1": "Customization",
+          "part2": "Options"
         },
         "cards": {
           "voicePersonalization": {
@@ -478,18 +470,18 @@
         },
         "technology": {
           "title": {
-            "part1": "AI Travel Agent",
-            "part2": "Technology"
+            "part1": "Techn",
+            "part2": "ology"
           },
-          "description": "The AI Travel Agent leverages cutting-edge artificial intelligence and machine learning technologies to deliver a highly responsive and interactive customer experience. Its extensive knowledge base, equipped with over 4 million travel industry articles and multimedia content, allows it to provide accurate and up-to-date information on a global scale."
+          "description": "The Ai Travel Agent leverages cutting-edge artificial intelligence and machine learning technologies to deliver a highly responsive and interactive customer experience. Its extensive knowledge base, equipped with over 4 million travel industry articles and multimedia content, allows it to provide accurate and up-to-date information on a global scale. The AI’s customizable features, including voice, avatar, and behavior settings, ensure it aligns perfectly with your brand's identity, offering a tailored service to every client."
         },
         "benefits": {
           "title": {
-            "part1": "How can Travel Agents",
-            "part2": "Benefit from this Feature?",
-            "part3": "Maximizing the AI Agent's Potential"
+            "part1": "How can Travel",
+            "part2": "Agents benefit from ",
+            "part3": "this feature?"
           },
-          "description": "For travel agents, the AI Travel Agent is a game-changer. It acts as an extension of your sales team, handling routine inquiries, providing detailed travel information, and guiding customers through the booking process.",
+          "description": "Maximizing the AI Agent's Potential:For travel agents, the Ai Travel Agent is a game-changer. It acts as an extension of your sales team, handling routine inquiries, providing detailed travel information, and guiding customers through the booking process. Here’s how you can benefit",
           "cards": {
             "seamlessIntegration": {
               "title": "Seamless Integration",
@@ -515,9 +507,9 @@
         },
         "features": {
           "title": {
-            "part1": "How Our Features",
-            "part2": "Make a Difference",
-            "part3": ""
+            "part1": "How Our ",
+            "part2": "Features Make",
+            "part3": "a Difference?"
           },
           "cards": {
             "boostEfficiency": {
@@ -543,7 +535,7 @@
           "description": "Experience the difference that vbooking's innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
           "buttons": {
             "requestDemo": "Request a Demo",
-            "getQuote": "Contact Us"
+            "getQuote": "Get a Quote"
           }
         }
       },
@@ -572,38 +564,39 @@
         },
         "technology": {
           "title": {
-            "part1": "Engagement Package Builder",
-            "part2": "Technology"
+            "part1": "Techn",
+            "part2": "ology"
           },
-          "description": "The Engagement Package Builder is powered by vBooking's cutting-edge technology, which integrates real-time data from various service providers. This technology allows for seamless booking of flights, accommodations, and activities all within a single platform. Our AI-powered tools help optimize itineraries based on client preferences and market trends, ensuring you deliver the best possible experiences."
+          "description": "The Engagement Package Builder is powered by vBooking’s cutting-edge technology, which integrates real-time data from various service providers. This technology allows for seamless booking of flights, accommodations, and activities all within a single platform. Our AI-powered tools help optimize itineraries based on client preferences and market trends, ensuring you deliver the best possible experiences. Additionally, the platform provides built-in analytics to track package performance and customer engagement, giving you the insights you need to continually refine your offerings."
         },
         "benefits": {
           "title": {
-            "part1": "How Can Travel Agents",
-            "part2": "Benefit from This Product?",
-            "part3": ""
+            "part1": "How Can Travel",
+            "part2": "Agents Benefit from",
+            "part3": "This Product?"
           },
           "description": "Travel agents can leverage the Engagement Package Builder to enhance efficiency, boost revenue, expand reach, increase professionalism, and broaden sales channels.",
+
           "cards": {
             "seamlessIntegration": {
-              "title": "",
-              "description": ""
-            },
-            "enhancedCustomerEngagement": {
               "title": "Enhanced Efficiency",
               "description": "Streamline the process of building travel packages, saving time and effort while increasing the quality of the end product."
             },
-            "increasedProductivity": {
+            "enhancedCustomerEngagement": {
               "title": "Boost Revenue",
               "description": "With customizable packages, agents can upsell premium services and offer more attractive deals, ultimately increasing sales and profit margins."
             },
-            "higherConversionRates": {
+            "increasedProductivity": {
               "title": "Expand Reach",
               "description": "By offering unique, customized packages, agents can appeal to a broader client base, reaching new customers and retaining loyal ones."
             },
-            "scalableCustomerSupport": {
+            "higherConversionRates": {
               "title": "Increase Professionalism",
               "description": "The pre-built content provided by vBooking allows agents to present polished and professional-looking packages to their clients, enhancing credibility."
+            },
+            "scalableCustomerSupport": {
+              "title": "Broaden Sales Channels",
+              "description": "The ability to sell through the vBooking marketplace or directly to travelers gives agents flexibility in how they approach their sales strategy."
             }
           }
         },
@@ -633,11 +626,11 @@
           }
         },
         "cta": {
-          "title": "Transform Your Business Today",
-          "description": "Experience the difference that vbooking's innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
+          "title": "Contact Us Today to Get Started",
+          "description": "Experience the difference that vbooking’s innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
           "buttons": {
             "requestDemo": "Request a Demo",
-            "getQuote": "Contact Us"
+            "getQuote": "Get a Quote"
           }
         }
       },
@@ -674,8 +667,8 @@
         "benefits": {
           "title": {
             "part1": "How can Travel Agents",
-            "part2": "Benefit from this Feature?",
-            "part3": ""
+            "part2": "Benefit from",
+            "part3": "this Feature?"
           },
           "description": "Travel agents can leverage the Live Booking Desk to enhance their consultation sessions, offering clients a more interactive and engaging experience.",
           "cards": {
@@ -731,7 +724,7 @@
           "description": "Experience the difference that vbooking's innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
           "buttons": {
             "requestDemo": "Request a Demo",
-            "getQuote": "Contact Us"
+            "getQuote": "Get a Quote"
           }
         }
       },
@@ -825,7 +818,7 @@
           "description": "Experience the difference that vbooking's innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
           "buttons": {
             "requestDemo": "Request a Demo",
-            "getQuote": "Contact Us"
+            "getQuote": "Get a Quote"
           }
         }
       },
@@ -919,7 +912,7 @@
           "description": "Experience the difference that vbooking's innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
           "buttons": {
             "requestDemo": "Request a Demo",
-            "getQuote": "Contact Us"
+            "getQuote": "Get a Quote"
           }
         }
       }

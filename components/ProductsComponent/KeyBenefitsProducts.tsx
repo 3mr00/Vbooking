@@ -114,7 +114,7 @@ const KeyBenefitsProducts = ({ productId }: { productId: ProductId }) => {
                 className="w-full flex flex-col sm:flex-row justify-start items-start gap-6 sm:gap-20"
               >
                 {/* Category Title */}
-                <div className="w-full sm:w-72 text-start text-fuchsia-700 text-xl font-normal">
+                <div className="w-full sm:w-72 text-start text-fuchsia-700 text-xl font-semibold">
                   {benefit.category}
                 </div>
 
@@ -129,7 +129,7 @@ const KeyBenefitsProducts = ({ productId }: { productId: ProductId }) => {
                         {/* Text Content */}
                         <div className="flex-1">
                           <span className="text-blue-700 text-base font-semibold">
-                            {item.title}:
+                            {item.title ? item.title + ":" : item.title}
                           </span>
                           <span className="text-gray-500 text-base font-normal">
                             {" "}

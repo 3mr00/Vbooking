@@ -52,12 +52,12 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
       description: t(`${productId}.cards.avatarCustomization.description`),
     },
     {
-      icon: <ProdouctsBeh />,
+      icon: <Prodouctsknow />,
       title: t(`${productId}.cards.behaviorSettings.title`),
       description: t(`${productId}.cards.behaviorSettings.description`),
     },
     {
-      icon: <Prodouctsknow />,
+      icon: <ProdouctsBeh />,
       title: t(`${productId}.cards.knowledgeBaseManagement.title`),
       description: t(`${productId}.cards.knowledgeBaseManagement.description`),
     },
@@ -182,24 +182,24 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
             </div>
           </div>
           <div className="w-full flex justify-center items-start">
-            <div className="w-full text-gray-500 text-sm sm:text-base font-normal leading-normal">
+            <div className="w-full text-gray-500 text-sm sm:text-base  font-normal leading-normal">
               {t(`${productId}.technology.description`)}
             </div>
           </div>
         </section>
 
-        {/* Benefits Section */}
+        {/* How Can Travel  Section */}
         {benefitsCards.length > 0 && (
           <section className="w-full py-10 flex flex-col justify-start items-center gap-6">
-            <div className="w-full flex flex-col justify-start items-center gap-2">
+            <div className="w-full flex flex-col justify-start items-center gap-2 md:px-28">
               <div className="w-full text-center">
-                <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
+                <span className="text-blue-900 text-xl md:text-2xl lg:text-3xl font-medium">
                   {t(`${productId}.benefits.title.part1`)}{" "}
                 </span>
-                <span className="text-fuchsia-700 text-2xl md:text-3xl lg:text-4xl font-medium">
+                <span className="text-fuchsia-700 text-xl md:text-2xl lg:text-3xl font-medium">
                   {t(`${productId}.benefits.title.part2`)}{" "}
                 </span>
-                <span className="text-blue-900 text-2xl md:text-3xl lg:text-4xl font-medium">
+                <span className="text-blue-900 text-xl md:text-2xl lg:text-3xl font-medium">
                   {t(`${productId}.benefits.title.part3`)}
                 </span>
               </div>
@@ -207,15 +207,18 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
                 {t(`${productId}.benefits.description`)}
               </div>
             </div>
-
             {/* Benefits Cards */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="w-full flex flex-col lg:flex-row lg:flex-wrap gap-6">
               {benefitsCards.map((card, index) => (
                 <div
                   key={index}
-                  className="w-full p-6 bg-white rounded-2xl flex flex-col justify-start items-start gap-3"
+                  className={`w-full p-6 bg-white rounded-2xl flex flex-col justify-start items-start gap-3 ${
+                    index < 3
+                      ? "lg:w-[calc(33.333%-1.5rem)]"
+                      : "lg:w-[calc(50%-1.5rem)]"
+                  }`}
                 >
-                  <div className="w-full text-fuchsia-700 text-md sm:text-lg font-normal">
+                  <div className="w-full text-fuchsia-700 text-md sm:text-md font-semibold">
                     {card.title}
                   </div>
                   <div className="w-full flex justify-start items-start gap-2">
@@ -226,12 +229,12 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
                   </div>
                 </div>
               ))}
-            </div>
+            </div>{" "}
           </section>
         )}
 
         {/* Features Section */}
-        {featuresCards.length > 0 && (
+        {productId !== "EngagementPackage" && featuresCards.length > 0 && (
           <section className="w-full py-10 flex flex-col justify-center items-center gap-2.5">
             <div className="w-full flex flex-col justify-start items-start gap-6">
               <div className="w-full text-center">
@@ -273,7 +276,7 @@ const CustomizationProducts: React.FC<CustomizationProductsProps> = ({
               <div className="w-full text-center text-white text-2xl md:text-3xl lg:text-4xl font-medium">
                 {t(`${productId}.cta.title`)}
               </div>
-              <div className="w-full text-center text-white text-sm sm:text-base font-normal">
+              <div className="w-full text-center text-white text-sm  font-normal">
                 {t(`${productId}.cta.description`)}
               </div>
             </div>
