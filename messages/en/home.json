@@ -41,6 +41,10 @@
         "engaging_holiday": " Engagement Package Builder",
         "live_booking_desk": "Live Booking Desk",
         "operator_app": "Operator App"
+      },
+      "resourcesLinks": {
+        "join_traveler": "Join as a traveler",
+        "networking": "Networking"
       }
     },
 

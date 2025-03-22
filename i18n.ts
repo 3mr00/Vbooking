@@ -8,6 +8,8 @@ export default getRequestConfig(async ({ locale }) => {
       ...(await import(`./messages/${locale}/productPage.json`)).default,
       ...(await import(`./messages/${locale}/technologyPage.json`)).default,
       ...(await import(`./messages/${locale}/turboPage.json`)).default,
+      ...(await import(`./messages/${locale}/Traveler.json`)).default,
+      ...(await import(`./messages/${locale}/WhyUs.json`)).default,
     },
   };
 });
