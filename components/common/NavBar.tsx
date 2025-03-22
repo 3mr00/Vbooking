@@ -61,7 +61,7 @@ const links: LinkType[] = [
     links: [
       {
         title: "navbar.technologyLinks.Metaverse",
-        url: "/technology/Metaverse ",
+        url: "/technology/Metaverse",
       },
       {
         title: "navbar.technologyLinks.AlAndMachineLearning",
@@ -73,7 +73,7 @@ const links: LinkType[] = [
       },
       {
         title: "navbar.technologyLinks.DecentraliseServers",
-        url: "/technology/DecentraliseServers ",
+        url: "/technology/DecentraliseServers",
       },
       {
         title: "navbar.technologyLinks.HTMX",

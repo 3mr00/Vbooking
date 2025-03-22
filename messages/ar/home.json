@@ -24,12 +24,11 @@
         "holiday_rental_managers": "مديرو تأجير العطلات"
       },
       "technologyLinks": {
-        "turbo_booking_engine": "محرك الحجز السريع",
-        "ai_agent": "وكيل الذكاء الاصطناعي",
-        "travel_crm": "إدارة علاقات العملاء للسفر",
-        "engaging_holiday": "عطلة ممتعة",
-        "live_booking_desk": "مكتب الحجز المباشر",
-        "operator_app": "تطبيق المشغل"
+        "Metaverse": "تقنية الميتافيرس",
+        "AIAndMachineLearning": "الذكاء الاصطناعي وتعلم الآلة",
+        "Automation": "عمليات البيانات والتشغيل التلقائي",
+        "DecentraliseServers": "خوادم متمركزة",
+        "HTMX": "إتش تي إم إكس"
       },
       "productsLinks": {
         "turbo_booking_engine": "محرك الحجز السريع",

@@ -150,6 +150,9 @@ body::-webkit-scrollbar-thumb {
   background: radial-gradient(circle, #ebb3ed 70%, #d7eff1 100%);
   background-repeat: no-repeat;
 }
+.infinite-slide-swiper {
+  --swiper-wrapper-transition-timing-function: linear !important;
+}
 
 @layer base {
   :root {

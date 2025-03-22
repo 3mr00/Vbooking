@@ -8,34 +8,40 @@ import { images } from "@/assets/images";
 import ScrollableCards from "../common/ScrollableCards";
 import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
 import { Link } from "@/navigation";
+import SlideByOne from "../Swiper/SlideByOne";
 
 const items = [
   {
+    id: 1,
+
     title: "booking_suite.wholesale_tour_operators_b2b_b2c",
     image: images.laptop,
     description: "booking_suite.automate_operations_manage_inventories",
-    url: "/turbo/1",
+    url: "/turbo/WholesaleTour",
   },
   {
+    id: 2,
     title: "booking_suite.incoming_agencies_dmcs",
     image: images.laptop,
     description:
       "booking_suite.improve_customer_satisfaction_with_fast_searches",
-    url: "/turbo/2",
+    url: "/turbo/IncomingAgencies",
   },
   {
+    id: 3,
     title: "booking_suite.online_travel_agencies_otas",
     image: images.laptop,
     description:
       "booking_suite.improve_customer_satisfaction_with_fast_searches",
-    url: "/turbo/3",
+    url: "/turbo/OnlineTravel",
   },
   {
+    id: 4,
     title: "booking_suite.holiday_rental_managers",
     image: images.laptop,
     description:
       "booking_suite.streamline_bookings_pricing_guest_communication",
-    url: "/turbo/4",
+    url: "/turbo/HolidayRental",
   },
 ];
 
@@ -76,11 +82,12 @@ function TurboBookingSuite() {
         </div>
 
         <div className="block sm:hidden mt-6">
-          <ScrollableCards
-            options={items}
-            renderCard={(option) => (
-              <Box className="w-[338px] h-[450px]" {...option} />
-            )}
+          <SlideByOne
+            options={items.map((item, index) => ({
+              id: item.id,
+              content: <Box key={index} {...item} />,
+            }))}
+            slideBy={1}
           />
         </div>
       </CustomContainer>

@@ -1,6 +1,6 @@
 "use client";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Title from "../common/Title";
 import Description from "../common/Description";
 import { images } from "@/assets/images";
@@ -110,6 +110,16 @@ const Box = ({ title, image, description }: BoxProps) => {
 const AccordionBox = ({ items }: any) => {
   const [openIndex, setOpenIndex] = useState(0);
 
+  // Automatically cycle through items every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOpenIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 4000);
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [items.length]);
+
+  // Manual toggle functionality
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
@@ -118,8 +128,9 @@ const AccordionBox = ({ items }: any) => {
     <div className="w-full">
       {items.map((item: BoxProps, index: number) => (
         <div key={index} className="mb-3 h-auto">
+          {/* Header - Clickable to toggle manually */}
           <div
-            className={`cursor-pointer bg-white px-6 py-4 rounded-[16px] ${
+            className={`cursor-pointer bg-white px-6 py-4 rounded-[16px]  ${
               openIndex === index ? "hidden" : ""
             }`}
             onClick={() => handleToggle(index)}
@@ -130,9 +141,11 @@ const AccordionBox = ({ items }: any) => {
               titleColor="text-secondary"
             />
           </div>
+
+          {/* Content - Visible if openIndex matches the current index */}
           <div
-            className={`accordion-content rounded-[16px] ${
-              openIndex === index ? "open" : ""
+            className={`accordion-content rounded-[16px] transition delay-150 duration-300 ease-in-out ${
+              openIndex === index ? "open" : "hidden"
             }`}
           >
             <Box {...item} />

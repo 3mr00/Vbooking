@@ -12,9 +12,11 @@ import {
 import ScrollableCards from "../common/ScrollableCards";
 import Button from "../common/Button";
 import ButtonShadcn from "../common/Shadcn/ButtonShadcn";
+import SlideByOne from "../Swiper/SlideByOne";
 
 const data = [
   {
+    id: 1,
     title: "travel_community.networkingPlatform.title",
     description: "travel_community.networkingPlatform.description",
     subDescription: "travel_community.networkingPlatform.subDescription",
@@ -32,6 +34,7 @@ const data = [
     ],
   },
   {
+    id: 2,
     title: "travel_community.vbookingAcademy.title",
     description: "travel_community.vbookingAcademy.description",
     icon: <VBookingAcademyIcon />,
@@ -42,6 +45,7 @@ const data = [
     ],
   },
   {
+    id: 3,
     title: "travel_community.exhibitionCenters.title",
     description: "travel_community.exhibitionCenters.description",
     subDescription: "travel_community.exhibitionCenters.subDescription",
@@ -53,6 +57,7 @@ const data = [
     ],
   },
   {
+    id: 4,
     title: "travel_community.worldTravelLibrary.title",
     description: "travel_community.worldTravelLibrary.description",
     icon: <WorldTravelLibraryIcon />,
@@ -63,6 +68,7 @@ const data = [
     ],
   },
   {
+    id: 5,
     title: "travel_community.vbookingHub.title",
     description: "travel_community.vbookingHub.description",
     icon: <VBookingHubIcon width={100} height={100} />,
@@ -128,15 +134,14 @@ function TravelCommunity() {
           </div>
 
           <div className="block sm:hidden mt-6">
-            <ScrollableCards
-              options={data}
-              renderCard={(option, index) => (
-                <Box
-                  index={index}
-                  {...option}
-                  className="w-[340px] min-h-[450px]"
-                />
-              )}
+            <SlideByOne
+              options={data?.map((item, index) => ({
+                id: item.id,
+                content: (
+                  <Box index={index} {...item} className=" min-h-[450px]" />
+                ),
+              }))}
+              slideBy={1}
             />
           </div>
         </div>

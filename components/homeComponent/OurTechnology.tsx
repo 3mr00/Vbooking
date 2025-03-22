@@ -3,27 +3,33 @@ import React from "react";
 import Title from "../common/Title";
 import Description from "../common/Description";
 import Button from "../common/Button";
+import { Link } from "@/navigation";
 
 const data = [
   {
     title: "our_technology.ai_machine_learning",
     description: "our_technology.ai_description",
+    url: "/technology/AlAndMachineLearning ",
   },
   {
     title: "our_technology.advanced_metaverse_technology",
     description: "our_technology.metaverse_description",
+    url: "/technology/Metaverse",
   },
   {
     title: "our_technology.htmx",
     description: "our_technology.htmx_description",
+    url: "/technology/HTMX",
   },
   {
     title: "our_technology.data_operations_automation",
     description: "our_technology.data_operations_description",
+    url: "/technology/Automation",
   },
   {
     title: "our_technology.decentralized_servers",
     description: "our_technology.decentralized_servers_description",
+    url: "/technology/DecentraliseServers",
   },
 ];
 
@@ -55,6 +61,7 @@ function OurTechnology() {
                   key={index}
                   title={item.title}
                   description={item.description}
+                  url={item.url}
                   index={index}
                 />
               ))}
@@ -72,9 +79,10 @@ interface BoxProps {
   title: string;
   description: string;
   index: number;
+  url: string;
 }
 
-const Box = ({ title, description, index }: BoxProps) => {
+const Box = ({ title, description, index, url }: BoxProps) => {
   const gridClasses = [
     "lg:col-span-2 lg:row-span-1",
     "lg:col-span-2 lg:row-span-1 lg:col-start-3",
@@ -85,7 +93,7 @@ const Box = ({ title, description, index }: BoxProps) => {
 
   return (
     <div
-      className={`p-4 rounded-[16px] bg-[#EFF9FA] ${gridClasses[index]} sm:col-span-1 md:col-span-1 animations-box`}
+      className={`p-4 rounded-[16px] bg-[#EFF9FA] ${gridClasses[index]} sm:col-span-1 md:col-span-1 animations-box flex flex-col justify-between`}
     >
       <Title
         TransPage="home"
@@ -99,10 +107,12 @@ const Box = ({ title, description, index }: BoxProps) => {
         DescriptionColor="text-grayText"
         className="md:text-[.8rem] text-[.7rem]"
       />
-      <Button
-        text="common.learn_more"
-        className="mt-4 text-darkText border-[#D0D5DD] bg-white border px-4 py-2"
-      />
+      <Link href={url}>
+        <Button
+          text="common.learn_more"
+          className="mt-4 text-darkText border-[#D0D5DD] bg-white border px-4 py-2"
+        />
+      </Link>
     </div>
   );
 };
