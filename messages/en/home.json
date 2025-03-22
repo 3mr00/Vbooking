@@ -27,21 +27,23 @@
         "holiday_rental_managers": "Holiday Rental Managers"
       },
       "technologyLinks": {
-        "Metaverse": "Advanced Metaverse Technology",
-        "AlAndMachineLearning": "AI and Machine Learning",
-        "Automation": "Data Operations and Automation",
+        "Metaverse": "Metaverse",
+        "AlAndMachineLearning": "Al and Machine Learning",
+        "Automation": "DataOps",
         "DecentraliseServers": "Decentralized Servers",
         "HTMX": "HTMX"
       },
+
       "productsLinks": {
         "turbo_booking_engine": "Turbo Booking Engine",
         "ai_agent": "AI Agent",
-        "travel_crm": "Travel CRM",
-        "engaging_holiday": "Engaging Holiday",
+        "travel_crm": "Turbo Travel CRM",
+        "engaging_holiday": " Engagement Package Builder",
         "live_booking_desk": "Live Booking Desk",
         "operator_app": "Operator App"
       }
     },
+
     "header": {
       "empowering_tourism": "Empowering Tourism,",
       "elevating_experiences": "Elevating Experiences.",
