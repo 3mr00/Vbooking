@@ -7,58 +7,23 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, description }) => {
   return (
-    <div
-      className="bg-white relative min-w-1/4 flex-1 shrink basis-[0%] rounded-2xl max-sm:mb-4"
-      style={{
-      display: "flex",
-      padding: "37px 11px 19px;",
-      flexDirection: "column",
-      alignItems: "center",
-      gap: "32px",
-      flex: "1 0 0",
-      alignSelf: "stretch",
-      }}
-    >
+    <div className="bg-white relative min-w-1/4 flex-1 shrink basis-[0%] rounded-2xl max-sm:mb-4 flex flex-col items-center gap-8 p-[37px_11px_19px] self-stretch">
       <div className="z-0 w-full text-center flex-1 max-md:px-5">
         <div className="flex w-full flex-col">
-          <h3
-            className="text-[#9c25a0] text-2xl font-semibold"
-            style={{
-              color: "var(--fonts, color(display-p3 0.6118 0.1451 0.6275))",
-              textAlign: "center",
-              fontFamily: "Poppins",
-              fontSize: "18px",
-              fontStyle: "normal",
-              fontWeight: 600,
-              lineHeight: "normal",
-            }}
-          >
+          <h3 className="text-[#9c25a0] text-center font-poppins text-lg font-semibold">
             {title}
           </h3>
-          <p
-            className="text-[#667085] text-ellipsis text-lg font-normal leading-[27px] mt-2"
-            style={{
-              overflow: "hidden",
-              color: "var(--G2, #647087)",
-              textAlign: "center",
-              textOverflow: "ellipsis",
-              fontFamily: "Poppins",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "18px",
-            }}
-          >
+          <p className="text-[#647087] text-center font-poppins text-sm font-normal leading-[18px] mt-2 overflow-hidden text-ellipsis">
             {description}
           </p>
         </div>
       </div>
-      <div className="items-center border-[#eaecf0] shadow-[0px_2px_4px_0px_rgba(27,28,29,0.04)] absolute w-[56px] h-[56px] -translate-x-2/4 -translate-y-2/4 rounded-lg border-[1px] border-solid left-[50%] top-[0%]">
-        <div className="justify-center items-center bg-white self-stretch flex min-h-14 w-14 h-14 my-auto px-2 rounded-lg">
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-14 h-14 border border-[#eaecf0] rounded-lg shadow-[0px_2px_4px_0px_rgba(27,28,29,0.04)]">
+        <div className="flex justify-center items-center bg-white w-full h-full rounded-lg p-2">
           <img
             src="/images/FeatureIcon.svg"
             alt="Feature Icon"
-            className="aspect-[1] object-contain w-7 self-stretch my-auto"
+            className="w-7 h-7 object-contain"
           />
         </div>
       </div>

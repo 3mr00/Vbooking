@@ -10,10 +10,10 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 const page = () => {
   return (
     <>
-      <CustomContainer className="bg-[rgba(247,252,252,1)] p-0 max-md:p-0">
+      <CustomContainer className="bg-[rgba(247,252,252,1)]">
         <Hero />
       </CustomContainer>
-        <Advantages />
+      <Advantages />
       <CustomContainer className="bg-[#d7efef]">
         <WhoWeEmpower />
       </CustomContainer>

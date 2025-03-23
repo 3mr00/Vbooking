@@ -114,6 +114,7 @@ const links: LinkType[] = [
   },
   {
     title: "navbar.contacts",
+    url: "/contact-us",
   },
   {
     title: "navbar.resources",

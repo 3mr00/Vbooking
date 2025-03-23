@@ -11,6 +11,8 @@ export default getRequestConfig(async ({ locale }) => {
       ...(await import(`./messages/${locale}/Traveler.json`)).default,
       ...(await import(`./messages/${locale}/TravelManagementPage.json`))
         .default,
+      ...(await import(`./messages/${locale}/WhyUsPage.json`)).default,
+      ...(await import(`./messages/${locale}/ContactUsPage.json`)).default,
     },
   };
 });

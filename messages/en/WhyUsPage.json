@@ -1,0 +1,110 @@
+{
+  "WhyUsPage": {
+    "title": "Why Us",
+    "description": "Why Us",
+    "heroSection": {
+      "badge": "Why Choose VBooking?",
+      "title": "Powering the Future of",
+      "titleHighlight": "Travel with Smart Innovation",
+      "description": "At VBooking, we redefine how travel businesses operate. Our all-in-one AI-driven travel platform empowers you to streamline operations, enhance customer experiences, and expand your reach—effortlessly. Whether you're a tour operator, travel agency, or holiday home manager, VBooking provides the technology, flexibility, and automation you need to stay ahead in a rapidly evolving industry."
+    },
+    "features": [
+      {
+        "title": "Seamless Automation & AI-Powered Tools",
+        "description": "Save time with intelligent booking solutions and real-time customer engagement."
+      },
+      {
+        "title": "All-in-One Travel Technology",
+        "description": "From reservations and CRM to Metaverse virtual tours, everything you need in one powerful platform."
+      },
+      {
+        "title": "Global Reach, Local Expertise",
+        "description": "Multi-language, multi-currency, and a network of 16,500+ travel agencies worldwide."
+      },
+      {
+        "title": "Scalable & Customizable Solutions",
+        "description": "Grow your business with flexible tools that adapt to your needs."
+      }
+    ],
+    "empowerItems": [
+      {
+        "title": "Wholesale Tour Operators (B2B)",
+        "description": "Automate bookings, manage inventories, and maximize efficiency."
+      },
+      {
+        "title": "Destination Management Companies (DMCs)",
+        "description": "Simplify itineraries, supplier coordination, and real-time pricing updates."
+      },
+      {
+        "title": "Online Travel Agencies (OTAs)",
+        "description": "Deliver fast, AI-powered searches and recommendations to boost conversions."
+      },
+      {
+        "title": "Holiday Home Managers",
+        "description": "Optimize pricing, streamline bookings, and enhance guest communication."
+      }
+    ],
+    "whoWeEmpower": {
+      "title": "Who We",
+      "titleHighlight": "Empower",
+      "description": "VBooking is designed for every segment of the travel industry"
+    },
+    "technologySection": {
+      "title": "Technology That",
+      "titleHighlight": "Drives Success",
+      "technologies": [
+        {
+          "title": "Turbo Booking Engine",
+          "description": "Real-time availability, dynamic pricing, and seamless API integration."
+        },
+        {
+          "title": "AI Travel Assistant",
+          "description": "Engage customers with personalized recommendations and instant support."
+        },
+        {
+          "title": "Advanced Travel CRM",
+          "description": "Manage leads, automate follow-ups, and track performance effortlessly."
+        },
+        {
+          "title": "Metaverse Virtual Tours",
+          "description": "Immerse customers in interactive 3D destination previews."
+        },
+        {
+          "title": "Live Booking Desk & Dynamic Quotations",
+          "description": "Convert leads into bookings faster with real-time offers."
+        },
+        {
+          "title": "Integrated Business Intelligence",
+          "description": "Data-driven insights to optimize pricing and customer engagement."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Trusted by",
+      "titleHighlight": "Industry Leaders",
+      "items": [
+        {
+          "quote": "VBooking revolutionized how we manage bookings—efficiency and customer experience have never been better!",
+          "clientName": "Client Name"
+        },
+        {
+          "quote": "From AI-driven automation to seamless integrations, VBooking is the ultimate game-changer for travel businesses.",
+          "clientName": "Client Name"
+        },
+        {
+          "quote": "The Metaverse virtual tours took our travel offerings to a whole new level. Our customers love it!",
+          "clientName": "Client Name"
+        },
+        {
+          "quote": "The Metaverse virtual tours took our travel offerings to a whole new level. Our customers love it!",
+          "clientName": "Client Name"
+        }
+      ]
+    },
+    "callToAction": {
+      "title": "Experience the Future of Travel",
+      "description": "Ready to elevate your travel business with cutting-edge technology? Join VBooking and unlock endless possibilities.",
+      "button": "Start Your Journey Today"
+    }
+  }
+}

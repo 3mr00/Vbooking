@@ -32,11 +32,11 @@ const HeroSection = () => {
           <div className="order-1 md:order-1">
             <div className="space-y-6">
               <h2 className="text-[12px] md:text-4xl font-bold">
-                <span className="text-[#9C25A0] text-[19px] md:text-[56px] font-medium leading-[32px] md:leading-[64px]">
+                <span className="text-[#9C25A0] text-[19px] md:text-[35px] font-medium leading-[32px] md:leading-[64px]">
                   {t("HeroSection.titlePurple")}
                 </span>{" "}
                 -{" "}
-                <span className="text-[#224A9A] text-[24px] md:text-[56px] font-medium leading-[32px] md:leading-[64px]">
+                <span className="text-[#224A9A] text-[24px] md:text-[35px] font-medium leading-[32px] md:leading-[64px]">
                   {t("HeroSection.titleBlue")}
                 </span>
               </h2>

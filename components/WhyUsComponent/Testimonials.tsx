@@ -1,38 +1,12 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import TestimonialCard from "./TestimonialCard";
+import { useTranslations } from "next-intl";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      quote:
-        "VBooking revolutionized how we manage bookings—efficiency and customer experience have never been better!.",
-      clientName: "Client Name",
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/8db68aff16c541a7b1ccc14db1396f19/9010481c87e11ac8a0033680aa5037cbbc44a386?placeholderIfAbsent=true",
-    },
-    {
-      quote:
-        "From AI-driven automation to seamless integrations, VBooking is the ultimate game-changer for travel businesses.",
-      clientName: "Client Name",
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/8db68aff16c541a7b1ccc14db1396f19/65bcad8786a8a979b191ea713c44f298bac82193?placeholderIfAbsent=true",
-    },
-    {
-      quote:
-        "The Metaverse virtual tours took our travel offerings to a whole new level. Our customers love it!",
-      clientName: "Client Name",
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/8db68aff16c541a7b1ccc14db1396f19/5938a8f39612f39f5020192d6cc29078d97d5224?placeholderIfAbsent=true",
-    },
-    {
-      quote:
-        "The Metaverse virtual tours took our travel offerings to a whole new level. Our customers love it!",
-      clientName: "Client Name",
-      iconSrc:
-        "https://cdn.builder.io/api/v1/image/assets/8db68aff16c541a7b1ccc14db1396f19/5938a8f39612f39f5020192d6cc29078d97d5224?placeholderIfAbsent=true",
-    },
-  ];
+  const t = useTranslations("WhyUsPage.testimonials");
+
+  const testimonials = t.raw("items");
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -137,8 +111,8 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-[16px] md:text-4xl font-medium">
-            <span className="text-[#1e4187]">Trusted by</span>{" "}
-            <span className="text-[#9c25a0]">Industry Leaders</span>
+            <span className="text-[#1e4187]">{t("title")}</span>{" "}
+            <span className="text-[#9c25a0]">{t("titleHighlight")}</span>
           </h2>
         </div>
         <div className="relative overflow-hidden">
@@ -160,7 +134,7 @@ const Testimonials = () => {
             onTouchEnd={stopDragging}
           >
             {/* Original testimonials */}
-            {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial: any, index: number) => (
               <div
                 key={`original-${index}`}
                 className="flex-shrink-0"
@@ -169,13 +143,13 @@ const Testimonials = () => {
                 <TestimonialCard
                   quote={testimonial.quote}
                   clientName={testimonial.clientName}
-                  iconSrc={testimonial.iconSrc}
+                  iconSrc="/images/trustedby.svg"
                 />
               </div>
             ))}
 
             {/* Duplicate testimonials for seamless loop */}
-            {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial: any, index: number) => (
               <div
                 key={`duplicate-${index}`}
                 className="flex-shrink-0"
@@ -184,7 +158,7 @@ const Testimonials = () => {
                 <TestimonialCard
                   quote={testimonial.quote}
                   clientName={testimonial.clientName}
-                  iconSrc={testimonial.iconSrc}
+                  iconSrc="/images/trustedby.svg"
                 />
               </div>
             ))}

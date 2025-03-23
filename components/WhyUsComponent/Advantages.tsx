@@ -1,30 +1,16 @@
 import React from "react";
 import FeatureCard from "../ui/FeatureCard";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
+import { useTranslations } from "next-intl";
+
+interface Feature {
+  title: string;
+  description: string;
+}
 
 const Advantages = () => {
-  const features = [
-    {
-      title: "Seamless Automation & AI-Powered Tools",
-      description:
-        "Save time with intelligent booking solutions and real-time customer engagement.",
-    },
-    {
-      title: "All-in-One Travel Technology",
-      description:
-        "From reservations and CRM to Metaverse virtual tours, everything you need in one powerful platform.",
-    },
-    {
-      title: "Global Reach, Local Expertise",
-      description:
-        "Multi-language, multi-currency, and a network of 16,500+ travel agencies worldwide.",
-    },
-    {
-      title: "Scalable & Customizable Solutions",
-      description:
-        "Grow your business with flexible tools that adapt to your needs.",
-    },
-  ];
+  const t = useTranslations("WhyUsPage");
+  const features = t.raw("features") as Feature[];
 
   return (
     <div
@@ -41,7 +27,7 @@ const Advantages = () => {
         </div>
 
         <div className="flex w-full items-stretch gap-6 flex-wrap mt-10">
-          {features.map((feature, index) => (
+          {features.map((feature: Feature, index: number) => (
             <FeatureCard
               key={index}
               title={feature.title}
