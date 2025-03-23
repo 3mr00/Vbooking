@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* border: 1px solid red; */
+}
 :root {
   --primary: "#9c25a0";
   --primary-foreground: "#9C25A0";

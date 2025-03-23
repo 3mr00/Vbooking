@@ -31,6 +31,7 @@ import { Link } from "@/navigation";
 
 type LinkType = {
   title: string;
+  url?: string;
   links?: { title: string; url: string }[];
 };
 
@@ -109,21 +110,23 @@ const links: LinkType[] = [
   },
   {
     title: "navbar.why_us",
+    url: "/why-us",
   },
   {
     title: "navbar.contacts",
+    url: "/contact-us",
   },
   {
     title: "navbar.resources",
     links: [
       {
-        title: "navbar.resourcesLinks.join_traveler",
-        url: "/resources/join_traveler",
+        title: "navbar.resourcesLinks.itinerary-travel",
+        url: "/resources/itinerary-travel",
       },
       {
-        title: "navbar.resourcesLinks.networking",
-        url: "/resources/networking",
-      }
+        title: "navbar.resourcesLinks.travel-management",
+        url: "/resources/travel-management",
+      },
     ],
   },
 ];
@@ -197,7 +200,7 @@ function NavBar() {
                     </DropdownMenu>
                   ) : (
                     <Link
-                      href="#"
+                      href={link.url || "#"}
                       className="text-[#004CA6] font-normal text-[13px]"
                     >
                       <Title
