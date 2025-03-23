@@ -100,6 +100,12 @@
         "name": "Amanda Lee",
         "title": "Travel Manager, Elite Corporate Solutions"
       }
+    },
+    "SuperchargeSection": {
+      "title": "Transform Your Business Today",
+      "description": "Experience the difference that vbooking's innovative features can make for your tourism business. Contact us to schedule a demo and see our tools in action.",
+      "requestDemo": "Request a Demo",
+      "getQuote": "Get a Quote"
     }
   }
 }
