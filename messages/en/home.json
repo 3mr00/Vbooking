@@ -11,7 +11,7 @@
       "our_technology": "Our Technology",
       "our_product": "Our Product",
       "why_us": "Why Us",
-      "contacts": "Contacts",
+      "contacts": "Contacts Us",
       "resources": "Resources",
       "login": "Login",
       "empowering_tourism": "Empowering Tourism",
@@ -43,8 +43,8 @@
         "operator_app": "Operator App"
       },
       "resourcesLinks": {
-        "join_traveler": "Join as a traveler",
-        "networking": "Networking"
+        "itinerary-travel": "Itinerary & Travel",
+        "travel-management": "Travel Management"
       }
     },
 

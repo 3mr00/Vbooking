@@ -1,0 +1,45 @@
+{
+  "ContactUsPage": {
+    "HeroSection": {
+      "title": "We'd love to hear from you. Reach out for any inquiries, support, or feedback. Our team is here to help!",
+      "buttonText": "Let's Connect"
+    },
+    "ContactFormSection": {
+      "title": "We're here to help!",
+      "description": "At Vbooking, we're committed to providing you with the best possible support for all your tourism needs. Whether you're a tour organizer, travel agent, or traveler, our team is ready to assist you with any inquiries or support you may need.",
+      "officeHours": {
+        "title": "Office Hours",
+        "subtitle": "Our team is available to assist you during the following hours",
+        "weekdays": "Monday to Friday",
+        "weekdaysHours": "9:00 AM - 6:00 PM (GMT)",
+        "weekend": "Saturday & Sunday",
+        "weekendHours": "Closed"
+      },
+      "social": {
+        "connectText": "Connect with us:"
+      }
+    },
+    "ContactForm": {
+      "title": "Get in touch",
+      "name": {
+        "label": "Name",
+        "placeholder": "Full name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Email address"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "optional": "(optional)",
+        "placeholder": "Phone number"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your message..."
+      },
+      "submit": "Submit",
+      "required": "*"
+    }
+  }
+}

@@ -11,7 +11,7 @@ interface FeatureCardProps {
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, description }) => {
   return (
     <div className="min-w-[300px] md:min-w-[400px] rounded-[16px] border-[2px] border-[var(--fonts,#BA00AB)] border-[var(--fonts,color(display-p3_0.6118_0.1451_0.6275))] bg-[var(--white,#FFF)] bg-[var(--white,color(display-p3_1_1_1))] shadow-[8px_9px_0px_0px_rgba(0,0,0,0.10)] shadow-[8px_9px_0px_0px_color(display-p3_0_0_0_/_0.10)] p-6 select-none transition-all">
-      <h3 className="text-[22px] font-semibold leading-[22px] font-poppins text-[var(--fonts,#AA10A5)] text-[color(display-p3_0.6118_0.1451_0.6275)]">
+      <h3 className="pb-4 text-[22px] font-semibold leading-[22px] font-poppins text-[var(--fonts,#AA10A5)] text-[color(display-p3_0.6118_0.1451_0.6275)]">
         {title}
       </h3>
       <p className="text-[16px] font-normal leading-[21px] font-poppins text-[var(--G2,#647087)] text-[color(display-p3_0.4_0.4392_0.5216)]">
@@ -134,37 +134,35 @@ const AutoScrollFeatures = () => {
 
   return (
     <section className=" w-full bg-[#e6f4f7] overflow-hidden">
-      <div className="">
-        <div className="relative">
-          <div
-            ref={scrollRef}
-            className="flex gap-6 overflow-x-hidden w-full cursor-grab active:cursor-grabbing touch-pan-x"
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={stopDragging}
-            onMouseLeave={stopDragging}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={stopDragging}
-          >
-            {/* Original cards */}
-            {features.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                title={feature.title}
-                description={feature.description}
-              />
-            ))}
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-hidden w-full cursor-grab active:cursor-grabbing touch-pan-x"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={stopDragging}
+          onMouseLeave={stopDragging}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={stopDragging}
+        >
+          {/* Original cards */}
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
 
-            {/* Duplicate cards for seamless loop */}
-            {features.map((feature, index) => (
-              <FeatureCard
-                key={`duplicate-${index}`}
-                title={feature.title}
-                description={feature.description}
-              />
-            ))}
-          </div>
+          {/* Duplicate cards for seamless loop */}
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={`duplicate-${index}`}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
         </div>
       </div>
     </section>
