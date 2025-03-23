@@ -12,7 +12,13 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   iconSrc,
 }) => {
   return (
-    <div className="items-stretch bg-white min-h-[220px] flex min-w-25 flex-col flex-1 shrink basis-[0%]  rounded-2xl max-md:max-w-full max-md:px-5 ">
+    <div
+      className="items-stretch bg-white min-h-[220px] flex min-w-25 flex-col flex-1 shrink basis-[0%]  rounded-2xl max-md:max-w-full max-md:px-5 "
+      style={{
+        justifyContent: "space-around",
+        textAlign: "center",
+      }}
+    >
       <img
         src={iconSrc}
         alt="Testimonial Icon"

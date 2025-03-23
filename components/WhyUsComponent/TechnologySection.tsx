@@ -35,28 +35,24 @@ const TechnologySection = () => {
 
   return (
     <CustomContainer className="relative">
-      <div className="flex flex-col w-full items-stretch justify-center md:py-8 max-md:max-w-full max-md:px-5">
+      <div className="flex flex-col w-full items-stretch justify-center md:py-8 max-md:max-w-full ">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/8db68aff16c541a7b1ccc14db1396f19/87f4a12c345df5ba88e1cc8e130240cd69a4f595?placeholderIfAbsent=true"
           alt="Background"
           className="absolute h-full w-full object-cover inset-0"
         />
 
-        <div className="flex flex-col py-20 bg-[#fff] relative z-10 rounded-2xl">
+        <div className="flex flex-col py-4 md:py-20 bg-[#fff] relative z-10 rounded-2xl">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 md:gap-8">
               {/* Title Section */}
-              <div className="lg:col-span-4 flex flex-col items-center justify-center gap-4">
-                <h2 className="text-4xl font-bold mb-4">
-                  <span className="text-[#1E3A8A] text-[30px] font-medium leading-[54px]">
-                    Technology That
-                  </span>
-                  <br />
-                  <span
-                    className="text-[#AA10A5]
-                  
-                  text-[30px] font-medium"
-                  >
+              <div className="lg:col-span-4 flex flex-col items-center justify-center md:gap-4">
+                <h2 className=" text-[14px] md:text-[30px] font-bold md:mb-4">
+                    <span className="text-[#1E3A8A] font-medium leading-[54px]">
+                    Technology That {" "}
+                    </span>
+                    <br className="hidden md:block" />
+                  <span className="text-[#AA10A5] font-medium">
                     Drives Success
                   </span>
                 </h2>

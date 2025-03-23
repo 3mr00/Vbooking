@@ -25,22 +25,20 @@ const WhoWeEmpower = () => {
   ];
 
   return (
-    <div className="items-stretch bg-[#d7efef] flex w-full flex-col overflow-hidden text-base justify-center py-10 max-md:max-w-full">
-      <div className="w-full max-md:max-w-full max-md:px-5">
-        <div className="items-center bg-white flex w-full gap-8  rounded-2xl max-md:max-w-full max-md:px-5">
-          <div className="self-stretch flex min-w-60 w-full items-center gap-8 flex-wrap flex-1 shrink basis-[0%] my-auto p-10 max-md:max-w-full max-md:px-5">
+    <div className="items-stretch bg-[#d7efef] flex w-full flex-col overflow-hidden text-base justify-center md:py-10 max-md:max-w-full">
+      <div className="w-full max-md:max-w-full ">
+        <div className="items-center bg-white flex w-full md:gap-8  rounded-2xl max-md:max-w-full p-4 md:px-5">
+          <div className="self-stretch flex min-w-60 w-full items-center gap-8 flex-wrap flex-1 shrink basis-[0%] my-auto md:py-8 max-md:max-w-full ">
             <img
               src="/images/WhoWeEmpower.png"
               alt="Who We Empower"
               className="aspect-[1.48] object-contain w-full  min-w-60 flex-1 shrink basis-[0%] my-auto rounded-lg max-md:max-w-full"
             />
-            <div className="flex min-w-60 flex-col items-stretch justify-center flex-1 shrink basis-[0%] max-md:max-w-full">
+            <div className="flex w-full flex-col items-stretch justify-center flex-1 shrink basis-[0%] max-md:max-w-full">
               <div className="w-full max-md:max-w-full">
-                <h2 className="text-[34px] font-bold bg-clip-text text-[#1e4187] bg-[linear-gradient(180deg,#2249a_0%,#1c3d80_100%)] max-md:max-w-full">
-                  <span className="font-medium text-[36px] leading-[54px]">
-                    Who We{" "}
-                  </span>
-                  <span className="font-medium text-[36px] leading-[54px] text-[#9c25a0]">
+                <h2 className="text-[18px] md:text-[30px] font-bold bg-clip-text text-[#1e4187] bg-[linear-gradient(180deg,#2249a_0%,#1c3d80_100%)] max-md:max-w-full">
+                  <span className="font-medium leading-[54px]">Who We </span>
+                  <span className="font-medium leading-[54px] text-[#9c25a0]">
                     Empower
                   </span>
                 </h2>

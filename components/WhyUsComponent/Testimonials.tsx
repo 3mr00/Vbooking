@@ -136,10 +136,10 @@ const Testimonials = () => {
     <div className="w-full bg-[#d7efef] md:py-8 py-4">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-            <h2 className="text-[16px] md:text-4xl font-medium">
+          <h2 className="text-[16px] md:text-4xl font-medium">
             <span className="text-[#1e4187]">Trusted by</span>{" "}
             <span className="text-[#9c25a0]">Industry Leaders</span>
-            </h2>
+          </h2>
         </div>
         <div className="relative overflow-hidden">
           <div
