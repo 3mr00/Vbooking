@@ -8,7 +8,7 @@ const socialIcons = [
     iconSrc: "/social/Facebook.svg",
   },
   {
-    name: "x",
+    name: "X",
     iconSrc: "/social/x.svg",
   },
   {
