@@ -31,6 +31,7 @@ import { Link } from "@/navigation";
 
 type LinkType = {
   title: string;
+  url?: string;
   links?: { title: string; url: string }[];
 };
 
@@ -109,6 +110,7 @@ const links: LinkType[] = [
   },
   {
     title: "navbar.why_us",
+    url: "/why-us",
   },
   {
     title: "navbar.contacts",
@@ -197,7 +199,7 @@ function NavBar() {
                     </DropdownMenu>
                   ) : (
                     <Link
-                      href="#"
+                      href={link.url || "#"}
                       className="text-[#004CA6] font-normal text-[13px]"
                     >
                       <Title
