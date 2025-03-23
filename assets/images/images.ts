@@ -49,6 +49,11 @@ import holidayRental from "@/assets/images/image/TurboPage/holidayRental.png";
 import onlineTravel from "@/assets/images/image/TurboPage/onlineTravel.png";
 import wholesaleTour from "@/assets/images/image/TurboPage/wholesaleTour.png";
 
+// contact-us images
+import FacebookCu from "@/assets/images/image/facebook.svg";
+import XCu from "@/assets/images/image/X.svg";
+import InstagramCu from "@/assets/images/image/Instagram.svg";
+
 export default {
   logo,
   headerImage,
@@ -99,4 +104,9 @@ export default {
   holidayRental,
   onlineTravel,
   wholesaleTour,
+
+  // contact-us images
+  FacebookCu,
+  XCu,
+  InstagramCu,
 };

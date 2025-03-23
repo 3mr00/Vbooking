@@ -1,19 +1,21 @@
 import React from "react";
 import ContactForm from "../ui/ContactForm";
 import { useTranslations } from "next-intl";
+import { images } from "@/assets/images";
+import Image from "next/image";
 
 const socialIcons = [
   {
     name: "Facebook",
-    iconSrc: "/social/Facebook.svg",
+    iconSrc: images.FacebookCu,
   },
   {
     name: "X",
-    iconSrc: "/social/x.svg",
+    iconSrc: images.XCu,
   },
   {
     name: "Instagram",
-    iconSrc: "/social/Instagram.svg",
+    iconSrc: images.InstagramCu,
   },
 ];
 
@@ -77,7 +79,7 @@ const ContactFormSection: React.FC = () => {
                           key={index}
                           className="hover:opacity-80 transition-opacity"
                         >
-                          <img
+                          <Image
                             src={social.iconSrc}
                             alt={social.name}
                             className="w-8 h-8 md:w-[34px] md:h-[34px]"
