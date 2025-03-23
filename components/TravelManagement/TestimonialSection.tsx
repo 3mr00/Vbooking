@@ -3,42 +3,9 @@ import TestimonialCard from "./TestimonialCard";
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
-const testimonials = [
-  {
-    id: 1,
-    logoSrc: "/images/trustedby.svg",
-    quote:
-      'My clients were thrilled with the proposals – the stunning visuals, interactive maps, and engaging videos provided all the information they needed and more. It gave them confidence in their decisions and elevated their booking experience with my company."',
-    name: "Ali Shahen",
-    title: "Owner and Founder, The Karibu Company",
-  },
-  {
-    id: 2,
-    logoSrc: "/images/trustedby.svg",
-    quote:
-      'TuRbo has revolutionized how we manage group travel and events. The itinerary builder and live booking desk have streamlined our operations, allowing us to create tailored packages in minutes. Our clients are happier, and our team is more productive than ever!"',
-    name: "Sarah Johnson",
-    title: "Managing Director, Global Destinations",
-  },
-  {
-    id: 3,
-    logoSrc: "/images/trustedby.svg",
-    quote:
-      '"As a small travel agency, TuRbo has been a game-changer. The CRM helps us stay connected with clients, and the AI Agent has significantly improved our response times. Our bookings have increased by 35%, and our clients love the personalized service we now provide."',
-    name: "Michael Ramirez",
-    title: "Owner, Wanderlust Travel",
-  },
-  {
-    id: 4,
-    logoSrc: "/images/trustedby.svg",
-    quote:
-      "Managing corporate travel used to be overwhelming, but TuRbo's management tools and operations app have made it so much easier. We can now handle complex itineraries with speed and precision, giving us a professional edge that clients value.\"",
-    name: "Amanda Lee",
-    title: "Travel Manager, Elite Corporate Solutions",
-  },
-];
-
 const TestimonialSection: React.FC = () => {
+  const t = useTranslations("TravelManagementPage");
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -156,24 +123,24 @@ const TestimonialSection: React.FC = () => {
             onTouchEnd={stopDragging}
           >
             {/* Original cards */}
-            {testimonials.map((testimonial, index) => (
+            {[1, 2, 3, 4].map((num) => (
               <TestimonialCard
-                key={index}
-                logoSrc={testimonial.logoSrc}
-                quote={testimonial.quote}
-                name={testimonial.name}
-                title={testimonial.title}
+                key={num}
+                logoSrc={t(`testimonials.${num}.logoSrc`)}
+                quote={t(`testimonials.${num}.quote`)}
+                name={t(`testimonials.${num}.name`)}
+                title={t(`testimonials.${num}.title`)}
               />
             ))}
 
             {/* Duplicate cards for seamless loop */}
-            {testimonials.map((testimonial, index) => (
+            {[1, 2, 3, 4].map((num) => (
               <TestimonialCard
-                key={index}
-                logoSrc={testimonial.logoSrc}
-                quote={testimonial.quote}
-                name={testimonial.name}
-                title={testimonial.title}
+                key={num}
+                logoSrc={t(`testimonials.${num}.logoSrc`)}
+                quote={t(`testimonials.${num}.quote`)}
+                name={t(`testimonials.${num}.name`)}
+                title={t(`testimonials.${num}.title`)}
               />
             ))}
           </div>
