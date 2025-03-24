@@ -84,7 +84,7 @@ function InnovativeTechnology() {
           <SlideByOne
             options={items.map((item, index) => ({
               id: item.id,
-              content: <Box key={index} {...item} />,
+              content: <BoxMob key={index} {...item} />,
             }))}
             slideBy={1}
           />
@@ -101,6 +101,44 @@ interface BoxProps {
   image: StaticImageData;
   description: string;
 }
+
+const BoxMob = ({ title, image, description }: BoxProps) => {
+  return (
+    <div className="bg-white p-[16px] flex gap-[16px] rounded-lg">
+      {/* الصورة للشاشات الكبيرة */}
+      <div className="md:block hidden w-[8rem] h-auto relative overflow-hidden rounded-xl flex-shrink-0">
+        <Image src={image} alt={title} fill className="object-cover" />
+      </div>
+
+      {/* المحتوى */}
+      <div className="flex flex-col gap-3 flex-grow">
+        {/* الصورة للشاشات الصغيرة */}
+        <div className="md:hidden w-full h-[12rem] relative overflow-hidden rounded-xl">
+          <Image src={image} alt={title} fill className="object-cover" />
+        </div>
+
+        <div className=" w-full h-[6rem] ">
+          {/* العنوان */}
+          <Title
+            TransPage="home"
+            title={title}
+            titleColor="text-secondary"
+            className="text-[15px] font-semibold text-wrap mb-4"
+          />
+
+          {/* الوصف */}
+          <Description
+            TransPage="home"
+            Description={description}
+            DescriptionColor="text-grayText"
+            className="text-[10px] font-normal text-wrap"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Box = ({ title, image, description }: BoxProps) => {
   return (
     <div className="bg-white p-[16px] flex  gap-[16px] rounded-lg">
