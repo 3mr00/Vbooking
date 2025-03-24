@@ -5,34 +5,46 @@ import Title from "../common/Title";
 import Description from "../common/Description";
 import { images } from "@/assets/images";
 import Image, { StaticImageData } from "next/image";
+import SlideByOne from "../Swiper/SlideByOne";
 
 const items = [
   {
+    id: 1,
     title: "InnovativeTechnology.html_to_htmx",
     description: "InnovativeTechnology.html_to_htmx_description",
     image: images.InnovativeTechnology1,
   },
   {
+    id: 2,
+
     title: "InnovativeTechnology.cold_calls_to_ai_automation",
     description: "InnovativeTechnology.ai_customer_support",
     image: images.InnovativeTechnology2,
   },
   {
+    id: 3,
+
     title: "InnovativeTechnology.2d_media_to_metaverse",
     description: "InnovativeTechnology.metaverse_transition",
     image: images.InnovativeTechnology3,
   },
   {
+    id: 4,
+
     title: "InnovativeTechnology.big_data_to_dataops",
     description: "InnovativeTechnology.dataops_approach",
     image: images.InnovativeTechnology4,
   },
   {
+    id: 5,
+
     title: "InnovativeTechnology.traditional_search_to_nlp",
     description: "InnovativeTechnology.nlp_search",
     image: images.InnovativeTechnology5,
   },
   {
+    id: 6,
+
     title: "InnovativeTechnology.centralized_to_decentralized_servers",
     description: "InnovativeTechnology.decentralized_servers",
     image: images.InnovativeTechnology6,
@@ -69,7 +81,13 @@ function InnovativeTechnology() {
         </div>
 
         <div className="sm:hidden mt-6">
-          <AccordionBox items={items} />
+          <SlideByOne
+            options={items.map((item, index) => ({
+              id: item.id,
+              content: <Box key={index} {...item} />,
+            }))}
+            slideBy={1}
+          />
         </div>
       </CustomContainer>
     </div>
@@ -103,55 +121,6 @@ const Box = ({ title, image, description }: BoxProps) => {
           className="text-[10px] font-normal text-wrap"
         />
       </div>
-    </div>
-  );
-};
-
-const AccordionBox = ({ items }: any) => {
-  const [openIndex, setOpenIndex] = useState(0);
-
-  // Automatically cycle through items every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setOpenIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 4000);
-
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [items.length]);
-
-  // Manual toggle functionality
-  const handleToggle = (index: number) => {
-    setOpenIndex(openIndex === index ? -1 : index);
-  };
-
-  return (
-    <div className="w-full">
-      {items.map((item: BoxProps, index: number) => (
-        <div key={index} className="mb-3 h-auto">
-          {/* Header - Clickable to toggle manually */}
-          <div
-            className={`cursor-pointer bg-white px-6 py-4 rounded-[16px]  ${
-              openIndex === index ? "hidden" : ""
-            }`}
-            onClick={() => handleToggle(index)}
-          >
-            <Title
-              TransPage="home"
-              title={item.title}
-              titleColor="text-secondary"
-            />
-          </div>
-
-          {/* Content - Visible if openIndex matches the current index */}
-          <div
-            className={`accordion-content rounded-[16px] transition delay-150 duration-300 ease-in-out ${
-              openIndex === index ? "open" : "hidden"
-            }`}
-          >
-            <Box {...item} />
-          </div>
-        </div>
-      ))}
     </div>
   );
 };
