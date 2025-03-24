@@ -117,7 +117,7 @@ const BoxMob = ({ title, image, description }: BoxProps) => {
           <Image src={image} alt={title} fill className="object-cover" />
         </div>
 
-        <div className=" w-full h-[6rem] ">
+        <div className=" w-full h-[7rem] ">
           {/* العنوان */}
           <Title
             TransPage="home"
