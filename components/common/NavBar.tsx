@@ -65,12 +65,12 @@ const links: LinkType[] = [
         url: "/technology/Metaverse",
       },
       {
-        title: "navbar.technologyLinks.AlAndMachineLearning",
+        title: "navbar.technologyLinks.AIAndMachineLearning",
         url: "/technology/AlAndMachineLearning ",
       },
       {
-        title: "navbar.technologyLinks.Automation",
-        url: "/technology/Automation",
+        title: "navbar.technologyLinks.DataOps",
+        url: "/technology/DataOps",
       },
       {
         title: "navbar.technologyLinks.DecentraliseServers",

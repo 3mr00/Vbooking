@@ -13,6 +13,13 @@ import maintenance from "@/assets/icons/icon/maintenance.png";
 import revenue from "@/assets/icons/icon/revenue.png";
 import guestcommunication from "@/assets/icons/icon/guestcommunication.png";
 import propertymanagement from "@/assets/icons/icon/propertymanagement.png";
+import DataOpsShadows from "@/assets/icons/icon/DataOpsShadows.png";
+import DataOpsShadows2 from "@/assets/icons/icon/DataOpsShadows2.png";
+import DecentraliseServersShadows from "@/assets/icons/icon/DecentraliseServersShadows.png";
+import DecentraliseServersShadows2 from "@/assets/icons/icon/DecentraliseServersShadows2.png";
+import DecentraliseServersShadows3 from "@/assets/icons/icon/DecentraliseServersShadows3.png";
+import HTMX1 from "@/assets/icons/icon/HTMX1.png";
+import HTMX2 from "@/assets/icons/icon/HTMX2.png";
 
 export default {
   inventory,
@@ -30,4 +37,11 @@ export default {
   marketing,
   payment,
   customization,
+  DataOpsShadows,
+  DataOpsShadows2,
+  DecentraliseServersShadows,
+  DecentraliseServersShadows2,
+  DecentraliseServersShadows3,
+  HTMX1,
+  HTMX2,
 };

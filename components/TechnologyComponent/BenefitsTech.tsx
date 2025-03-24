@@ -7,22 +7,23 @@ import { FaCircleCheck } from "react-icons/fa6";
 const BenefitsTech = ({ techId }: { techId: string }) => {
   const t = useTranslations("technology.benefits");
 
-  if (techId === "Automation") {
+  if (techId === "DataOps") {
     return null;
   }
 
-  const title = t(`${techId}.title`);
   const sections = t.raw(`${techId}.sections`);
 
   return (
-    <section className="relative">
+    <section
+      className={`relative ${techId === "AlAndMachineLearning" && "py-12"}`}
+    >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
           src={images.techBooking}
           alt="Suspension bridge in misty forest"
           fill
-          className="object-cover"
+          // className="object-cover"
           priority
         />
       </div>
@@ -32,7 +33,10 @@ const BenefitsTech = ({ techId }: { techId: string }) => {
         <div className="relative">
           <h2 className="text-center text-2xl md:text-3xl font-bold mb-16">
             <span className="text-[#1C3D80] md:text-[30px] text-[22px] font-medium">
-              {title}
+              {t(`${techId}.titlepart1`)}
+            </span>{" "}
+            <span className="text-fuchsia-700 md:text-[30px] text-[22px] font-medium">
+              {t(`${techId}.titlepart2`)}
             </span>
           </h2>
 

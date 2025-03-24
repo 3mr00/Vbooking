@@ -5,10 +5,15 @@ import { Link } from "@/navigation";
 import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Shadows from "./Shadows";
+import Steps from "./Steps";
+import HTMXinAction from "./HTMXinAction";
 
-const RepeatedCom = () => {
+const RepeatedCom = ({ techId }: { techId: string }) => {
   const t = useTranslations("technology.repeatedCom");
   const tLang = useTranslations("lang");
+  const tShadows = useTranslations("technology.Shadows");
+  const tSteps = useTranslations("technology.Steps");
 
   const features = [
     {
@@ -43,8 +48,145 @@ const RepeatedCom = () => {
     },
   ];
 
+  let DataOpsShadows = null;
+  let DataOpSteps = null;
+
+  if (techId === "DataOps") {
+    DataOpsShadows = {
+      titlePart1: tShadows(`${techId}.titlePart1`),
+      titlePart2: tShadows(`${techId}.titlePart2`),
+      description: tShadows(`${techId}.description`),
+      items: [
+        {
+          icon: icons.DataOpsShadows,
+          title: tShadows(`${techId}.items.1.title`),
+          description: tShadows(`${techId}.items.1.description`),
+        },
+        {
+          icon: icons.DataOpsShadows2,
+          title: tShadows(`${techId}.items.2.title`),
+          description: tShadows(`${techId}.items.2.description`),
+        },
+      ],
+    };
+
+    DataOpSteps = {
+      titlePart1: tSteps(`${techId}.titlePart1`),
+      titlePart2: tSteps(`${techId}.titlePart2`),
+      description: tShadows(`${techId}.description`),
+
+      items: [
+        {
+          icon: icons.DataOpsShadows,
+          title: tSteps(`${techId}.items.1.title`),
+          description: tSteps(`${techId}.items.1.description`),
+        },
+        {
+          icon: icons.DataOpsShadows2,
+          title: tSteps(`${techId}.items.2.title`),
+          description: tSteps(`${techId}.items.2.description`),
+        },
+        {
+          icon: icons.DataOpsShadows2,
+          title: tSteps(`${techId}.items.3.title`),
+          description: tSteps(`${techId}.items.3.description`),
+        },
+      ],
+    };
+  }
+
+  let DecentraliseServersShadows = null;
+
+  if (techId === "DecentraliseServers") {
+    DecentraliseServersShadows = {
+      titlePart1: tShadows(`${techId}.titlePart1`),
+      titlePart2: tShadows(`${techId}.titlePart2`),
+      description: tShadows(`${techId}.description`),
+      items: [
+        {
+          icon: icons.DecentraliseServersShadows,
+          title: tShadows(`${techId}.items.1.title`),
+          description: tShadows(`${techId}.items.1.description`),
+        },
+        {
+          icon: icons.DecentraliseServersShadows2,
+          title: tShadows(`${techId}.items.2.title`),
+          description: tShadows(`${techId}.items.2.description`),
+        },
+        {
+          icon: icons.DecentraliseServersShadows3,
+          title: tShadows(`${techId}.items.3.title`),
+          description: tShadows(`${techId}.items.3.description`),
+        },
+      ],
+    };
+  }
+
+  let HTMXShadows = null;
+
+  if (techId === "HTMX") {
+    HTMXShadows = {
+      titlePart1: tShadows(`${techId}.titlePart1`),
+      titlePart2: tShadows(`${techId}.titlePart2`),
+      description: tShadows(`${techId}.description`),
+      items: [
+        {
+          icon: icons.HTMX1,
+          title: tShadows(`${techId}.items.1.title`),
+          description: tShadows(`${techId}.items.1.description`),
+        },
+        {
+          icon: icons.HTMX2,
+          title: tShadows(`${techId}.items.2.title`),
+          description: tShadows(`${techId}.items.2.description`),
+        },
+      ],
+    };
+  }
+
   return (
     <div>
+      <div className="bg-gradient-to-b from-[#EBF7F7] via-[#F9DBE8] to-[#E8F6F6]">
+        {techId === "DataOps" ||
+        techId === "DecentraliseServers" ||
+        techId === "HTMX" ? (
+          <Shadows
+            data={
+              techId === "DataOps"
+                ? DataOpsShadows
+                : techId === "DecentraliseServers"
+                ? DecentraliseServersShadows
+                : techId === "HTMX" && HTMXShadows
+            }
+          />
+        ) : (
+          ""
+        )}
+      </div>
+      {techId === "DataOps" && <Steps data={DataOpSteps} />}
+
+      {techId === "DecentraliseServers" && (
+        <div className="w-full mb-12 flex flex-col justify-center items-center gap-2">
+          <div className="text-center">
+            <span className="text-blue-900 text-2xl sm:text-3xl md:text-4xl font-medium ">
+              Comparison with
+            </span>
+            <span className="text-fuchsia-700 text-2xl sm:text-3xl md:text-4xl font-medium ">
+              Traditional Servers
+            </span>
+          </div>
+          <div className="w-full px-4 md:px-16 lg:px-32 xl:px-64 flex flex-col items-center">
+            <div className="max-w-3xl text-center text-gray-500 lg:text-[.8rem] text-xs font-normal">
+              Unlike traditional centralized servers, which rely on single or
+              clustered data centers, decentralized servers distribute data
+              across numerous nodes globally. This approach
+            </div>
+          </div>
+        </div>
+      )}
+
+      {techId === "HTMX" && <HTMXinAction />}
+
       <div className="bg-gradient-to-b from-[#EBF7F7] via-[#F9DBE8] to-[#E0F3F4]">
         <CustomContainer className="!py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 relative">
@@ -55,14 +197,10 @@ const RepeatedCom = () => {
               height={500}
               className="w-[14rem] h-[14rem] lg:mx-[-120px] absolute"
             />
-            <div className="relative">
+            <div className="relative md:ml-[7rem]">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-primary">
-                  {t("title").split(" ")[0]}{" "}
-                </span>
-                <span className="text-secondary">
-                  {t("title").split(" ").slice(1).join(" ")}
-                </span>
+                <span className="text-primary">{t("titlePart1")} </span>
+                <span className="text-secondary">{t("titlePart2")}</span>
               </h2>
             </div>
             <div>
@@ -81,10 +219,10 @@ const RepeatedCom = () => {
               <div className="text-center">
                 <span className="text-blue-900 text-4xl font-medium">
                   {" "}
-                  {t("partnerWith").split(" ")[0]}{" "}
+                  {t("partnerWithpart1")}{" "}
                 </span>
                 <span className="text-fuchsia-700 text-4xl font-medium">
-                  {t("partnerWith").split(" ").slice(1).join(" ")}
+                  {t("partnerWithpart2")}
                 </span>
               </div>
               <p className="w-full max-w-[714px] text-center text-gray-500 text-base font-normal">
@@ -129,7 +267,7 @@ const RepeatedCom = () => {
         {/* Call to Action */}
         <div className="py-12 flex flex-col justify-center items-center">
           <div className="bg-primary rounded-xl p-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-medium text-white mb-4">
               {t("takeNextStep")}
             </h2>
             <p className="text-white mb-8 lg:max-w-3xl text-sm mx-auto">

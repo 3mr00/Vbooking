@@ -41,7 +41,7 @@ import AlAndMachineLearning from "@/assets/images/image/TechPage/AlAndMachineLea
 import Metaverse from "@/assets/images/image/TechPage/Metaverse.png";
 import HTMX from "@/assets/images/image/TechPage/HTMX.png";
 import DecentraliseServers from "@/assets/images/image/TechPage/DecentraliseServers.png";
-import Automation from "@/assets/images/image/TechPage/Automation.png";
+import DataOps from "@/assets/images/image/TechPage/DataOps.png";
 
 // turbo header images
 import incomingAgencies from "@/assets/images/image/TurboPage/incomingAgencies.png";
@@ -97,7 +97,7 @@ export default {
   Metaverse,
   HTMX,
   DecentraliseServers,
-  Automation,
+  DataOps,
 
   // turbo-specific header images
   incomingAgencies,
