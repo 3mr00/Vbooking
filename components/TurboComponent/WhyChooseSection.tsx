@@ -10,31 +10,37 @@ const WhyChooseSection = ({ turboId }: { turboId: string }) => {
 
   return (
     <div>
-      <div className="bg-gradient-to-b from-[#DDF1F3] via-[#F9DBE8] to-[#D7EFF1]">
-        <CustomContainer className="">
-          <div className="grid grid-cols-1 lg:grid-cols-2 relative">
-            <Image
-              src={images.vsymbolsmall}
-              alt="Turbo Booking Engine Platform Interface"
-              width={600}
-              height={500}
-              className={`w-[14rem] h-[14rem] lg:mx-[-120px] absolute`}
-            />
-            <div className="relative">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-primary">{t("Title1")} </span>
-                <span className="text-secondary">{t("Title2")}</span>
-                <br />
-                <span className="text-secondary">{t("Title3")}</span>
-              </h2>
+      {turboId !== "HolidayRental" && turboId !== "OnlineTravel" ? (
+        <div className="bg-gradient-to-b from-[#DDF1F3] via-[#F9DBE8] to-[#D7EFF1]">
+          <CustomContainer className="">
+            <div className="grid grid-cols-1 lg:grid-cols-2 relative">
+              <Image
+                src={images.vsymbolsmall}
+                alt="Turbo Booking Engine Platform Interface"
+                width={600}
+                height={500}
+                className={`w-[14rem] h-[14rem] lg:mx-[-120px] absolute`}
+              />
+              <div className="relative">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  <span className=" text-secondary">{t("Title1")} </span>
+                  <span className="text-primary">{t("Title2")}</span>
+                  <br />
+                  <span className="text-primary">{t("Title3")}</span>
+                </h2>
+              </div>
+              <div>
+                <p className="text-gray-600 mb-4 text-sm">
+                  {t("Description1")}
+                </p>
+                <p className="text-gray-600">{t("Description2")}</p>
+              </div>
             </div>
-            <div>
-              <p className="text-gray-600 mb-4 text-sm">{t("Description1")}</p>
-              <p className="text-gray-600">{t("Description2")}</p>
-            </div>
-          </div>
-        </CustomContainer>
-      </div>
+          </CustomContainer>
+        </div>
+      ) : (
+        ""
+      )}
 
       {/* CTA Section */}
       <div className="lg:w-[879px] mx-auto px-4 py-12">

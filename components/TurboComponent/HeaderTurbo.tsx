@@ -36,10 +36,10 @@ const HeaderTurbo = ({ turboId }: { turboId: string }) => {
           <h2 className="text-[#2d63cf] lg:text-sm text-xs font-medium mb-2">
             {masterBookings}
           </h2>
-          <h1 className="md:text-[2.5rem] text-[1.6rem] font-medium mb-4">
-            <span className="text-[#9c25a0]">{empower}</span>
-            <br />
-            <span className="text-[#2d63cf]">{efficiency}</span>
+
+          <h1 className="flex flex-wrap gap-2  md:text-4xl text-[1.6rem] font-medium mb-4">
+            <div className="text-[#9c25a0] ">{empower}</div>
+            <div className="text-[#2d63cf]">{efficiency}</div>
           </h1>
           <p className="text-[#667085] mb-[6px] md:text-[.8rem] text-[.6rem] font-normal">
             {description}

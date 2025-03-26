@@ -21,11 +21,6 @@ import EnFlag from "@/assets/images/image/en-flag.png";
 import smallLogo from "@/assets/images/image/smallLogo.png";
 import EgyptFlag from "@/assets/images/image/eg-flag.png";
 import OurCommunity from "@/assets/images/image/OurCommunity.png";
-import Enhanced1 from "@/assets/images/image/Enhanced1.png";
-import Enhanced2 from "@/assets/images/image/Enhanced2.png";
-import Enhanced3 from "@/assets/images/image/Enhanced3.png";
-import Enhanced4 from "@/assets/images/image/Enhanced4.png";
-import Enhanced5 from "@/assets/images/image/Enhanced5.png";
 import vsymbolsmall from "@/assets/images/image/vsymbolsmall.png";
 import techBooking from "@/assets/images/image/techBooking.png";
 
@@ -48,6 +43,29 @@ import incomingAgencies from "@/assets/images/image/TurboPage/incomingAgencies.p
 import holidayRental from "@/assets/images/image/TurboPage/holidayRental.png";
 import onlineTravel from "@/assets/images/image/TurboPage/onlineTravel.png";
 import wholesaleTour from "@/assets/images/image/TurboPage/wholesaleTour.png";
+//------ IncomingAgencies
+import IncomingAgenciesEnhanced1 from "@/assets/images/image/TurboPage/IncomingAgencies/Enhanced1.jpg";
+import IncomingAgenciesEnhanced2 from "@/assets/images/image/TurboPage/IncomingAgencies/Enhanced2.jpg";
+import IncomingAgenciesEnhanced3 from "@/assets/images/image/TurboPage/IncomingAgencies/Enhanced3.jpg";
+import IncomingAgenciesEnhanced4 from "@/assets/images/image/TurboPage/IncomingAgencies/Enhanced4.jpg";
+import IncomingAgenciesEnhanced5 from "@/assets/images/image/TurboPage/IncomingAgencies/Enhanced5.jpg";
+//------ HolidayRentalEnhanced
+import HolidayRentalEnhanced1 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced1.jpg";
+import HolidayRentalEnhanced2 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced2.jpg";
+import HolidayRentalEnhanced3 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced3.jpg";
+import HolidayRentalEnhanced4 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced4.jpg";
+import HolidayRentalEnhanced5 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced5.jpg";
+import HolidayRentalEnhanced6 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced6.jpg";
+import HolidayRentalEnhanced7 from "@/assets/images/image/TurboPage/HolidayRental/Enhanced7.jpg";
+
+//------ OnlineTravel
+import OnlineTravel1 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced1.jpg";
+import OnlineTravel2 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced2.jpg";
+import OnlineTravel3 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced3.jpg";
+import OnlineTravel4 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced4.jpg";
+import OnlineTravel5 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced5.jpg";
+import OnlineTravel6 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced6.jpg";
+import OnlineTravel7 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced7.jpg";
 
 // contact-us images
 import FacebookCu from "@/assets/images/image/facebook.svg";
@@ -78,11 +96,6 @@ export default {
   EgyptFlag,
   animatedHeaderImage,
   OurCommunity,
-  Enhanced1,
-  Enhanced2,
-  Enhanced3,
-  Enhanced4,
-  Enhanced5,
   vsymbolsmall,
   techBooking,
   // Product-specific header images
@@ -104,7 +117,25 @@ export default {
   holidayRental,
   onlineTravel,
   wholesaleTour,
-
+  IncomingAgenciesEnhanced1,
+  IncomingAgenciesEnhanced2,
+  IncomingAgenciesEnhanced3,
+  IncomingAgenciesEnhanced4,
+  IncomingAgenciesEnhanced5,
+  HolidayRentalEnhanced1,
+  HolidayRentalEnhanced2,
+  HolidayRentalEnhanced3,
+  HolidayRentalEnhanced4,
+  HolidayRentalEnhanced5,
+  HolidayRentalEnhanced6,
+  HolidayRentalEnhanced7,
+  OnlineTravel1,
+  OnlineTravel2,
+  OnlineTravel3,
+  OnlineTravel4,
+  OnlineTravel5,
+  OnlineTravel6,
+  OnlineTravel7,
   // contact-us images
   FacebookCu,
   XCu,

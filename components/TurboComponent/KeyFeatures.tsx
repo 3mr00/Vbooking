@@ -24,30 +24,33 @@ interface KeyFeaturesData {
 }
 
 const iconMap: Record<string, any> = {
-  inventory: icons.inventory,
-  booking: icons.booking,
-  control: icons.control,
-  operations: icons.operations,
-  functionalities: icons.functionalities,
+  // IncomingAgencies
+  inventory: icons.IncomingAgencies1,
+  booking: icons.IncomingAgencies2,
+  control: icons.IncomingAgencies3,
+  operations: icons.IncomingAgencies4,
+  functionalities: icons.IncomingAgencies5,
 
-  propertymanagement: icons.propertymanagement,
-  guestcommunication: icons.guestcommunication,
-  revenue: icons.revenue,
-  maintenance: icons.maintenance,
-  marketing: icons.marketing,
-  payment: icons.payment,
-  customization: icons.customization,
+  // HolidayRental
+  propertymanagement: icons.HolidayRental1,
+  guestcommunication: icons.HolidayRental2,
+  revenue: icons.HolidayRental3,
+  maintenance: icons.HolidayRental4,
+  marketing: icons.HolidayRental5,
+  payment: icons.HolidayRental6,
+  customization: icons.HolidayRental7,
 
-  // bookingengine
-  // rapiddeployment
-  // suppliernetwork
-  // multilingualsupport
-  // automatedprocesses
-  // travelmodules
-  // paymentfinance
-  // backoffice
-  // customersupport
-  // scalability
+  //OnlineTravel
+  rapiddeployment: icons.OnlineTravel1,
+  suppliernetwork: icons.OnlineTravel2,
+  multilingualsupport: icons.OnlineTravel3,
+  automatedprocesses: icons.OnlineTravel4,
+  travelmodules: icons.OnlineTravel5,
+  paymentfinance: icons.OnlineTravel6,
+  backoffice: icons.OnlineTravel7,
+  scalability: icons.OnlineTravel8,
+  bookingengine: icons.OnlineTravel9,
+  customersupport: icons.OnlineTravel10,
 
   // inventorymanagement
   // suppliersportal
@@ -77,20 +80,19 @@ const KeyFeatures = ({ turboId }: { turboId: string }) => {
         </span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {Object.entries(data.sections).map(([sectionId, section]) => (
-          <div key={sectionId} className="bg-white p-6 rounded-xl shadow-md">
+      <div className=" flex flex-wrap gap-12 justify-center">
+        {Object.entries(data.sections).map(([sectionId, section], index) => (
+          <div
+            key={sectionId}
+            className="bg-white p-6 rounded-xl shadow-md w-full md:w-[48%] lg:w-[45%]"
+          >
             <div className="flex justify-start mb-6">
               <div
                 onClick={() => alert(section?.id)}
                 className="p-4 rounded-full md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] relative"
               >
                 <Image
-                  src={
-                    iconMap[section?.id]
-                      ? iconMap[section?.id]
-                      : icons.inventory
-                  } // Fallback to prevent errors
+                  src={iconMap[section?.id] && iconMap[section?.id]}
                   alt={`${section.title} Icon`}
                   className="object-contain"
                   fill
@@ -105,16 +107,14 @@ const KeyFeatures = ({ turboId }: { turboId: string }) => {
                 <div key={featureId} className="flex gap-3">
                   <FaCircleCheck className="h-5 w-5 text-[#2d63cf] flex-shrink-0" />
                   <div>
-                    <p className="font-semibold md:text-base text-sm">
-                      {feature.title}
-                    </p>
-                    <ul className="list-disc list-inside">
-                      {feature.points.map((point, idx) => (
-                        <li key={idx} className="text-sm">
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
+                    <span className="font-semibold text-secondary md:text-base text-sm">
+                      {feature.title && feature.title + ":"}{" "}
+                    </span>
+                    {feature.points.map((point, idx) => (
+                      <span key={idx} className="text-sm">
+                        {point}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ))}

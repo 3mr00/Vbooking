@@ -4,119 +4,97 @@ import { CustomContainer } from "@/Wrapper/CustomContainer";
 import Image from "next/image";
 import WhyChooseSection from "./WhyChooseSection";
 
+const ImageMap: Record<string, any> = {
+  // IncomingAgencies
+  holidayPackagesManagement: images.IncomingAgenciesEnhanced1,
+  transfersInventoryManagement: images.IncomingAgenciesEnhanced2,
+  charterServicesManagement: images.IncomingAgenciesEnhanced3,
+  channelManagerIntegration: images.IncomingAgenciesEnhanced4,
+  integratedPaymentGateway: images.IncomingAgenciesEnhanced5,
+
+  // HolidayRental
+  streamlinedOperations: images.HolidayRentalEnhanced1,
+  increasedRevenue: images.HolidayRentalEnhanced2,
+  enhancedGuestSatisfaction: images.HolidayRentalEnhanced3,
+  improvedPropertyMaintenance: images.HolidayRentalEnhanced4,
+  dataDrivenDecisions: images.HolidayRentalEnhanced5,
+  customizableBranding: images.HolidayRentalEnhanced6,
+  secureFinancialManagement: images.HolidayRentalEnhanced7,
+
+  // OnlineTravel
+  turbochargedEfficiency: images.OnlineTravel1,
+  enhancedUserExperience: images.OnlineTravel2,
+  globalMarketReach: images.OnlineTravel3,
+  costSavingsRevenueGrowth: images.OnlineTravel4,
+  scalabilityFlexibility: images.OnlineTravel5,
+  reliableSupportPartnership: images.OnlineTravel6,
+  rapidTimeToMarket: images.OnlineTravel7,
+
+  // WholesaleTour
+  // increasedEfficiency: images.Enhanced5,
+  // enhancedFlexibility: images.Enhanced1,
+  // globalReach: images.Enhanced2,
+  // improvedCustomerSatisfaction: images.Enhanced3,
+
+  // Fallback images if needed
+  // default1: images.Enhanced1,
+  // default2: images.Enhanced2,
+  // default3: images.Enhanced3,
+  // default4: images.Enhanced4,
+  // default5: images.Enhanced5,
+};
+
 export default function EnhancedServices({ turboId }: { turboId: string }) {
+  const t = useTranslations(`turbo.EnhancedSec.${turboId}.EnhancedServices`);
+
+  // Get all sections for the current turboId
+  const sections = t.raw("sections") as Array<{
+    id: string;
+    title: string;
+    features: Array<{
+      title: string;
+      description: string;
+    }>;
+  }>;
+
   return (
     <>
       <CustomContainer className="">
         {/* Header Section */}
         <div className="mx-auto px-4 pb-12 text-center">
           <h1 className="text-[#2d63cf] md:text-[30px] text-[22px] font-medium">
-            Key Services{" "}
+            {t("Title")}{" "}
             <span className="text-[#9c25a0] md:text-[30px] text-[22px] font-medium">
-              We Offer
+              {t("Subtitle")}
             </span>
           </h1>
         </div>
 
         {/* Services Grid - First Row */}
-        <div className="mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="h-[150px] relative">
-              <Image
-                src={images.Enhanced1}
-                alt="Holiday Packages Management"
-                fill
-                className="object-cover"
-              />
+        <div className="flex flex-wrap gap-6 justify-center mb-6">
+          {sections.map((section, index) => (
+            <div
+              key={section.id}
+              className="bg-white rounded-xl shadow-sm overflow-hidden w-full sm:w-[48%] lg:w-[30%]"
+            >
+              <div className="h-[150px] relative">
+                <Image
+                  src={ImageMap[section.id] || images.IncomingAgenciesEnhanced1}
+                  alt={section.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-secondary mb-2">
+                  {section.title}
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  {section.features[0]?.description}
+                </p>
+              </div>
             </div>
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-secondary mb-2">
-                Holiday Packages Management
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Manage and customize holiday packages effortlessly.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="h-[150px] relative">
-              <Image
-                src={images.Enhanced2}
-                alt="Integrated Payment Gateway"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-secondary mb-2">
-                Integrated Payment Gateway
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Seamless and secure payment integrations.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="h-[150px] relative">
-              <Image
-                src={images.Enhanced3}
-                alt="Charter Services Management"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-secondary mb-2">
-                Charter Services Management
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Efficiently handle charter service bookings.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Services Grid - Second Row */}
-        <div className="lg:w-[50rem] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="h-[150px] relative">
-              <Image
-                src={images.Enhanced4}
-                alt="Channel Manager Integration"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-secondary mb-2">
-                Channel Manager Integration
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Sync inventory across multiple platforms.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="h-[150px] relative">
-              <Image
-                src={images.Enhanced5}
-                alt="Transfers Inventory Management"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-secondary mb-2">
-                Transfers Inventory Management
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Manage transfers and logistics effortlessly.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </CustomContainer>
 

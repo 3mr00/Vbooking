@@ -9,14 +9,14 @@
       },
       "HolidayRental": {
         "MasterBookings": "Master Your Bookings, Elevate Your Sales!",
-        "Empower": "Your Ultimate Solution",
-        "Efficiency": "for Seamless Holiday Rental Management",
-        "Description": "Managing holiday rentals doesn’t have to be overwhelming. With VBooking, you gain access to a cutting-edge, all-in-one platform designed specifically to simplify and enhance holiday rental management. Our platform provides a comprehensive suite of tools to streamline operations, enhance guest experiences, and increase revenue. Whether you manage a single property or an extensive portfolio, VBooking equips you with the tools you need to succeed."
+        "Empower": "Your Ultimate Solution for Seamless",
+        "Efficiency": "Holiday Rental Management",
+        "Description": "Managing holiday Rentals doesn’t have to be overwhelming. With VBooking, you gain access to a cutting-edge, all-in-one platform designed specifically to simplify and enhance holiday Rental management. Our platform provides a comprehensive suite of tools to streamline operations, enhance guest experiences, and increase revenue. Whether you manage a single property or an extensive portfolio, VBooking equips you with the robust features you need to excel in today’s competitive vacation rental market."
       },
       "OnlineTravel": {
         "MasterBookings": "Master Your Bookings, Elevate Your Sales!",
-        "Empower": "Empowering OTAs",
-        "Efficiency": "with Turbocharged Efficiency",
+        "Empower": "Empowering OTAs with ",
+        "Efficiency": "Efficiency for Unmatched Travel Experiences.",
         "Description": "At VBooking, we are committed to transforming the operations of online travel agencies (OTAs) through our advanced, transparent, and innovative travel solutions. Our goal is to equip OTAs with the tools and support needed to excel in the highly competitive travel market. Our flagship product, the Turbo Booking Engine, is crafted to elevate your OTA’s efficiency, user experience, and global reach, helping you deliver exceptional value to customers."
       },
       "WholesaleTour": {
@@ -29,7 +29,7 @@
 
     "KeyFeatures": {
       "IncomingAgencies": {
-        "title": "Key Features of the Turbo Booking Engine",
+        "title": "Core Features",
         "sections": [
           {
             "id": "inventory",
@@ -188,7 +188,7 @@
         ]
       },
       "HolidayRental": {
-        "title": "Core Features for Holiday Rental",
+        "title": "Core Features",
         "sections": [
           {
             "id": "propertymanagement",
@@ -334,28 +334,8 @@
         ]
       },
       "OnlineTravel": {
-        "title": "Core Features for Online Travel",
+        "title": "Core Features",
         "sections": [
-          {
-            "id": "bookingengine",
-            "title": "Intelligent and Customizable Booking Engine",
-            "features": [
-              {
-                "title": "45 Modern Web Designs",
-                "points": [
-                  "Select from a diverse collection of 45 professionally designed, user-centric web templates.",
-                  "Each template is fully customizable to reflect your brand's identity, ensuring a seamless and visually engaging user experience that captivates your customers at every touchpoint."
-                ]
-              },
-              {
-                "title": "B2C Portal",
-                "points": [
-                  "Empower customers to effortlessly book travel services, from browsing options to secure payments and e-ticket issuance, all online.",
-                  "The B2C portal provides a comprehensive booking experience that prioritizes convenience and efficiency."
-                ]
-              }
-            ]
-          },
           {
             "id": "rapiddeployment",
             "title": "Rapid Deployment for Quick Market Entry",
@@ -447,6 +427,39 @@
             ]
           },
           {
+            "id": "scalability",
+            "title": "Unlimited Users for Scalability",
+            "features": [
+              {
+                "title": "Scalable Solution",
+                "points": [
+                  "As your OTA grows, the Turbo Booking Engine scales with you, supporting unlimited users without the need for costly upgrades.",
+                  "Whether you're an emerging OTA or an established market player, VBooking is built to support your growth trajectory."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bookingengine",
+            "title": "Intelligent and Customizable Booking Engine",
+            "features": [
+              {
+                "title": "45 Modern Web Designs",
+                "points": [
+                  "Select from a diverse collection of 45 professionally designed, user-centric web templates.",
+                  "Each template is fully customizable to reflect your brand's identity, ensuring a seamless and visually engaging user experience that captivates your customers at every touchpoint."
+                ]
+              },
+              {
+                "title": "B2C Portal",
+                "points": [
+                  "Empower customers to effortlessly book travel services, from browsing options to secure payments and e-ticket issuance, all online.",
+                  "The B2C portal provides a comprehensive booking experience that prioritizes convenience and efficiency."
+                ]
+              }
+            ]
+          },
+          {
             "id": "customersupport",
             "title": "Comprehensive Customer Support for Enhanced Satisfaction",
             "features": [
@@ -461,19 +474,6 @@
                 "points": [
                   "Enjoy a dedicated account manager focused on helping you achieve your business goals.",
                   "This personalized support ensures you have a trusted partner who understands your needs and provides guidance as your business evolves."
-                ]
-              }
-            ]
-          },
-          {
-            "id": "scalability",
-            "title": "Unlimited Users for Scalability",
-            "features": [
-              {
-                "title": "Scalable Solution",
-                "points": [
-                  "As your OTA grows, the Turbo Booking Engine scales with you, supporting unlimited users without the need for costly upgrades.",
-                  "Whether you're an emerging OTA or an established market player, VBooking is built to support your growth trajectory."
                 ]
               }
             ]
@@ -588,153 +588,328 @@
         ]
       }
     },
+
     "EnhancedSec": {
       "IncomingAgencies": {
         "EnhancedServices": {
           "Title": "Enhanced Services",
           "Subtitle": "for Comprehensive Management",
-          "HolidayPackagesManagement": {
-            "Title": "Holiday Packages Management",
-            "Description": "Expand your offerings with a dedicated extranet for managing holiday packages. Easily create, manage, and market diverse packages tailored to client interests."
-          },
-          "TransfersInventoryManagement": {
-            "Title": "Transfers Inventory Management",
-            "Description": "Maintain streamlined control over transfer services to guarantee smooth client journeys at every stage."
-          },
-          "CharterServicesManagement": {
-            "Title": "Charter Services Management",
-            "Description": "Easily manage charter services, from flights to boats, through a specialized extranet. Enhance logistics coordination and customer experience with ease."
-          },
-          "ChannelManagerIntegration": {
-            "Title": "Channel Manager Integration",
-            "Description": "Broaden your market presence by connecting to multiple distribution channels, enhancing visibility and driving sales."
-          },
-          "IntegratedPaymentGateway": {
-            "Title": "Integrated Payment Gateway",
-            "Description": "Ensure secure, reliable transactions with our payment gateway integration, providing clients with peace of mind throughout their booking experience."
-          }
+          "sections": [
+            {
+              "id": "holidayPackagesManagement",
+              "title": "Holiday Packages Management",
+              "features": [
+                {
+                  "description": "Expand your offerings with a dedicated extranet for managing holiday packages. Easily create, manage, and market diverse packages tailored to client interests."
+                }
+              ]
+            },
+            {
+              "id": "transfersInventoryManagement",
+              "title": "Transfers Inventory Management",
+              "features": [
+                {
+                  "description": "Maintain streamlined control over transfer services to guarantee smooth client journeys at every stage."
+                }
+              ]
+            },
+            {
+              "id": "charterServicesManagement",
+              "title": "Charter Services Management",
+              "features": [
+                {
+                  "description": "Easily manage charter services, from flights to boats, through a specialized extranet. Enhance logistics coordination and customer experience with ease."
+                }
+              ]
+            },
+            {
+              "id": "channelManagerIntegration",
+              "title": "Channel Manager Integration",
+              "features": [
+                {
+                  "description": "Broaden your market presence by connecting to multiple distribution channels, enhancing visibility and driving sales."
+                }
+              ]
+            },
+            {
+              "id": "integratedPaymentGateway",
+              "title": "Integrated Payment Gateway",
+              "features": [
+                {
+                  "description": "Ensure secure, reliable transactions with our payment gateway integration, providing clients with peace of mind throughout their booking experience."
+                }
+              ]
+            }
+          ]
         },
         "WhyChooseSection": {
-          "Title1": "Why Choose",
-          "Title2": "vbooking",
-          "Title3": "for Destination Management?",
-          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network.",
-          "Description2": "Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction. Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
+          "Title1": "Why Choose ",
+          "Title2": "vbooking for Destination Management?",
+          "Title3": "",
+          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network. Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction.",
+          "Description2": "Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
           "CTATitle": "Get Started with vbooking",
           "CTADescription": "Ready to transform your travel business? From tour operators and DMCs to online travel agencies and holiday property managers, vbooking provides the tools and technology you need to succeed. Reach out to us today to learn more about how our solutions can elevate your operations.",
           "CTAButton1": "Contact Us",
-          "CTAButton2": "Request a Demo"
+          "CTAButton2": "Get a Quote"
         }
       },
       "HolidayRental": {
         "EnhancedServices": {
           "Title": "Enhanced Services",
-          "Subtitle": "for Holiday Rental Management",
-          "HolidayPackagesManagement": {
-            "Title": "Property Management",
-            "Description": "Centralize all your management tasks, from booking to guest communication, allowing you to focus on delivering exceptional guest experiences while minimizing daily administrative burdens."
-          },
-          "TransfersInventoryManagement": {
-            "Title": "Dynamic Pricing Tools",
-            "Description": "Leverage dynamic pricing tools and increased visibility through integrated channels to drive occupancy, boost income, and improve your bottom line."
-          },
-          "CharterServicesManagement": {
-            "Title": "Guest Communication",
-            "Description": "Automated messaging keeps guests informed, while 24/7 support provides peace of mind. These features foster positive experiences, leading to repeat bookings and favorable reviews."
-          },
-          "ChannelManagerIntegration": {
-            "Title": "Maintenance Management",
-            "Description": "Efficient maintenance and housekeeping tools ensure your properties remain in excellent condition, ready to welcome guests at any time and reducing operational downtime."
-          },
-          "IntegratedPaymentGateway": {
-            "Title": "Secure Payment Processing",
-            "Description": "Our integrated payment and financial reporting solutions offer a secure, transparent view of your finances, helping you maintain control and financial stability."
-          }
+          "Subtitle": "for Comprehensive Management",
+          "sections": [
+            {
+              "id": "streamlinedOperations",
+              "title": "1-Streamlined Operations",
+              "features": [
+                {
+                  "description": "VBooking centralizes all your management tasks, from booking to guest communication, allowing you to focus on delivering exceptional guest experiences while minimizing daily administrative burdens."
+                }
+              ]
+            },
+            {
+              "id": "increasedRevenue",
+              "title": "2-Increased Revenue",
+              "features": [
+                {
+                  "description": "Leverage dynamic pricing tools and increased visibility through integrated channels to drive occupancy, boost income, and improve your bottom line."
+                }
+              ]
+            },
+            {
+              "id": "enhancedGuestSatisfaction",
+              "title": "3-Enhanced Guest Satisfaction",
+              "features": [
+                {
+                  "description": "Automated messaging keeps guests informed, while 24/7 support provides peace of mind. These features foster positive experiences, leading to repeat bookings and favorable reviews."
+                }
+              ]
+            },
+            {
+              "id": "improvedPropertyMaintenance",
+              "title": "4-Improved Property Maintenance",
+              "features": [
+                {
+                  "description": "Efficient maintenance and housekeeping tools ensure your properties remain in excellent condition, ready to welcome guests at any time and reducing operational downtime."
+                }
+              ]
+            },
+            {
+              "id": "dataDrivenDecisions",
+              "title": "5-Data-Driven Decisions",
+              "features": [
+                {
+                  "description": "Gain insights from detailed reports and analytics, enabling you to refine pricing, improve operations, and make informed decisions to support long-term growth."
+                }
+              ]
+            },
+            {
+              "id": "customizableBranding",
+              "title": "6-Customizable Branding",
+              "features": [
+                {
+                  "description": "Strengthen your brand with a unique website and personalized guest experiences, establishing a distinct identity and encouraging guest loyalty."
+                }
+              ]
+            },
+            {
+              "id": "secureFinancialManagement",
+              "title": "7-Secure Financial Management",
+              "features": [
+                {
+                  "description": "Our integrated payment and financial reporting solutions offer a secure, transparent view of your finances, helping you maintain control and financial stability."
+                }
+              ]
+            }
+          ]
         },
         "WhyChooseSection": {
-          "Title1": "Why Choose",
-          "Title2": "VBooking",
-          "Title3": "for Holiday Rentals?",
-          "Description1": "VBooking centralizes all your management tasks, from booking to guest communication, allowing you to focus on delivering exceptional guest experiences while minimizing daily administrative burdens. Gain insights from detailed reports and analytics, enabling you to refine pricing, improve operations, and make informed decisions to support long-term growth.",
-          "Description2": "Strengthen your brand with a unique website and personalized guest experiences, establishing a distinct identity and encouraging guest loyalty. Our integrated payment and financial reporting solutions offer a secure, transparent view of your finances, helping you maintain control and financial stability.",
-          "CTATitle": "Get Started with VBooking",
+          "Title1": "Why Choose ",
+          "Title2": "vbooking for Destination Management?",
+          "Title3": "",
+          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network. Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction.",
+          "Description2": "Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
+          "CTATitle": "Get Started with vbooking",
           "CTADescription": "Ready to elevate your holiday Rental business? Whether you're a tour operator, destination management company, online travel agency, or independent holiday Rental manager, VBooking offers the innovative solutions you need to succeed. Contact us today to learn how VBooking can transform your operations and help you achieve your business goals.",
           "CTAButton1": "Contact Us",
-          "CTAButton2": "Request a Demo"
+          "CTAButton2": "Get a Quote"
         }
       },
       "OnlineTravel": {
         "EnhancedServices": {
-          "Title": "Enhanced Services",
-          "Subtitle": "for Online Travel Agencies",
-          "HolidayPackagesManagement": {
-            "Title": "Turbocharged Booking Engine",
-            "Description": "The Turbo Booking Engine minimizes manual tasks, enhancing your operational workflow and reducing turnaround times, contributing to a smooth customer experience."
-          },
-          "TransfersInventoryManagement": {
-            "Title": "Customizable Interface",
-            "Description": "Choose from 45 modern designs and tailor your booking experience to reflect your brand with intuitive navigation, making it easier for customers to find and book services."
-          },
-          "CharterServicesManagement": {
-            "Title": "Global Market Access",
-            "Description": "Access to 550+ suppliers and multilingual support lets you offer competitive pricing across a broad range of travel services while reaching a global audience."
-          },
-          "ChannelManagerIntegration": {
-            "Title": "Revenue Optimization",
-            "Description": "Flexible rate management tools let you optimize pricing strategies to maximize profit margins while remaining competitive in the market."
-          },
-          "IntegratedPaymentGateway": {
-            "Title": "24/7 Support & Deployment",
-            "Description": "Customers benefit from round-the-clock assistance, while our fast deployment process gets your OTA up and running within two weeks."
-          }
+          "Title": "Key Benefits",
+          "Subtitle": "",
+          "sections": [
+            {
+              "id": "turbochargedEfficiency",
+              "title": "1-Turbocharged Efficiency",
+              "features": [
+                {
+                  "title": "Optimized Workflow",
+                  "description": "The Turbo Booking Engine minimizes manual tasks, enhancing your operational workflow and reducing turnaround times."
+                },
+                {
+                  "title": "Enhanced Customer Experience",
+                  "description": "The streamlined operations contribute to a smooth customer experience, increasing satisfaction and encouraging repeat business."
+                }
+              ]
+            },
+            {
+              "id": "enhancedUserExperience",
+              "title": "2-Enhanced User Experience",
+              "features": [
+                {
+                  "title": "Customizable Interface",
+                  "description": "Choose from 45 modern designs and tailor your booking experience to reflect your brand."
+                },
+                {
+                  "title": "Intuitive Navigation",
+                  "description": "Simplify the booking process with user-friendly navigation, making it easier for customers to find and book the services they need, boosting conversion rates."
+                }
+              ]
+            },
+            {
+              "id": "globalMarketReach",
+              "title": "3-Global Market Reach",
+              "features": [
+                {
+                  "title": "Access to 550+ Suppliers",
+                  "description": "Offer competitive pricing across a broad range of travel services by connecting with our extensive supplier network."
+                },
+                {
+                  "title": "Multilingual Support",
+                  "description": "Reach a global audience by providing support in multiple languages, making customers feel understood and valued."
+                }
+              ]
+            },
+            {
+              "id": "costSavingsRevenueGrowth",
+              "title": "4-Cost Savings and Revenue Growth",
+              "features": [
+                {
+                  "title": "Automated Processes",
+                  "description": "Automation reduces operational costs and errors, allowing your OTA to focus resources on growth."
+                },
+                {
+                  "title": "Flexible Rate Management",
+                  "description": "VBooking's rate management tools let you optimize pricing strategies to maximize profit margins while remaining competitive."
+                },
+                {
+                  "title": "Increased Profit Margins",
+                  "description": "By reducing overhead and boosting efficiency, VBooking helps improve your OTA's profitability, enabling reinvestment in growth."
+                }
+              ]
+            },
+            {
+              "id": "scalabilityFlexibility",
+              "title": "5-Scalability and Flexibility",
+              "features": [
+                {
+                  "title": "Unlimited Users",
+                  "description": "Our platform grows with you, supporting an unlimited number of users as your business expands."
+                },
+                {
+                  "title": "Adaptable Platform",
+                  "description": "VBooking is flexible, accommodating businesses of all sizes and adapting to specific requirements, ensuring seamless scalability."
+                }
+              ]
+            },
+            {
+              "id": "reliableSupportPartnership",
+              "title": "6-Reliable Support and Partnership",
+              "features": [
+                {
+                  "title": "24/7 Call Center",
+                  "description": "Customers benefit from round-the-clock assistance, enhancing trust and satisfaction."
+                },
+                {
+                  "title": "Dedicated Account Manager",
+                  "description": "Receive strategic guidance and personalized support to help you navigate challenges and seize new opportunities."
+                }
+              ]
+            },
+            {
+              "id": "rapidTimeToMarket",
+              "title": "7-Rapid Time to Market",
+              "features": [
+                {
+                  "title": "Quick Deployment",
+                  "description": "VBooking's fast deployment process gets your OTA up and running within two weeks, letting you capitalize on market opportunities without delay."
+                },
+                {
+                  "title": "Competitive Advantage",
+                  "description": "The combination of rapid deployment and efficient operations gives your business a strong edge in the market."
+                }
+              ]
+            }
+          ]
         },
         "WhyChooseSection": {
-          "Title1": "Why Choose",
-          "Title2": "VBooking",
-          "Title3": "for Online Travel?",
-          "Description1": "VBooking's platform grows with you, supporting an unlimited number of users as your business expands. Our adaptable platform accommodates businesses of all sizes and adapts to specific requirements, ensuring seamless scalability.",
-          "Description2": "By reducing overhead and boosting efficiency, VBooking helps improve your OTA's profitability, enabling reinvestment in growth. The combination of rapid deployment and efficient operations gives your business a strong edge in the market.",
-          "CTATitle": "Get Started with VBooking",
+          "Title1": "Why Choose ",
+          "Title2": "vbooking for Destination Management?",
+          "Title3": "",
+          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network. Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction.",
+          "Description2": "Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
+          "CTATitle": "Get Started with vbooking",
           "CTADescription": "Are you ready to transform your OTA and deliver unmatched travel experiences? VBooking empowers wholesale tour operators, destination management companies, OTAs, and holiday home managers with the tools and technology needed to thrive. Contact us today to explore our solutions and discover how we can revolutionize your business.",
           "CTAButton1": "Contact Us",
-          "CTAButton2": "Request a Demo"
+          "CTAButton2": "Get a Quote"
         }
       },
       "WholesaleTour": {
         "EnhancedServices": {
-          "Title": "Enhanced Services",
-          "Subtitle": "for Wholesale Tour Operators",
-          "HolidayPackagesManagement": {
-            "Title": "Streamlined Operations",
-            "Description": "Streamlined operations reduce manual work, boosting productivity across your business and allowing you to focus on growth."
-          },
-          "TransfersInventoryManagement": {
-            "Title": "Inventory Management",
-            "Description": "With full control over your inventory and customizable options, easily adapt to changing market demands and optimize your offerings."
-          },
-          "CharterServicesManagement": {
-            "Title": "Global Distribution",
-            "Description": "Multi-language and multi-currency support, combined with channel manager access, empowers you to serve a diverse global audience."
-          },
-          "ChannelManagerIntegration": {
-            "Title": "Customer Relationship Tools",
-            "Description": "By providing a seamless booking experience, you build lasting relationships with your clients and improve retention rates."
-          },
-          "IntegratedPaymentGateway": {
-            "Title": "Secure Payment Processing",
-            "Description": "Our integrated payment solutions ensure secure transactions while providing comprehensive financial reporting for your business."
-          }
+          "Title": "Benefits for Wholesale Tour Operators",
+          "Subtitle": "",
+          "sections": [
+            {
+              "id": "increasedEfficiency",
+              "title": "Increased Efficiency",
+              "features": [
+                {
+                  "description": "Streamlined operations reduce manual work, boosting productivity across your business."
+                }
+              ]
+            },
+            {
+              "id": "enhancedFlexibility",
+              "title": "Enhanced Flexibility",
+              "features": [
+                {
+                  "description": "With full control over your inventory and customizable options, easily adapt to changing market demands."
+                }
+              ]
+            },
+            {
+              "id": "globalReach",
+              "title": "Global Reach",
+              "features": [
+                {
+                  "description": "Multi-language and multi-currency support, combined with channel manager access, empowers you to serve a diverse global audience."
+                }
+              ]
+            },
+            {
+              "id": "improvedCustomerSatisfaction",
+              "title": "Improved Customer Satisfaction",
+              "features": [
+                {
+                  "description": "By providing a seamless booking experience, you build lasting relationships with your clients and improve retention."
+                }
+              ]
+            }
+          ]
         },
         "WhyChooseSection": {
-          "Title1": "Why Choose",
-          "Title2": "VBooking",
-          "Title3": "for Wholesale Tour Operations?",
-          "Description1": "VBooking provides wholesale tour operators with a comprehensive platform that streamlines operations, enhances flexibility, and expands your global reach. Our solution is designed specifically for the unique challenges of wholesale tour management.",
-          "Description2": "With VBooking, you'll gain access to powerful tools that help you manage inventory, process bookings efficiently, and deliver exceptional service to your clients. Our platform grows with your business, ensuring you can scale operations without disruption.",
-          "CTATitle": "Get Started with VBooking",
-          "CTADescription": "Ready to streamline your operations and expand your market? Discover how VBooking can elevate your wholesale operations today!",
+          "Title1": "Why Choose ",
+          "Title2": "vbooking for Destination Management?",
+          "Title3": "",
+          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network. Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction.",
+          "Description2": "Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
+          "CTATitle": "Get Started with vbooking",
+          "CTADescription": "Ready to transform your travel business? From tour operators and DMCs to online travel agencies and holiday property managers, vbooking provides the tools and technology you need to succeed. Reach out to us today to learn more about how our solutions can elevate your operations.",
           "CTAButton1": "Contact Us",
-          "CTAButton2": "Request a Demo"
+          "CTAButton2": "Get a Quote"
         }
       }
     }
