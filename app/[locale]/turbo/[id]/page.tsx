@@ -3,6 +3,7 @@ import HeaderTurbo from "@/components/TurboComponent/HeaderTurbo";
 import KeyFeatures from "@/components/TurboComponent/KeyFeatures";
 import EnhancedServices from "@/components/TurboComponent/EnhancedServices";
 import { notFound } from "next/navigation";
+import WholesaleTour from "@/components/TurboComponent/WholesaleTour/WholesaleTour";
 
 // Define the type for nested feature content
 
@@ -29,11 +30,17 @@ const Turbo = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="bg-gradient-to-b from-[#F7FCFC] to-[#D7EFF1]">
-      {/* Hero Section */}
       <HeaderTurbo turboId={turboId} />
-      {/* Key Features Section */}
-      <KeyFeatures turboId={turboId} />
-      {/* Key Enhanced Services Section */}
+
+      {turboId !== "WholesaleTour" && (
+        <>
+          <KeyFeatures turboId={turboId} />
+        </>
+      )}
+
+      {/* WholesaleTour */}
+      {turboId === "WholesaleTour" && <WholesaleTour />}
+
       <EnhancedServices turboId={turboId} />
     </div>
   );

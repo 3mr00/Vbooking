@@ -21,8 +21,8 @@
       },
       "WholesaleTour": {
         "MasterBookings": "Master Your Bookings, Elevate Your Sales!",
-        "Empower": "Streamline, Optimize, and Thrive",
-        "Efficiency": "with VBooking’s Turbo Booking Engine",
+        "Empower": "Streamline, Optimize, and Thrive with VBooking’s Turbo",
+        "Efficiency": "Booking Engine for Wholesale Tour Operators",
         "Description": "In today’s competitive travel industry, wholesale tour operators play a vital role in connecting service providers and travel agents. At VBooking, we recognize the unique challenges B2B partners face and are committed to supporting them with state-of-the-art tools and technologies. Our solutions are designed to streamline operations, maximize efficiency, and enhance collaboration, ensuring your business flourishes in the ever-evolving travel landscape."
       }
     },
@@ -858,9 +858,213 @@
         }
       },
       "WholesaleTour": {
+        "CoreFeatures": {
+          "title": {
+            "part1": "Core",
+            "part2": "Features"
+          },
+          "features": {
+            "firstRow": [
+              {
+                "id": "full-control",
+                "title": "Full Control and Customization",
+                "points": [
+                  {
+                    "id": "b2b-integration",
+                    "highlight": "B2B/B2C Integration:",
+                    "description": "Integrate the Turbo Booking Engine seamlessly with your distribution platforms to ensure smooth, consistent operations."
+                  },
+                  {
+                    "id": "api-integration",
+                    "highlight": "API Integration:",
+                    "description": "Offer flexible API connections for third-party access to your inventory, allowing custom pricing and availability adjustments."
+                  },
+                  {
+                    "id": "multi-language",
+                    "highlight": "Multi-Language & Multi-Currency Support:",
+                    "description": "Cater to a global market with support for multiple languages and currencies, providing a personalized experience."
+                  },
+                  {
+                    "id": "diy-language",
+                    "highlight": "DIY Multi-Language Capability:",
+                    "description": "Tailor language options to meet specific business needs, enhancing accessibility."
+                  },
+                  {
+                    "id": "product-definition",
+                    "highlight": "Product Definition:",
+                    "description": "Define and manage a variety of products—including hotels, villas, resorts, apartments, camping sites, tours, and transfers—on one platform."
+                  }
+                ]
+              },
+              {
+                "id": "advanced-booking",
+                "title": "Advanced Booking Capabilities",
+                "points": [
+                  {
+                    "id": "static-deals",
+                    "highlight": "Static and Dynamic Deals:",
+                    "description": "Offer flexible hotel deals, allowing adjustments in pricing and availability to match market demand."
+                  },
+                  {
+                    "id": "rest-api",
+                    "highlight": "REST / JSON API:",
+                    "description": "Broaden your reach by enabling third-party access to your inventory, facilitating customizable pricing and broader distribution."
+                  },
+                  {
+                    "id": "hotel-data",
+                    "highlight": "1.5 Million Hotel Static Data:",
+                    "description": "Access a vast, high-quality database of hotel information and photos, enriching your offerings to attract more clients."
+                  }
+                ]
+              }
+            ],
+            "secondRow": [
+              {
+                "id": "suppliers-portal",
+                "title": "Suppliers Portal",
+                "points": [
+                  {
+                    "id": "supplier-management",
+                    "highlight": "Manage relationships with all suppliers through a single portal:",
+                    "description": "From hotels to transport providers, our Suppliers Portal offers seamless coordination and efficient management of offerings, ensuring that all suppliers remain updated and aligned with your business needs."
+                  }
+                ]
+              },
+              {
+                "id": "inventory-management",
+                "title": "Comprehensive Inventory Management",
+                "points": [
+                  {
+                    "id": "bulk-booking",
+                    "highlight": "Bulk Booking Management:",
+                    "description": "Simplify large-volume bookings with our intuitive interface, reducing manual work and boosting productivity."
+                  },
+                  {
+                    "id": "hotel-contracts",
+                    "highlight": "Direct Hotel Contracts:",
+                    "description": "Manage your contracted hotels directly by controlling allotments, rates, and policies to keep your inventory updated."
+                  },
+                  {
+                    "id": "tour-management",
+                    "highlight": "Tour & Excursion Management:",
+                    "description": "Organize and showcase tours and excursions with detailed descriptions, photos, and essential information."
+                  },
+                  {
+                    "id": "transfers-management",
+                    "highlight": "Transfers Management:",
+                    "description": "Coordinate and manage transfer services seamlessly, offering customers a hassle-free experience."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+
+        "OperationalManagement": {
+          "title": {
+            "part1": "Operational",
+            "part2": "Management"
+          },
+          "operatorApp": {
+            "title": "Operator App",
+            "subtitle": "Simplify trip operations with our Operator App:",
+            "features": [
+              {
+                "title": "Pick-Ups:",
+                "description": "Organize client pick-ups efficiently to ensure smooth transitions."
+              },
+              {
+                "title": "Task Assignment:",
+                "description": "Assign tasks to guides and drivers seamlessly, ensuring streamlined workflows."
+              },
+              {
+                "title": "Operational Pipelines:",
+                "description": "Manage single or multiple bookings with structured, streamlined pipelines linked to the package builder for cohesive management."
+              }
+            ]
+          },
+          "quotation": {
+            "title": "Dynamic Quotation and Quotation Tracking",
+            "subtitle": "Empower DMCs and travel agents with dynamic quotation tools:",
+            "features": [
+              {
+                "title": "Customizable Client Links:",
+                "description": "Send clients dynamic quotation links that allow them to modify packages, add or remove items, change hotels or flights, and make payments without needing to call the agent."
+              },
+              {
+                "title": "Quotation Tracking:",
+                "description": "Monitor link activity to see how often it's opened and how much time clients spend on it until payment is completed."
+              }
+            ]
+          },
+          "aiAgent": {
+            "title": "AI Agent",
+            "subtitle": "Leverage advanced AI features to boost operations:",
+            "features": [
+              {
+                "title": "Task Organization and Assignment:",
+                "description": "Automate task management and client communication, freeing up valuable time for your team."
+              },
+              {
+                "title": "Sales Empowerment:",
+                "description": "Enhance engagement and conversion rates through real-time, AI-driven interactions."
+              },
+              {
+                "title": "Full Itinerary Creation:",
+                "description": "Create detailed, client-specific itineraries that are recorded in their CRM profile for future reference."
+              },
+              {
+                "title": "AI-Powered Helpdesk:",
+                "description": "Ensure seamless customer service and support with an intelligent helpdesk system that can handle inquiries and provide personalized assistance."
+              }
+            ]
+          }
+        },
+
+        "ComprehensiveFunctionalities": {
+          "title": {
+            "part1": "Comprehensive",
+            "part2": "Functionalities"
+          },
+          "websiteBuilder": {
+            "title": "Website Builder",
+            "description": "Our robust web builder offers comprehensive tools for DMCs and travel agents to create professional, feature-rich websites:",
+            "features": [
+              {
+                "title": "CMS and Call-to-Action Buttons:",
+                "description": "Integrate essential buttons like 'Book Now,' 'Get Quote,' 'Customer Service Desk,' 'Live Chat,' and 'Talk with AI Agent' to drive engagement and provide clients with instant access to your services."
+              },
+              {
+                "title": "NLP Engine:",
+                "description": "Improve customer interaction and support with natural language processing that understands client needs and responds effectively."
+              },
+              {
+                "title": "Widgets and Sales Tools:",
+                "description": "Add interactive elements that enhance the sales experience for your clients."
+              },
+              {
+                "title": "Insights:",
+                "description": "Access detailed analytics to understand visitor behavior and improve your engagement strategies."
+              }
+            ]
+          },
+          "liveBookingDesk": {
+            "title": "Live Booking Desk",
+            "description": "A powerful communication tool, the Live Booking Desk functions similarly to Zoom but is tailored for the travel industry. This tool bridges the gap between online and offline bookings, enabling agents to make bookings, gather client information, and process payments in one streamlined platform, boosting conversion rates and enhancing client interaction."
+          },
+          "hrManagement": {
+            "title": "HR Management",
+            "description": "Maintain an organized and efficient team with advanced HR management tools. From task assignments to performance tracking, manage your team's activities smoothly to enhance productivity and maintain a high level of operational efficiency."
+          },
+          "communityAccess": {
+            "title": "V Booking Community Access",
+            "description": "All employees receive membership in the V Booking Community, providing access to a network of travel professionals, resources, and shared industry insights to foster growth and learning."
+          }
+        },
+
         "EnhancedServices": {
-          "Title": "Benefits for Wholesale Tour Operators",
-          "Subtitle": "",
+          "Title": "Benefits for ",
+          "Subtitle": "Wholesale Tour Operators",
           "sections": [
             {
               "id": "increasedEfficiency",
@@ -901,13 +1105,13 @@
           ]
         },
         "WhyChooseSection": {
-          "Title1": "Why Choose ",
-          "Title2": "vbooking for Destination Management?",
+          "Title1": "Partner ",
+          "Title2": "Program",
           "Title3": "",
-          "Description1": "At vbooking, we specialize in meeting the unique needs of Destination Management Companies with an intuitive platform that simplifies operations, enhances service delivery, and drives revenue. Our Turbo Booking Engine is powered by industry-leading technology, informed by extensive DMC experience, and backed by a global network. Trusted by hundreds of DMCs worldwide, vbooking has proven its impact by boosting operational efficiency, driving sales, and enhancing customer satisfaction.",
-          "Description2": "Join the vbooking community and discover how our solution can empower your business, keeping you competitive and ready to scale in a dynamic travel market.",
+          "Description1": "Increase revenue by becoming a part of the VBooking Partner Program, where you can sell the complete Turbo Booking Engine feature set to your network of travel agents.",
+          "Description2": " Earn commissions while extending the reach and impact of your business with VBooking’s powerful suite of tools.",
           "CTATitle": "Get Started with vbooking",
-          "CTADescription": "Ready to transform your travel business? From tour operators and DMCs to online travel agencies and holiday property managers, vbooking provides the tools and technology you need to succeed. Reach out to us today to learn more about how our solutions can elevate your operations.",
+          "CTADescription": "Ready to streamline your operations and expand your market? Discover how VBooking can elevate your wholesale operations today!",
           "CTAButton1": "Contact Us",
           "CTAButton2": "Get a Quote"
         }

@@ -87,10 +87,7 @@ const KeyFeatures = ({ turboId }: { turboId: string }) => {
             className="bg-white p-6 rounded-xl shadow-md w-full md:w-[48%] lg:w-[45%]"
           >
             <div className="flex justify-start mb-6">
-              <div
-                onClick={() => alert(section?.id)}
-                className="p-4 rounded-full md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] relative"
-              >
+              <div className="p-4 rounded-full md:w-[5rem] md:h-[5rem] w-[3rem] h-[3rem] relative">
                 <Image
                   src={iconMap[section?.id] && iconMap[section?.id]}
                   alt={`${section.title} Icon`}

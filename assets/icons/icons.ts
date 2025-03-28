@@ -38,6 +38,12 @@ import OnlineTravel8 from "@/assets/icons/icon/TurboPage/OnlineTravel/products i
 import OnlineTravel9 from "@/assets/icons/icon/TurboPage/OnlineTravel/products icons-20.svg";
 import OnlineTravel10 from "@/assets/icons/icon/TurboPage/OnlineTravel/products icons-21.svg";
 
+//--WholesaleTour
+import WholesaleTour1 from "@/assets/icons/icon/TurboPage/WholesaleTour/products icons-22.svg";
+import WholesaleTour2 from "@/assets/icons/icon/TurboPage/WholesaleTour/products icons-23.svg";
+import WholesaleTour3 from "@/assets/icons/icon/TurboPage/WholesaleTour/products icons-24.svg";
+import WholesaleTour4 from "@/assets/icons/icon/TurboPage/WholesaleTour/products icons-25.svg";
+
 export default {
   tech1,
   tech2,
@@ -75,4 +81,10 @@ export default {
   OnlineTravel8,
   OnlineTravel9,
   OnlineTravel10,
+
+  //--WholesaleTour
+  WholesaleTour1,
+  WholesaleTour2,
+  WholesaleTour3,
+  WholesaleTour4,
 };

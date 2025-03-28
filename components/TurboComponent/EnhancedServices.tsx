@@ -31,10 +31,10 @@ const ImageMap: Record<string, any> = {
   rapidTimeToMarket: images.OnlineTravel7,
 
   // WholesaleTour
-  // increasedEfficiency: images.Enhanced5,
-  // enhancedFlexibility: images.Enhanced1,
-  // globalReach: images.Enhanced2,
-  // improvedCustomerSatisfaction: images.Enhanced3,
+  increasedEfficiency: images.WholesaleTour1,
+  enhancedFlexibility: images.WholesaleTour2,
+  globalReach: images.WholesaleTour3,
+  improvedCustomerSatisfaction: images.WholesaleTour4,
 
   // Fallback images if needed
   // default1: images.Enhanced1,

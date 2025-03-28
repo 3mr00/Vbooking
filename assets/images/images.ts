@@ -67,6 +67,12 @@ import OnlineTravel5 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced
 import OnlineTravel6 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced6.jpg";
 import OnlineTravel7 from "@/assets/images/image/TurboPage/OnlineTravel/Enhanced7.jpg";
 
+//------ WholesaleTour
+import WholesaleTour1 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanced1.jpg";
+import WholesaleTour2 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanced2.jpg";
+import WholesaleTour3 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanced3.jpg";
+import WholesaleTour4 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanced4.jpg";
+
 // contact-us images
 import FacebookCu from "@/assets/images/image/facebook.svg";
 import XCu from "@/assets/images/image/X.svg";
@@ -136,6 +142,10 @@ export default {
   OnlineTravel5,
   OnlineTravel6,
   OnlineTravel7,
+  WholesaleTour1,
+  WholesaleTour2,
+  WholesaleTour3,
+  WholesaleTour4,
   // contact-us images
   FacebookCu,
   XCu,
