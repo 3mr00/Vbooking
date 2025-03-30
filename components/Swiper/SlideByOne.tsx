@@ -1,6 +1,6 @@
 "use client"; // Mark this as a Client Component
 
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css"; // Swiper styles
@@ -23,31 +23,42 @@ const SlideByOne = ({
   swiperClassName,
   slideBy,
 }: ScrollableCardsProps) => {
+  const prevRef = useRef<HTMLDivElement>(null);
+  const nextRef = useRef<HTMLDivElement>(null);
   return (
-    <Swiper
-      spaceBetween={30}
-      slidesPerView={slideBy}
-      loop={true}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-        // pauseOnMouseEnter: true,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Navigation, Pagination]}
-      className={swiperClassName || "mySwiper "} // Use dynamic class or fallback to default
-    >
-      {options.map((item) => (
-        <SwiperSlide key={item.id} className="pb-10 ">
-          {typeof item.content === "function"
-            ? item.content(item)
-            : item.content}
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="relative">
+      <Swiper
+        spaceBetween={30}
+        slidesPerView={slideBy}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          // pauseOnMouseEnter: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={{
+          nextEl: ".custom-swiper-button-next",
+          prevEl: ".custom-swiper-button-prev",
+        }}
+        modules={[Autoplay, Navigation, Pagination]}
+        className={swiperClassName || "mySwiper "} // Use dynamic class or fallback to default
+      >
+        {options.map((item) => (
+          <SwiperSlide key={item.id} className="pb-10">
+            {typeof item.content === "function"
+              ? item.content(item)
+              : item.content}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Custom navigation buttons with refs */}
+      <div ref={prevRef} className="custom-swiper-button-prev"></div>
+      <div ref={nextRef} className="custom-swiper-button-next"></div>
+    </div>
   );
 };
 
