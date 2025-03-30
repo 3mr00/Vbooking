@@ -114,16 +114,16 @@ body::-webkit-scrollbar-thumb {
 
 .custom-swiper-button-next::after,
 .custom-swiper-button-prev::after {
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(156, 37, 160, 80%);
 }
 
 .custom-swiper-button-next::after {
-  content: "\1F852"; /* Unicode arrow */
+  content: "→"; /* Unicode arrow */
 }
 
 .custom-swiper-button-prev::after {
-  content: "\1F850"; /* Unicode arrow */
+  content: "←"; /* Unicode arrow */
 }
 
 /* .swiper-button-prev:after,
