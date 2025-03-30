@@ -82,6 +82,33 @@ body::-webkit-scrollbar-thumb {
     background: transparent;
   }
 }
+/* swiper */
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 30px;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  text-transform: none !important;
+  color: rgb(156, 37, 160, 50%);
+}
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: gray !important;
+  opacity: 0.7 !important;
+  margin: 0 4px !important;
+  border-radius: 50px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px !important;
+  height: 8px !important;
+  background-color: rgb(156, 37, 160, 80%) !important;
+  opacity: 1 !important;
+}
 
 /* Loading overlay that covers the entire screen */
 .loading-overlay {

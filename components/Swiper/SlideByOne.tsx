@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css"; // Swiper styles
 
 // Define the type for the card options
@@ -33,15 +33,15 @@ const SlideByOne = ({
         disableOnInteraction: false,
         // pauseOnMouseEnter: true,
       }}
-      // pagination={{
-      //   clickable: true,
-      // }}
-      // navigation={true}
-      modules={[Autoplay]}
-      className={swiperClassName || "mySwiper"} // Use dynamic class or fallback to default
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Navigation, Pagination]}
+      className={swiperClassName || "mySwiper "} // Use dynamic class or fallback to default
     >
       {options.map((item) => (
-        <SwiperSlide key={item.id}>
+        <SwiperSlide key={item.id} className="pb-10 ">
           {typeof item.content === "function"
             ? item.content(item)
             : item.content}
