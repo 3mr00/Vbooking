@@ -15,14 +15,14 @@ const items = [
     id: 1,
 
     title: "booking_suite.wholesale_tour_operators_b2b_b2c",
-    image: images.laptop,
+    image: images.WholesaleTourOperators,
     description: "booking_suite.automate_operations_manage_inventories",
     url: "/turbo/WholesaleTour",
   },
   {
     id: 2,
     title: "booking_suite.incoming_agencies_dmcs",
-    image: images.laptop,
+    image: images.IncomingAgencies,
     description:
       "booking_suite.improve_customer_satisfaction_with_fast_searches",
     url: "/turbo/IncomingAgencies",
@@ -30,7 +30,7 @@ const items = [
   {
     id: 3,
     title: "booking_suite.online_travel_agencies_otas",
-    image: images.laptop,
+    image: images.OnlineTravelAgencies,
     description:
       "booking_suite.improve_customer_satisfaction_with_fast_searches",
     url: "/turbo/OnlineTravel",
@@ -38,7 +38,7 @@ const items = [
   {
     id: 4,
     title: "booking_suite.holiday_rental_managers",
-    image: images.laptop,
+    image: images.HolidayRentalManagers,
     description:
       "booking_suite.streamline_bookings_pricing_guest_communication",
     url: "/turbo/HolidayRental",

@@ -73,6 +73,12 @@ import WholesaleTour2 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanc
 import WholesaleTour3 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanced3.jpg";
 import WholesaleTour4 from "@/assets/images/image/TurboPage/WholesaleTour/Enhanced4.jpg";
 
+//------ TurboBooking
+import HolidayRentalManagers from "@/assets/images/image/TurboPage/TurboBooking Suite/HolidayRentalManagers.png";
+import IncomingAgencies from "@/assets/images/image/TurboPage/TurboBooking Suite/IncomingAgencies.png";
+import OnlineTravelAgencies from "@/assets/images/image/TurboPage/TurboBooking Suite/OnlineTravelAgencies.png";
+import WholesaleTourOperators from "@/assets/images/image/TurboPage/TurboBooking Suite/WholesaleTourOperators.png";
+
 // contact-us images
 import FacebookCu from "@/assets/images/image/facebook.svg";
 import XCu from "@/assets/images/image/X.svg";
@@ -146,6 +152,14 @@ export default {
   WholesaleTour2,
   WholesaleTour3,
   WholesaleTour4,
+
+  // turbo-specific images
+
+  HolidayRentalManagers,
+  IncomingAgencies,
+  OnlineTravelAgencies,
+  WholesaleTourOperators,
+
   // contact-us images
   FacebookCu,
   XCu,
